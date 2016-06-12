@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageSizeViewController">
+            <connections>
+                <outlet property="btn1" destination="6kY-i4-pTN" id="w7d-ns-fAu"/>
+                <outlet property="btn2" destination="CF0-EI-exi" id="XRg-o8-GXA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC3-eu-I1q">
+                    <rect key="frame" x="8" y="74" width="48" height="44"/>
+                    <state key="normal" image="ranking_list"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kY-i4-pTN">
+                    <rect key="frame" x="76" y="74" width="48" height="44"/>
+                    <state key="normal" image="ranking_list"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-EI-exi">
+                    <rect key="frame" x="144" y="74" width="48" height="44"/>
+                    <state key="normal" image="ranking_list"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CF0-EI-exi" firstAttribute="leading" secondItem="6kY-i4-pTN" secondAttribute="trailing" constant="20" id="3g6-a9-EZw"/>
+                <constraint firstItem="CF0-EI-exi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="8IQ-CC-Wtn"/>
+                <constraint firstItem="6kY-i4-pTN" firstAttribute="leading" secondItem="zC3-eu-I1q" secondAttribute="trailing" constant="20" id="9GA-G6-afA"/>
+                <constraint firstItem="zC3-eu-I1q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="eIj-IL-ag9"/>
+                <constraint firstItem="zC3-eu-I1q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="lPJ-45-y9a"/>
+                <constraint firstItem="6kY-i4-pTN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="oC3-2v-F2P"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ranking_list" width="48" height="44"/>
+    </resources>
+</document>

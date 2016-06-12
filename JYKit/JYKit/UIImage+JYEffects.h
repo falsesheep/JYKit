@@ -38,4 +38,14 @@
  */
 - (UIImage *)imageWithColor:(UIColor *)color;
 
+/**
+ *  缩小图片
+ *
+ *  @param image   原图
+ *  @param newSize 缩小后的尺寸
+ *
+ *  @return 缩小后的图片
+ */
++ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
+
 @end

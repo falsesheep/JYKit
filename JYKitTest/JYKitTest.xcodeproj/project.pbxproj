@@ -18,6 +18,8 @@
 		205398AD1D0D2CDF00B34DA1 /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205398AC1D0D2CDF00B34DA1 /* ColorViewController.xib */; };
 		205398B71D0D41BC00B34DA1 /* ImageColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398B51D0D41BC00B34DA1 /* ImageColorViewController.m */; };
 		205398B81D0D41BC00B34DA1 /* ImageColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205398B61D0D41BC00B34DA1 /* ImageColorViewController.xib */; };
+		205398BD1D0D45DA00B34DA1 /* ImageSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398BB1D0D45DA00B34DA1 /* ImageSizeViewController.m */; };
+		205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205398BC1D0D45DA00B34DA1 /* ImageSizeViewController.xib */; };
 		2087C1C61BD4FF7200A3D53F /* JYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C8BDC1BD4EF8400E55D5D /* JYKit.framework */; };
 		2087C1C71BD4FF7200A3D53F /* JYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 208C8BDC1BD4EF8400E55D5D /* JYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		208C8BA41BD4EF6E00E55D5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8BA31BD4EF6E00E55D5D /* main.m */; };
@@ -101,6 +103,9 @@
 		205398B41D0D41BC00B34DA1 /* ImageColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageColorViewController.h; sourceTree = "<group>"; };
 		205398B51D0D41BC00B34DA1 /* ImageColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageColorViewController.m; sourceTree = "<group>"; };
 		205398B61D0D41BC00B34DA1 /* ImageColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageColorViewController.xib; sourceTree = "<group>"; };
+		205398BA1D0D45DA00B34DA1 /* ImageSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSizeViewController.h; sourceTree = "<group>"; };
+		205398BB1D0D45DA00B34DA1 /* ImageSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSizeViewController.m; sourceTree = "<group>"; };
+		205398BC1D0D45DA00B34DA1 /* ImageSizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageSizeViewController.xib; sourceTree = "<group>"; };
 		2087C1D01BD5355D00A3D53F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		208C8B9F1BD4EF6E00E55D5D /* JYKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208C8BA31BD4EF6E00E55D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -205,6 +210,16 @@
 			name = "改变图片填充色";
 			sourceTree = "<group>";
 		};
+		205398B91D0D45AE00B34DA1 /* 改变图片大小 */ = {
+			isa = PBXGroup;
+			children = (
+				205398BA1D0D45DA00B34DA1 /* ImageSizeViewController.h */,
+				205398BB1D0D45DA00B34DA1 /* ImageSizeViewController.m */,
+				205398BC1D0D45DA00B34DA1 /* ImageSizeViewController.xib */,
+			);
+			name = "改变图片大小";
+			sourceTree = "<group>";
+		};
 		208C8B961BD4EF6E00E55D5D = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +256,7 @@
 				204989841D0D0E7B00894ACF /* 截图 */,
 				205398A61D0D2C0400B34DA1 /* 颜色 */,
 				205398B11D0D419600B34DA1 /* 改变图片填充色 */,
+				205398B91D0D45AE00B34DA1 /* 改变图片大小 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -416,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
+				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
 				208C8BB21BD4EF6E00E55D5D /* LaunchScreen.storyboard in Resources */,
 				205398AD1D0D2CDF00B34DA1 /* ColorViewController.xib in Resources */,
 				208C8BAF1BD4EF6E00E55D5D /* Assets.xcassets in Resources */,
@@ -449,6 +466,7 @@
 				208C8BAA1BD4EF6E00E55D5D /* ViewController.m in Sources */,
 				204989751D0D003900894ACF /* BaseViewController.m in Sources */,
 				204989871D0D0EBD00894ACF /* CropViewController.m in Sources */,
+				205398BD1D0D45DA00B34DA1 /* ImageSizeViewController.m in Sources */,
 				208C8BA71BD4EF6E00E55D5D /* AppDelegate.m in Sources */,
 				204989711D0CFDE000894ACF /* NavBackItemViewController.m in Sources */,
 				205398AB1D0D2C2600B34DA1 /* ColorViewController.m in Sources */,

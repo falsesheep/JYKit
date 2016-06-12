@@ -13,6 +13,7 @@
 #import "CropViewController.h"
 #import "ColorViewController.h"
 #import "ImageColorViewController.h"
+#import "ImageSizeViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -28,7 +29,8 @@
                   @"虚线",
                   @"截图",
                   @"颜色",
-                  @"改变图片填充色"];
+                  @"改变图片填充色",
+                  @"改变图片大小"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -74,6 +76,11 @@
             break;}
         case 5:{
             ImageColorViewController *vc = [ImageColorViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 6:{
+            ImageSizeViewController *vc = [ImageSizeViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}
