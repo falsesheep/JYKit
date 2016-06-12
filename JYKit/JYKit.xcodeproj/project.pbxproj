@@ -27,6 +27,8 @@
 		2049898D1D0D25CD00894ACF /* UIColor+JYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049898B1D0D25CD00894ACF /* UIColor+JYColor.m */; };
 		204DD9E51C9EC6B5002407A3 /* UIImage+JYEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 204DD9E31C9EC6B5002407A3 /* UIImage+JYEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 204DD9E41C9EC6B5002407A3 /* UIImage+JYEffects.m */; };
+		205398C11D0D490F00B34DA1 /* UIView+JYFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 205398BF1D0D490F00B34DA1 /* UIView+JYFrame.h */; };
+		205398C21D0D490F00B34DA1 /* UIView+JYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398C01D0D490F00B34DA1 /* UIView+JYFrame.m */; };
 		2087C1CD1BD534E300A3D53F /* UIButton+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 2087C1CB1BD534E300A3D53F /* UIButton+Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 2087C1CC1BD534E300A3D53F /* UIButton+Block.m */; };
 		208C8B261BD4E98B00E55D5D /* JYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 208C8B251BD4E98B00E55D5D /* JYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +57,8 @@
 		2049898B1D0D25CD00894ACF /* UIColor+JYColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JYColor.m"; sourceTree = "<group>"; };
 		204DD9E31C9EC6B5002407A3 /* UIImage+JYEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JYEffects.h"; sourceTree = "<group>"; };
 		204DD9E41C9EC6B5002407A3 /* UIImage+JYEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JYEffects.m"; sourceTree = "<group>"; };
+		205398BF1D0D490F00B34DA1 /* UIView+JYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYFrame.h"; sourceTree = "<group>"; };
+		205398C01D0D490F00B34DA1 /* UIView+JYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYFrame.m"; sourceTree = "<group>"; };
 		2087C1CB1BD534E300A3D53F /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		2087C1CC1BD534E300A3D53F /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		208C8B221BD4E98B00E55D5D /* JYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,8 @@
 				204DD9E41C9EC6B5002407A3 /* UIImage+JYEffects.m */,
 				2049898A1D0D25CD00894ACF /* UIColor+JYColor.h */,
 				2049898B1D0D25CD00894ACF /* UIColor+JYColor.m */,
+				205398BF1D0D490F00B34DA1 /* UIView+JYFrame.h */,
+				205398C01D0D490F00B34DA1 /* UIView+JYFrame.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205398C11D0D490F00B34DA1 /* UIView+JYFrame.h in Headers */,
 				208C8B261BD4E98B00E55D5D /* JYKit.h in Headers */,
 				208C8B3E1BD4E9BD00E55D5D /* JYTest.h in Headers */,
 				20E0F0321BD61040000583F9 /* UINavigationItem+ImageAndTitle.h in Headers */,
@@ -275,6 +282,7 @@
 				2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */,
 				2049898D1D0D25CD00894ACF /* UIColor+JYColor.m in Sources */,
 				202C35731CF6985D009CA7D8 /* JYDashLineView.m in Sources */,
+				205398C21D0D490F00B34DA1 /* UIView+JYFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
