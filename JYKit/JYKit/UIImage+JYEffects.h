@@ -29,4 +29,13 @@
  */
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 
+/**
+ *  改变图片的填充色
+ *
+ *  @param color 填充色
+ *
+ *  @return 图片
+ */
+- (UIImage *)imageWithColor:(UIColor *)color;
+
 @end

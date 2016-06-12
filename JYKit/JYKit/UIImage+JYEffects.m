@@ -26,7 +26,21 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();
 
     CGRect rect = CGRectMake(0, 0, size.width, size.height);
-    CGContextSetFillColorWithColor(ctx, color.CGColor);
+    [color setFill];
+    CGContextFillRect(ctx, rect);
+
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+- (UIImage *)imageWithColor:(UIColor *)color {
+    UIGraphicsBeginImageContext(self.size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+
+    CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
+    CGContextClipToMask(ctx, rect, self.CGImage);
+    [color setFill];
     CGContextFillRect(ctx, rect);
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
