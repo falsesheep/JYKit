@@ -19,6 +19,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N30-2n-L83">
                     <rect key="frame" x="8" y="64" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="L9b-Es-zHf"/>
                         <constraint firstAttribute="width" constant="100" id="sBL-Pt-CNy"/>
@@ -30,6 +31,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUx-mP-89z">
                     <rect key="frame" x="133" y="64" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="ZNw-Sl-1fu"/>
                         <constraint firstAttribute="height" constant="100" id="e12-ES-4mr"/>

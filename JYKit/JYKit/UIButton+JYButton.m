@@ -7,6 +7,7 @@
 //
 
 #import "UIButton+JYButton.h"
+#import "NSString+JYString.h"
 
 @implementation UIButton (JYButton)
 
@@ -21,8 +22,13 @@
     CGSize imageSize = self.imageView.frame.size;
     CGSize titleSize = self.titleLabel.frame.size;
     CGFloat totalHeight = imageSize.height + titleSize.height + 5;
-    self.imageEdgeInsets = UIEdgeInsetsMake(imageSize.height-totalHeight, 0, 0, -titleSize.width);
     self.titleEdgeInsets = UIEdgeInsetsMake(0, -imageSize.width, titleSize.height-totalHeight, 0);
+    CGSize acceptableTitleSize = [self.titleLabel.text acceptableSizeWithFont:self.titleLabel.font maxWith:0 maxHeight:21];
+    if (acceptableTitleSize.width <= titleSize.width) {
+        self.imageEdgeInsets = UIEdgeInsetsMake(imageSize.height-totalHeight, 0, 0, -titleSize.width);
+    }else {
+        self.imageEdgeInsets = UIEdgeInsetsMake(imageSize.height-totalHeight, 0, 0, -acceptableTitleSize.width);
+    }
 }
 
 @end
