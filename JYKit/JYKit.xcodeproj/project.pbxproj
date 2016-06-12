@@ -31,6 +31,8 @@
 		205398C21D0D490F00B34DA1 /* UIView+JYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398C01D0D490F00B34DA1 /* UIView+JYFrame.m */; };
 		205398C91D0D52BA00B34DA1 /* UIDevice+JYUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 205398C71D0D52BA00B34DA1 /* UIDevice+JYUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		205398CA1D0D52BA00B34DA1 /* UIDevice+JYUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398C81D0D52BA00B34DA1 /* UIDevice+JYUID.m */; };
+		205398CD1D0D5A2900B34DA1 /* NSString+JYString.h in Headers */ = {isa = PBXBuildFile; fileRef = 205398CB1D0D5A2900B34DA1 /* NSString+JYString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205398CE1D0D5A2900B34DA1 /* NSString+JYString.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398CC1D0D5A2900B34DA1 /* NSString+JYString.m */; };
 		2087C1CD1BD534E300A3D53F /* UIButton+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 2087C1CB1BD534E300A3D53F /* UIButton+Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 2087C1CC1BD534E300A3D53F /* UIButton+Block.m */; };
 		208C8B261BD4E98B00E55D5D /* JYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 208C8B251BD4E98B00E55D5D /* JYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +65,8 @@
 		205398C01D0D490F00B34DA1 /* UIView+JYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYFrame.m"; sourceTree = "<group>"; };
 		205398C71D0D52BA00B34DA1 /* UIDevice+JYUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JYUID.h"; sourceTree = "<group>"; };
 		205398C81D0D52BA00B34DA1 /* UIDevice+JYUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JYUID.m"; sourceTree = "<group>"; };
+		205398CB1D0D5A2900B34DA1 /* NSString+JYString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JYString.h"; sourceTree = "<group>"; };
+		205398CC1D0D5A2900B34DA1 /* NSString+JYString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYString.m"; sourceTree = "<group>"; };
 		2087C1CB1BD534E300A3D53F /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		2087C1CC1BD534E300A3D53F /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		208C8B221BD4E98B00E55D5D /* JYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +139,8 @@
 				205398C01D0D490F00B34DA1 /* UIView+JYFrame.m */,
 				205398C71D0D52BA00B34DA1 /* UIDevice+JYUID.h */,
 				205398C81D0D52BA00B34DA1 /* UIDevice+JYUID.m */,
+				205398CB1D0D5A2900B34DA1 /* NSString+JYString.h */,
+				205398CC1D0D5A2900B34DA1 /* NSString+JYString.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 				2049898C1D0D25CD00894ACF /* UIColor+JYColor.h in Headers */,
 				205398C11D0D490F00B34DA1 /* UIView+JYFrame.h in Headers */,
 				205398C91D0D52BA00B34DA1 /* UIDevice+JYUID.h in Headers */,
+				205398CD1D0D5A2900B34DA1 /* NSString+JYString.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +292,7 @@
 			files = (
 				20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */,
 				205398CA1D0D52BA00B34DA1 /* UIDevice+JYUID.m in Sources */,
+				205398CE1D0D5A2900B34DA1 /* NSString+JYString.m in Sources */,
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,
 				208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */,
 				2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */,
@@ -410,6 +418,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JYKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.falsesheep.JYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +435,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JYKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.falsesheep.JYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
