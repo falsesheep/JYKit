@@ -24,3 +24,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "UIView+JYFrame.h"
 #import "UIDevice+JYUID.h"
 #import "NSString+JYString.h"
+#import "UIButton+JYButton.h"

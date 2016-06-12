@@ -15,6 +15,7 @@
 #import "ImageColorViewController.h"
 #import "ImageSizeViewController.h"
 #import "FlexContentViewController.h"
+#import "ButtonImagePositionViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -32,7 +33,8 @@
                   @"颜色",
                   @"改变图片填充色",
                   @"改变图片大小",
-                  @"容纳文字所需要的大小"];
+                  @"容纳文字所需要的大小",
+                  @"Button图片位置"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -88,6 +90,11 @@
             break;}
         case 7:{
             FlexContentViewController *vc = [FlexContentViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 8:{
+            ButtonImagePositionViewController *vc = [ButtonImagePositionViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}
