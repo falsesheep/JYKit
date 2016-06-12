@@ -11,10 +11,24 @@
 @implementation UIImage (JYEffects)
 
 + (UIImage *)captureImageFromView:(UIView *)view {
-    CGRect screenRect = view.bounds;
-    UIGraphicsBeginImageContext(screenRect.size);
+    UIGraphicsBeginImageContext(view.bounds.size);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
+
     [view.layer renderInContext:ctx];
+
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
+    UIGraphicsBeginImageContext(size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    CGContextSetFillColorWithColor(ctx, color.CGColor);
+    CGContextFillRect(ctx, rect);
+
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;

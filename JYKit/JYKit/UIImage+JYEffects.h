@@ -19,4 +19,14 @@
  */
 + (UIImage *)captureImageFromView:(UIView *)view;
 
+/**
+ *  生成纯色的image
+ *
+ *  @param color 图片颜色
+ *  @param size  图片大小
+ *
+ *  @return 纯色图片
+ */
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+
 @end

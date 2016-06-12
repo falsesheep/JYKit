@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_button setBackgroundImage:[UIImage imageWithColor:[UIColor blueColor] size:CGSizeMake(10, 10)] forState:UIControlStateNormal];
     [_button handleControlEvent:UIControlEventTouchUpInside withBlock:^{
         NSLog(@"TODO: 事件处理");
     }];
