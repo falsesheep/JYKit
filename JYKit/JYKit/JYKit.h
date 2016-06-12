@@ -21,3 +21,5 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "JYDashLineView.h"
 #import "UIImage+JYEffects.h"
 #import "UIColor+JYColor.h"
+#import "UIView+JYFrame.h"
+#import "UIDevice+JYUID.h"
