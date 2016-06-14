@@ -16,6 +16,7 @@
 		204989891D0D0F3400894ACF /* CropViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204989881D0D0F3400894ACF /* CropViewController.xib */; };
 		204B2E8F1D10039100F9C88C /* HideNavLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204B2E8D1D10039100F9C88C /* HideNavLineViewController.m */; };
 		204B2E901D10039100F9C88C /* HideNavLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204B2E8E1D10039100F9C88C /* HideNavLineViewController.xib */; };
+		204B2E961D1008EA00F9C88C /* DashLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204B2E951D1008EA00F9C88C /* DashLineViewController.xib */; };
 		205398AB1D0D2C2600B34DA1 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398AA1D0D2C2600B34DA1 /* ColorViewController.m */; };
 		205398AD1D0D2CDF00B34DA1 /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205398AC1D0D2CDF00B34DA1 /* ColorViewController.xib */; };
 		205398B71D0D41BC00B34DA1 /* ImageColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398B51D0D41BC00B34DA1 /* ImageColorViewController.m */; };
@@ -106,6 +107,7 @@
 		204B2E8C1D10039100F9C88C /* HideNavLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideNavLineViewController.h; sourceTree = "<group>"; };
 		204B2E8D1D10039100F9C88C /* HideNavLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavLineViewController.m; sourceTree = "<group>"; };
 		204B2E8E1D10039100F9C88C /* HideNavLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HideNavLineViewController.xib; sourceTree = "<group>"; };
+		204B2E951D1008EA00F9C88C /* DashLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashLineViewController.xib; sourceTree = "<group>"; };
 		205398A91D0D2C2600B34DA1 /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
 		205398AA1D0D2C2600B34DA1 /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		205398AC1D0D2CDF00B34DA1 /* ColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			children = (
 				2049897F1D0D06ED00894ACF /* DashLineViewController.h */,
 				204989801D0D06ED00894ACF /* DashLineViewController.m */,
+				204B2E951D1008EA00F9C88C /* DashLineViewController.xib */,
 			);
 			name = "虚线";
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			files = (
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
+				204B2E961D1008EA00F9C88C /* DashLineViewController.xib in Resources */,
 				208C8BB21BD4EF6E00E55D5D /* LaunchScreen.storyboard in Resources */,
 				205398AD1D0D2CDF00B34DA1 /* ColorViewController.xib in Resources */,
 				208C8BAF1BD4EF6E00E55D5D /* Assets.xcassets in Resources */,

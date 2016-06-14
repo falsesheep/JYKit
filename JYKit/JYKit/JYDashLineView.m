@@ -13,18 +13,23 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
-        _lineColor = [UIColor redColor];
-        _lineWidth = 3;
-        _dashPatterns = @[@10, @5];
-        _startPoint = CGPointMake(0, CGRectGetHeight(frame)/2.f);
-        _endPoint = CGPointMake(self.bounds.size.width, CGRectGetHeight(frame)/2.f);
+        
     }
     return self;
 }
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
+
+    if (!_lineColor) {
+        _lineColor = [UIColor redColor];
+    }
+    if (_lineWidth == 0) {
+        _lineWidth = 3;
+    }
+    _dashPatterns = @[@10, @5];
+    _startPoint = CGPointMake(0, CGRectGetHeight(rect)/2.f);
+    _endPoint = CGPointMake(self.bounds.size.width, CGRectGetHeight(rect)/2.f);
 
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.frame = self.bounds;

@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
 // 虚线View
+IB_DESIGNABLE
 @interface JYDashLineView : UIView
 @property (nonatomic, strong) NSArray *dashPatterns;
-@property (nonatomic, strong) UIColor *lineColor;
-@property (nonatomic, assign) CGFloat lineWidth;
+@property (nonatomic, strong) IBInspectable UIColor *lineColor;
+@property (nonatomic, assign) IBInspectable CGFloat lineWidth;
 @property (nonatomic, assign) CGPoint startPoint;
 @property (nonatomic, assign) CGPoint endPoint;
 @end

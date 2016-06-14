@@ -9,15 +9,13 @@
 #import "DashLineViewController.h"
 
 @interface DashLineViewController ()
-
+@property (nonatomic, weak) IBOutlet JYDashLineView *dashline;
 @end
 
 @implementation DashLineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    JYDashLineView *line = [[JYDashLineView alloc] initWithFrame:CGRectMake(20, 80, 100, 10)];
-    [self.view addSubview:line];
 }
 
 @end
