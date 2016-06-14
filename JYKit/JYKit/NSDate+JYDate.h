@@ -24,4 +24,18 @@
  */
 - (NSString *)prettyFormat;
 
+/**
+ *  计算这个月有多少天
+ *
+ *  @return 天数
+ */
+- (NSUInteger)numberOfDaysInCurrentMonth;
+
+/**
+ *  计算这是礼拜几
+ *
+ *  @return 礼拜几
+ */
+- (NSUInteger)weeklyOrdinality;
+
 @end

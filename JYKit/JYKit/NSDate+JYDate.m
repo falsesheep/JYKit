@@ -91,4 +91,16 @@
     return [dateFormatter stringFromDate:self];
 }
 
+- (NSUInteger)numberOfDaysInCurrentMonth {
+    return [[NSCalendar currentCalendar] rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:self].length;
+}
+
+- (NSUInteger)numberOfWeeksInCurrentMonth {
+    return [[NSCalendar currentCalendar] rangeOfUnit:NSWeekCalendarUnit inUnit:NSMonthCalendarUnit forDate:self].length;
+}
+
+- (NSUInteger)weeklyOrdinality {
+    return [[NSCalendar currentCalendar] ordinalityOfUnit:NSDayCalendarUnit inUnit:NSWeekCalendarUnit forDate:self];
+}
+
 @end
