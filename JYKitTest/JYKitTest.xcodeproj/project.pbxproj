@@ -14,6 +14,8 @@
 		204989821D0D06ED00894ACF /* DashLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204989801D0D06ED00894ACF /* DashLineViewController.m */; };
 		204989871D0D0EBD00894ACF /* CropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204989861D0D0EBD00894ACF /* CropViewController.m */; };
 		204989891D0D0F3400894ACF /* CropViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204989881D0D0F3400894ACF /* CropViewController.xib */; };
+		204B2E8F1D10039100F9C88C /* HideNavLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204B2E8D1D10039100F9C88C /* HideNavLineViewController.m */; };
+		204B2E901D10039100F9C88C /* HideNavLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204B2E8E1D10039100F9C88C /* HideNavLineViewController.xib */; };
 		205398AB1D0D2C2600B34DA1 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398AA1D0D2C2600B34DA1 /* ColorViewController.m */; };
 		205398AD1D0D2CDF00B34DA1 /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205398AC1D0D2CDF00B34DA1 /* ColorViewController.xib */; };
 		205398B71D0D41BC00B34DA1 /* ImageColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398B51D0D41BC00B34DA1 /* ImageColorViewController.m */; };
@@ -101,6 +103,9 @@
 		204989851D0D0EBD00894ACF /* CropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
 		204989861D0D0EBD00894ACF /* CropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropViewController.m; sourceTree = "<group>"; };
 		204989881D0D0F3400894ACF /* CropViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CropViewController.xib; sourceTree = "<group>"; };
+		204B2E8C1D10039100F9C88C /* HideNavLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideNavLineViewController.h; sourceTree = "<group>"; };
+		204B2E8D1D10039100F9C88C /* HideNavLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavLineViewController.m; sourceTree = "<group>"; };
+		204B2E8E1D10039100F9C88C /* HideNavLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HideNavLineViewController.xib; sourceTree = "<group>"; };
 		205398A91D0D2C2600B34DA1 /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
 		205398AA1D0D2C2600B34DA1 /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		205398AC1D0D2CDF00B34DA1 /* ColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
@@ -200,6 +205,16 @@
 			name = "截图";
 			sourceTree = "<group>";
 		};
+		204B2E891D10035C00F9C88C /* 隐藏Navigation Bar下方分割线 */ = {
+			isa = PBXGroup;
+			children = (
+				204B2E8C1D10039100F9C88C /* HideNavLineViewController.h */,
+				204B2E8D1D10039100F9C88C /* HideNavLineViewController.m */,
+				204B2E8E1D10039100F9C88C /* HideNavLineViewController.xib */,
+			);
+			name = "隐藏Navigation Bar下方分割线";
+			sourceTree = "<group>";
+		};
 		205398A61D0D2C0400B34DA1 /* 颜色 */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +304,7 @@
 				205398B91D0D45AE00B34DA1 /* 改变图片大小 */,
 				205398CF1D0D5EDF00B34DA1 /* 容纳文字所需要的大小 */,
 				205398DA1D0D64B300B34DA1 /* Button图片位置 */,
+				204B2E891D10035C00F9C88C /* 隐藏Navigation Bar下方分割线 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -470,6 +486,7 @@
 				208C8BAF1BD4EF6E00E55D5D /* Assets.xcassets in Resources */,
 				208C8BAD1BD4EF6E00E55D5D /* Main.storyboard in Resources */,
 				205398D41D0D5F2E00B34DA1 /* FlexContentViewController.xib in Resources */,
+				204B2E901D10039100F9C88C /* HideNavLineViewController.xib in Resources */,
 				205398DF1D0D64F500B34DA1 /* ButtonImagePositionViewController.xib in Resources */,
 				205398B81D0D41BC00B34DA1 /* ImageColorViewController.xib in Resources */,
 				204989891D0D0F3400894ACF /* CropViewController.xib in Resources */,
@@ -507,6 +524,7 @@
 				205398D31D0D5F2E00B34DA1 /* FlexContentViewController.m in Sources */,
 				204989821D0D06ED00894ACF /* DashLineViewController.m in Sources */,
 				204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */,
+				204B2E8F1D10039100F9C88C /* HideNavLineViewController.m in Sources */,
 				205398DE1D0D64F500B34DA1 /* ButtonImagePositionViewController.m in Sources */,
 				205398B71D0D41BC00B34DA1 /* ImageColorViewController.m in Sources */,
 				208C8BA41BD4EF6E00E55D5D /* main.m in Sources */,

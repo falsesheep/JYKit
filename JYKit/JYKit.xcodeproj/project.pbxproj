@@ -25,6 +25,8 @@
 		202C35731CF6985D009CA7D8 /* JYDashLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202C35711CF6985D009CA7D8 /* JYDashLineView.m */; };
 		2049898C1D0D25CD00894ACF /* UIColor+JYColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2049898A1D0D25CD00894ACF /* UIColor+JYColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2049898D1D0D25CD00894ACF /* UIColor+JYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049898B1D0D25CD00894ACF /* UIColor+JYColor.m */; };
+		204B2E871D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 204B2E851D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204B2E881D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 204B2E861D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m */; };
 		204DD9E51C9EC6B5002407A3 /* UIImage+JYEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 204DD9E31C9EC6B5002407A3 /* UIImage+JYEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 204DD9E41C9EC6B5002407A3 /* UIImage+JYEffects.m */; };
 		205398C11D0D490F00B34DA1 /* UIView+JYFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 205398BF1D0D490F00B34DA1 /* UIView+JYFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +65,8 @@
 		202C35711CF6985D009CA7D8 /* JYDashLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYDashLineView.m; sourceTree = "<group>"; };
 		2049898A1D0D25CD00894ACF /* UIColor+JYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JYColor.h"; sourceTree = "<group>"; };
 		2049898B1D0D25CD00894ACF /* UIColor+JYColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JYColor.m"; sourceTree = "<group>"; };
+		204B2E851D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JYNavigationBar.h"; sourceTree = "<group>"; };
+		204B2E861D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JYNavigationBar.m"; sourceTree = "<group>"; };
 		204DD9E31C9EC6B5002407A3 /* UIImage+JYEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JYEffects.h"; sourceTree = "<group>"; };
 		204DD9E41C9EC6B5002407A3 /* UIImage+JYEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JYEffects.m"; sourceTree = "<group>"; };
 		205398BF1D0D490F00B34DA1 /* UIView+JYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYFrame.h"; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				205398D71D0D643E00B34DA1 /* UIButton+JYButton.m */,
 				205398E01D0D6A8800B34DA1 /* NSDate+JYDate.h */,
 				205398E11D0D6A8800B34DA1 /* NSDate+JYDate.m */,
+				204B2E851D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h */,
+				204B2E861D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 				205398CD1D0D5A2900B34DA1 /* NSString+JYString.h in Headers */,
 				205398D81D0D643E00B34DA1 /* UIButton+JYButton.h in Headers */,
 				205398E21D0D6A8800B34DA1 /* NSDate+JYDate.h in Headers */,
+				204B2E871D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +313,7 @@
 			files = (
 				20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */,
 				205398CA1D0D52BA00B34DA1 /* UIDevice+JYUID.m in Sources */,
+				204B2E881D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m in Sources */,
 				205398E31D0D6A8800B34DA1 /* NSDate+JYDate.m in Sources */,
 				205398CE1D0D5A2900B34DA1 /* NSString+JYString.m in Sources */,
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,

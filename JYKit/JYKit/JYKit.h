@@ -26,3 +26,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "NSString+JYString.h"
 #import "UIButton+JYButton.h"
 #import "NSDate+JYDate.h"
+#import "UINavigationBar+JYNavigationBar.h"
