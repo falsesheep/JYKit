@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface JDDetailViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet UILabel *lbChosen;
 @end

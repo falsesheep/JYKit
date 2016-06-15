@@ -10,7 +10,6 @@
 
 @interface JDMasterViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) NSArray *items;
 @property (nonatomic, assign) NSInteger selectedIndex;
 @end
 
@@ -19,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
-    _items = @[@"食品", @"服饰", @"电器", @"清洁"];
+    [self tableView:_tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
@@ -43,10 +42,15 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 清除之前的选择状态
     int prevIndex = _selectedIndex;
     _selectedIndex = indexPath.row;
     NSIndexPath *prevIndexPath = [NSIndexPath indexPathForRow:prevIndex inSection:0];
-    [tableView reloadRowsAtIndexPaths:@[prevIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [_tableView reloadRowsAtIndexPaths:@[prevIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    // 更新Detail View内容
+    if (self.delegate && [self.delegate respondsToSelector:@selector(masterViewDidSelectIndexPath:)]) {
+        [self.delegate masterViewDidSelectIndexPath:indexPath];
+    }
 }
 
 // 调整TableView自带的Seperator顶头(除以下代码，还需要在xib中设置Seperator Inset为0)
