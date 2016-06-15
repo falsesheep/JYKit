@@ -27,6 +27,8 @@
 		205398D41D0D5F2E00B34DA1 /* FlexContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205398D21D0D5F2E00B34DA1 /* FlexContentViewController.xib */; };
 		205398DE1D0D64F500B34DA1 /* ButtonImagePositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398DC1D0D64F500B34DA1 /* ButtonImagePositionViewController.m */; };
 		205398DF1D0D64F500B34DA1 /* ButtonImagePositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205398DD1D0D64F500B34DA1 /* ButtonImagePositionViewController.xib */; };
+		2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079C1161D10EFFF00A4315A /* GradientViewController.m */; };
+		2079C1191D10EFFF00A4315A /* GradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2079C1171D10EFFF00A4315A /* GradientViewController.xib */; };
 		2087C1C61BD4FF7200A3D53F /* JYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C8BDC1BD4EF8400E55D5D /* JYKit.framework */; };
 		2087C1C71BD4FF7200A3D53F /* JYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 208C8BDC1BD4EF8400E55D5D /* JYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		208C8BA41BD4EF6E00E55D5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8BA31BD4EF6E00E55D5D /* main.m */; };
@@ -123,6 +125,9 @@
 		205398DB1D0D64F500B34DA1 /* ButtonImagePositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonImagePositionViewController.h; sourceTree = "<group>"; };
 		205398DC1D0D64F500B34DA1 /* ButtonImagePositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonImagePositionViewController.m; sourceTree = "<group>"; };
 		205398DD1D0D64F500B34DA1 /* ButtonImagePositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonImagePositionViewController.xib; sourceTree = "<group>"; };
+		2079C1151D10EFFF00A4315A /* GradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
+		2079C1161D10EFFF00A4315A /* GradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
+		2079C1171D10EFFF00A4315A /* GradientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GradientViewController.xib; sourceTree = "<group>"; };
 		2087C1D01BD5355D00A3D53F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		208C8B9F1BD4EF6E00E55D5D /* JYKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208C8BA31BD4EF6E00E55D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -268,6 +273,16 @@
 			name = "Button图片位置";
 			sourceTree = "<group>";
 		};
+		2079C1121D10EFE900A4315A /* 渐变 */ = {
+			isa = PBXGroup;
+			children = (
+				2079C1151D10EFFF00A4315A /* GradientViewController.h */,
+				2079C1161D10EFFF00A4315A /* GradientViewController.m */,
+				2079C1171D10EFFF00A4315A /* GradientViewController.xib */,
+			);
+			name = "渐变";
+			sourceTree = "<group>";
+		};
 		208C8B961BD4EF6E00E55D5D = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +323,7 @@
 				205398CF1D0D5EDF00B34DA1 /* 容纳文字所需要的大小 */,
 				205398DA1D0D64B300B34DA1 /* Button图片位置 */,
 				204B2E891D10035C00F9C88C /* 隐藏Navigation Bar下方分割线 */,
+				2079C1121D10EFE900A4315A /* 渐变 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -484,6 +500,7 @@
 			files = (
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
+				2079C1191D10EFFF00A4315A /* GradientViewController.xib in Resources */,
 				204B2E961D1008EA00F9C88C /* DashLineViewController.xib in Resources */,
 				208C8BB21BD4EF6E00E55D5D /* LaunchScreen.storyboard in Resources */,
 				205398AD1D0D2CDF00B34DA1 /* ColorViewController.xib in Resources */,
@@ -527,6 +544,7 @@
 				205398AB1D0D2C2600B34DA1 /* ColorViewController.m in Sources */,
 				205398D31D0D5F2E00B34DA1 /* FlexContentViewController.m in Sources */,
 				204989821D0D06ED00894ACF /* DashLineViewController.m in Sources */,
+				2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */,
 				204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */,
 				204B2E8F1D10039100F9C88C /* HideNavLineViewController.m in Sources */,
 				205398DE1D0D64F500B34DA1 /* ButtonImagePositionViewController.m in Sources */,

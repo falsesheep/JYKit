@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GradientViewController">
+            <connections>
+                <outlet property="gradientView" destination="6X9-hO-GDi" id="6gb-AF-LhF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6X9-hO-GDi" customClass="JYGradientView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="middleColor">
+                            <color key="value" red="0.99215686270000003" green="1" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" red="0.84705882349999995" green="0.18039215689999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6X9-hO-GDi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IiJ-og-AtD"/>
+                <constraint firstAttribute="bottom" secondItem="6X9-hO-GDi" secondAttribute="bottom" id="ReT-h7-IuR"/>
+                <constraint firstItem="6X9-hO-GDi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mnX-X9-YvO"/>
+                <constraint firstAttribute="trailing" secondItem="6X9-hO-GDi" secondAttribute="trailing" id="rdX-me-hgv"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

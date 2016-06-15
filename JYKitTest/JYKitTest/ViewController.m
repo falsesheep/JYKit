@@ -17,6 +17,7 @@
 #import "FlexContentViewController.h"
 #import "ButtonImagePositionViewController.h"
 #import "HideNavLineViewController.h"
+#import "GradientViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -36,7 +37,8 @@
                   @"改变图片大小",
                   @"容纳文字所需要的大小",
                   @"Button图片位置",
-                  @"隐藏Navigation Bar下方分割线"];
+                  @"隐藏Navigation Bar下方分割线",
+                  @"渐变"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -102,6 +104,11 @@
             break;}
         case 9:{
             HideNavLineViewController *vc = [HideNavLineViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 10:{
+            GradientViewController *vc = [GradientViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}
