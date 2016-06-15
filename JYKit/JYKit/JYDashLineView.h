@@ -10,9 +10,10 @@
 // 虚线View
 IB_DESIGNABLE
 @interface JYDashLineView : UIView
-@property (nonatomic, strong) NSArray *dashPatterns;
 @property (nonatomic, strong) IBInspectable UIColor *lineColor;
-@property (nonatomic, assign) IBInspectable CGFloat lineWidth;
+@property (nonatomic, strong) IBInspectable NSNumber *lineWidth;
+@property (nonatomic, strong) IBInspectable NSNumber *dashPattern1;
+@property (nonatomic, strong) IBInspectable NSNumber *dashPattern2;
 @property (nonatomic, assign) IBInspectable CGPoint startPoint;
 @property (nonatomic, assign) IBInspectable CGPoint endPoint;
 @end
