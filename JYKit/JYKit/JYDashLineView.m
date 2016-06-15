@@ -12,34 +12,16 @@
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
-
     // 默认值
-    if (!_lineColor) {
-        _lineColor = [UIColor redColor];
-    }
-    if (!_lineWidth) {
-        _lineWidth = @3;
-    }
-    if (!_dashPattern1) {
-        _dashPattern1 = @10;
-    }
-    if (!_dashPattern2) {
-        _dashPattern2 = @5;
-    }
-    if (CGPointEqualToPoint(_startPoint, CGPointZero)) {
-        _startPoint = CGPointMake(0, CGRectGetHeight(rect)/2.f);
-    }
-    if (CGPointEqualToPoint(_endPoint, CGPointZero)) {
-        _endPoint = CGPointMake(self.bounds.size.width, CGRectGetHeight(rect)/2.f);
-    }
+    [self setDefaultValue];
 
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.frame = self.bounds;
     [shapeLayer setFillColor:[UIColor clearColor].CGColor];
     [shapeLayer setStrokeColor:_lineColor.CGColor];
-    [shapeLayer setLineWidth:_lineWidth.floatValue];
+    [shapeLayer setLineWidth:_lineWidth];
     [shapeLayer setLineJoin:kCALineJoinRound];
-    [shapeLayer setLineDashPattern:@[_dashPattern1, _dashPattern2]];
+    [shapeLayer setLineDashPattern:@[@(_patternShow), @(_patternHide)]];
 
     // Setup the path
     CGMutablePathRef path = CGPathCreateMutable();
@@ -52,24 +34,45 @@
     [[self layer] addSublayer:shapeLayer];
 }
 
+- (void)setDefaultValue {
+    if (!_lineColor) {
+        _lineColor = [UIColor redColor];
+    }
+    if (_lineWidth == 0) {
+        _lineWidth = 3;
+    }
+    if (_patternShow == 0) {
+        _patternShow = 10;
+    }
+    if (_patternHide == 0) {
+        _patternHide = 5;
+    }
+    if (CGPointEqualToPoint(_startPoint, CGPointZero)) {
+        _startPoint = CGPointMake(0, CGRectGetHeight(self.bounds)/2.f);
+    }
+    if (CGPointEqualToPoint(_endPoint, CGPointZero)) {
+        _endPoint = CGPointMake(self.bounds.size.width, CGRectGetHeight(self.bounds)/2.f);
+    }
+}
+
 #pragma mark - Setters
 - (void)setLineColor:(UIColor *)lineColor {
     _lineColor = lineColor;
     [self setNeedsDisplay];
 }
 
-- (void)setLineWidth:(NSNumber *)lineWidth {
+- (void)setLineWidth:(CGFloat)lineWidth {
     _lineWidth = lineWidth;
     [self setNeedsDisplay];
 }
 
-- (void)setDashPattern1:(NSNumber *)dashPattern1 {
-    _dashPattern1 = dashPattern1;
+- (void)setPatternShow:(CGFloat)patternShow {
+    _patternShow = patternShow;
     [self setNeedsDisplay];
 }
 
-- (void)setDashPattern2:(NSNumber *)dashPattern2 {
-    _dashPattern2 = dashPattern2;
+- (void)setPatternHide:(CGFloat)patternHide {
+    _patternHide = patternHide;
     [self setNeedsDisplay];
 }
 
