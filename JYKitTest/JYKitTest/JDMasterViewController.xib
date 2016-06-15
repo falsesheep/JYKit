@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JDMasterViewController">
+            <connections>
+                <outlet property="tableView" destination="vM3-Ng-HCv" id="omE-Av-y8b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vM3-Ng-HCv">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="WZ8-Z3-bep"/>
+                        <outlet property="delegate" destination="-1" id="7Yx-Ws-shB"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vM3-Ng-HCv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4fD-FC-b4C"/>
+                <constraint firstItem="vM3-Ng-HCv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="60E-72-DBy"/>
+                <constraint firstAttribute="bottom" secondItem="vM3-Ng-HCv" secondAttribute="bottom" id="SfL-I6-3lD"/>
+                <constraint firstAttribute="trailing" secondItem="vM3-Ng-HCv" secondAttribute="trailing" id="atQ-lA-afu"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -33,6 +33,12 @@
 		2079C1A31D11207900A4315A /* PopPresentingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2079C1A11D11207900A4315A /* PopPresentingViewController.xib */; };
 		2079C1A71D11208700A4315A /* PopPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079C1A51D11208700A4315A /* PopPresentedViewController.m */; };
 		2079C1A81D11208700A4315A /* PopPresentedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2079C1A61D11208700A4315A /* PopPresentedViewController.xib */; };
+		2079C1C51D113FD200A4315A /* JDMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079C1C31D113FD200A4315A /* JDMenuViewController.m */; };
+		2079C1C61D113FD200A4315A /* JDMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2079C1C41D113FD200A4315A /* JDMenuViewController.xib */; };
+		2079C1CA1D11403800A4315A /* JDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079C1C81D11403800A4315A /* JDMasterViewController.m */; };
+		2079C1CB1D11403800A4315A /* JDMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2079C1C91D11403800A4315A /* JDMasterViewController.xib */; };
+		2079C1CF1D11404800A4315A /* JDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079C1CD1D11404800A4315A /* JDDetailViewController.m */; };
+		2079C1D01D11404800A4315A /* JDDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2079C1CE1D11404800A4315A /* JDDetailViewController.xib */; };
 		2087C1C61BD4FF7200A3D53F /* JYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C8BDC1BD4EF8400E55D5D /* JYKit.framework */; };
 		2087C1C71BD4FF7200A3D53F /* JYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 208C8BDC1BD4EF8400E55D5D /* JYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		208C8BA41BD4EF6E00E55D5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8BA31BD4EF6E00E55D5D /* main.m */; };
@@ -138,6 +144,15 @@
 		2079C1A41D11208700A4315A /* PopPresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopPresentedViewController.h; sourceTree = "<group>"; };
 		2079C1A51D11208700A4315A /* PopPresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopPresentedViewController.m; sourceTree = "<group>"; };
 		2079C1A61D11208700A4315A /* PopPresentedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopPresentedViewController.xib; sourceTree = "<group>"; };
+		2079C1C21D113FD200A4315A /* JDMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMenuViewController.h; sourceTree = "<group>"; };
+		2079C1C31D113FD200A4315A /* JDMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMenuViewController.m; sourceTree = "<group>"; };
+		2079C1C41D113FD200A4315A /* JDMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDMenuViewController.xib; sourceTree = "<group>"; };
+		2079C1C71D11403800A4315A /* JDMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMasterViewController.h; sourceTree = "<group>"; };
+		2079C1C81D11403800A4315A /* JDMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMasterViewController.m; sourceTree = "<group>"; };
+		2079C1C91D11403800A4315A /* JDMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDMasterViewController.xib; sourceTree = "<group>"; };
+		2079C1CC1D11404800A4315A /* JDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDetailViewController.h; sourceTree = "<group>"; };
+		2079C1CD1D11404800A4315A /* JDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDetailViewController.m; sourceTree = "<group>"; };
+		2079C1CE1D11404800A4315A /* JDDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDDetailViewController.xib; sourceTree = "<group>"; };
 		2087C1D01BD5355D00A3D53F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		208C8B9F1BD4EF6E00E55D5D /* JYKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208C8BA31BD4EF6E00E55D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -306,6 +321,22 @@
 			name = "PopOver On Iphone";
 			sourceTree = "<group>";
 		};
+		2079C1BF1D113F9100A4315A /* 京东菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				2079C1C21D113FD200A4315A /* JDMenuViewController.h */,
+				2079C1C31D113FD200A4315A /* JDMenuViewController.m */,
+				2079C1C41D113FD200A4315A /* JDMenuViewController.xib */,
+				2079C1C71D11403800A4315A /* JDMasterViewController.h */,
+				2079C1C81D11403800A4315A /* JDMasterViewController.m */,
+				2079C1C91D11403800A4315A /* JDMasterViewController.xib */,
+				2079C1CC1D11404800A4315A /* JDDetailViewController.h */,
+				2079C1CD1D11404800A4315A /* JDDetailViewController.m */,
+				2079C1CE1D11404800A4315A /* JDDetailViewController.xib */,
+			);
+			name = "京东菜单";
+			sourceTree = "<group>";
+		};
 		208C8B961BD4EF6E00E55D5D = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +379,7 @@
 				204B2E891D10035C00F9C88C /* 隐藏Navigation Bar下方分割线 */,
 				2079C1121D10EFE900A4315A /* 渐变 */,
 				2079C19C1D11201F00A4315A /* PopOver On Iphone */,
+				2079C1BF1D113F9100A4315A /* 京东菜单 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -531,8 +563,11 @@
 				2079C1A31D11207900A4315A /* PopPresentingViewController.xib in Resources */,
 				205398AD1D0D2CDF00B34DA1 /* ColorViewController.xib in Resources */,
 				208C8BAF1BD4EF6E00E55D5D /* Assets.xcassets in Resources */,
+				2079C1D01D11404800A4315A /* JDDetailViewController.xib in Resources */,
 				208C8BAD1BD4EF6E00E55D5D /* Main.storyboard in Resources */,
 				205398D41D0D5F2E00B34DA1 /* FlexContentViewController.xib in Resources */,
+				2079C1CB1D11403800A4315A /* JDMasterViewController.xib in Resources */,
+				2079C1C61D113FD200A4315A /* JDMenuViewController.xib in Resources */,
 				204B2E901D10039100F9C88C /* HideNavLineViewController.xib in Resources */,
 				205398DF1D0D64F500B34DA1 /* ButtonImagePositionViewController.xib in Resources */,
 				205398B81D0D41BC00B34DA1 /* ImageColorViewController.xib in Resources */,
@@ -565,6 +600,7 @@
 				204989751D0D003900894ACF /* BaseViewController.m in Sources */,
 				204989871D0D0EBD00894ACF /* CropViewController.m in Sources */,
 				205398BD1D0D45DA00B34DA1 /* ImageSizeViewController.m in Sources */,
+				2079C1CA1D11403800A4315A /* JDMasterViewController.m in Sources */,
 				208C8BA71BD4EF6E00E55D5D /* AppDelegate.m in Sources */,
 				2079C1A21D11207900A4315A /* PopPresentingViewController.m in Sources */,
 				204989711D0CFDE000894ACF /* NavBackItemViewController.m in Sources */,
@@ -574,10 +610,12 @@
 				204989821D0D06ED00894ACF /* DashLineViewController.m in Sources */,
 				2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */,
 				204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */,
+				2079C1C51D113FD200A4315A /* JDMenuViewController.m in Sources */,
 				204B2E8F1D10039100F9C88C /* HideNavLineViewController.m in Sources */,
 				205398DE1D0D64F500B34DA1 /* ButtonImagePositionViewController.m in Sources */,
 				205398B71D0D41BC00B34DA1 /* ImageColorViewController.m in Sources */,
 				208C8BA41BD4EF6E00E55D5D /* main.m in Sources */,
+				2079C1CF1D11404800A4315A /* JDDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
