@@ -18,6 +18,7 @@
 #import "ButtonImagePositionViewController.h"
 #import "HideNavLineViewController.h"
 #import "GradientViewController.h"
+#import "PopPresentingViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -38,7 +39,8 @@
                   @"容纳文字所需要的大小",
                   @"Button图片位置",
                   @"隐藏Navigation Bar下方分割线",
-                  @"渐变"];
+                  @"渐变",
+                  @"PopOver On Iphone"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -50,8 +52,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL_ID];
-        cell.textLabel.text = _examples[indexPath.row];
     }
+    cell.textLabel.text = _examples[indexPath.row];
     return cell;
 }
 
@@ -109,6 +111,11 @@
             break;}
         case 10:{
             GradientViewController *vc = [GradientViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 11:{
+            PopPresentingViewController *vc = [PopPresentingViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}
