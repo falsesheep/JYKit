@@ -18,7 +18,7 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-gP-ayE" customClass="JYDashLineView">
                     <rect key="frame" x="20" y="100" width="240" height="10"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.20392156859999999" green="0.62745098040000002" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="cGm-bM-hRL"/>
                         <constraint firstAttribute="height" constant="10" id="krz-GD-5u8"/>
@@ -29,6 +29,9 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                             <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                            <point key="value" x="0.0" y="0.0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>

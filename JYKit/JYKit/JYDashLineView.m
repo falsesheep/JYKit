@@ -21,16 +21,21 @@
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
 
+    // 默认值
     if (!_lineColor) {
         _lineColor = [UIColor redColor];
     }
     if (_lineWidth == 0) {
         _lineWidth = 3;
     }
+    if (CGPointEqualToPoint(_startPoint, CGPointZero)) {
+        _startPoint = CGPointMake(0, CGRectGetHeight(rect)/2.f);
+    }
+    if (CGPointEqualToPoint(_endPoint, CGPointZero)) {
+        _endPoint = CGPointMake(self.bounds.size.width, CGRectGetHeight(rect)/2.f);
+    }
     _dashPatterns = @[@10, @5];
-    _startPoint = CGPointMake(0, CGRectGetHeight(rect)/2.f);
-    _endPoint = CGPointMake(self.bounds.size.width, CGRectGetHeight(rect)/2.f);
-
+    
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.frame = self.bounds;
     [shapeLayer setFillColor:[UIColor clearColor].CGColor];

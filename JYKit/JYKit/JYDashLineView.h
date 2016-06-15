@@ -13,6 +13,6 @@ IB_DESIGNABLE
 @property (nonatomic, strong) NSArray *dashPatterns;
 @property (nonatomic, strong) IBInspectable UIColor *lineColor;
 @property (nonatomic, assign) IBInspectable CGFloat lineWidth;
-@property (nonatomic, assign) CGPoint startPoint;
-@property (nonatomic, assign) CGPoint endPoint;
+@property (nonatomic, assign) IBInspectable CGPoint startPoint;
+@property (nonatomic, assign) IBInspectable CGPoint endPoint;
 @end
