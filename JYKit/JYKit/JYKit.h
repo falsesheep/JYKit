@@ -28,3 +28,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "NSDate+JYDate.h"
 #import "UINavigationBar+JYNavigationBar.h"
 #import "JYGradientView.h"
+#import "NSDictionary+JYDictionary.h"

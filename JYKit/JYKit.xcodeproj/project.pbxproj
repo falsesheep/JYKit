@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2011D2E61D13DA8B0009A26E /* NSDictionary+JYDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 2011D2E41D13DA8B0009A26E /* NSDictionary+JYDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2011D2E51D13DA8B0009A26E /* NSDictionary+JYDictionary.m */; };
 		202C35721CF6985D009CA7D8 /* JYDashLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202C35701CF6985D009CA7D8 /* JYDashLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202C35731CF6985D009CA7D8 /* JYDashLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202C35711CF6985D009CA7D8 /* JYDashLineView.m */; };
 		2049898C1D0D25CD00894ACF /* UIColor+JYColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2049898A1D0D25CD00894ACF /* UIColor+JYColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2011D2E41D13DA8B0009A26E /* NSDictionary+JYDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JYDictionary.h"; sourceTree = "<group>"; };
+		2011D2E51D13DA8B0009A26E /* NSDictionary+JYDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JYDictionary.m"; sourceTree = "<group>"; };
 		202C35701CF6985D009CA7D8 /* JYDashLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYDashLineView.h; sourceTree = "<group>"; };
 		202C35711CF6985D009CA7D8 /* JYDashLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYDashLineView.m; sourceTree = "<group>"; };
 		2049898A1D0D25CD00894ACF /* UIColor+JYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JYColor.h"; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				204B2E861D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m */,
 				2079C10E1D10ED5000A4315A /* JYGradientView.h */,
 				2079C10F1D10ED5000A4315A /* JYGradientView.m */,
+				2011D2E41D13DA8B0009A26E /* NSDictionary+JYDictionary.h */,
+				2011D2E51D13DA8B0009A26E /* NSDictionary+JYDictionary.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 				205398E21D0D6A8800B34DA1 /* NSDate+JYDate.h in Headers */,
 				204B2E871D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h in Headers */,
 				2079C1101D10ED5000A4315A /* JYGradientView.h in Headers */,
+				2011D2E61D13DA8B0009A26E /* NSDictionary+JYDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */,
+				2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */,
 				2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */,
 				205398CA1D0D52BA00B34DA1 /* UIDevice+JYUID.m in Sources */,
 				204B2E881D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m in Sources */,
