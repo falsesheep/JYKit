@@ -56,8 +56,9 @@
     double devided = rounded / multiply;
     NSString *formatter = [NSString stringWithFormat:@"%%.%df", count];
     NSString *ret = [NSString stringWithFormat:formatter, devided];
-    if (pretty) {
-        while ([[ret substringFromIndex:ret.length-1] isEqualToString:@"0"]) {
+    if (pretty) { // 去掉末尾的0和小数点
+        while ([[ret substringFromIndex:ret.length-1] isEqualToString:@"0"] ||
+               [[ret substringFromIndex:ret.length-1] isEqualToString:@"."]) {
             ret = [ret substringToIndex:ret.length-1];
         }
     }
