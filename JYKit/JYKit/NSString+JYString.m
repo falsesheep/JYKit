@@ -39,4 +39,29 @@
     return ret;
 }
 
++ (NSString *)stringFromDouble:(double)value {
+    return [NSString stringFromDouble:value decimalCount:2 allowRound:YES prettyFormat:NO];
+}
+
++ (NSString *)prettyStringFromDouble:(double)value {
+    return [NSString stringFromDouble:value decimalCount:2 allowRound:YES prettyFormat:YES];
+}
+
++ (NSString *)stringFromDouble:(double)value
+                  decimalCount:(NSUInteger)count
+                    allowRound:(BOOL)allowRound
+                  prettyFormat:(BOOL)pretty {
+    double multiply = pow(10, count);
+    double rounded = round(value * multiply);
+    double devided = rounded / multiply;
+    NSString *formatter = [NSString stringWithFormat:@"%%.%df", count];
+    NSString *ret = [NSString stringWithFormat:formatter, devided];
+    if (pretty) {
+        while ([[ret substringFromIndex:ret.length-1] isEqualToString:@"0"]) {
+            ret = [ret substringToIndex:ret.length-1];
+        }
+    }
+    return ret;
+}
+
 @end

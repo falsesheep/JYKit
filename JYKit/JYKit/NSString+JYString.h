@@ -29,4 +29,38 @@
                          maxWith:(CGFloat)maxWidth
                        maxHeight:(CGFloat)maxHeight;
 
+#pragma mark - double转NSString
+/**
+ *  double转NSString(条件:保留2位小数, 允许四舍五入, 不隐藏末尾的0), 例如:1.201 显示为 1.20
+ *
+ *  @param value double Value
+ *
+ *  @return NSString Value
+ */
++ (NSString *)stringFromDouble:(double)value;
+
+/**
+ *  double转NSString(条件:保留2位小数, 允许四舍五入, 隐藏末尾的0), 例如:1.201 显示为 1.2
+ *
+ *  @param value double Value
+ *
+ *  @return NSString Value
+ */
++ (NSString *)prettyStringFromDouble:(double)value;
+
+/**
+ *  double转NSString
+ *
+ *  @param value      double Value
+ *  @param count      最多显示小数点的位数
+ *  @param allowRound 是否四舍五入
+ *  @param pretty     是否隐藏末尾的0, 例如:1.20 显示为 1.2
+ *
+ *  @return NSString Value
+ */
++ (NSString *)stringFromDouble:(double)value
+                  decimalCount:(NSUInteger)count
+                    allowRound:(BOOL)allowRound
+                  prettyFormat:(BOOL)pretty;
+
 @end
