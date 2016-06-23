@@ -50,6 +50,8 @@
 		208C8B321BD4E98C00E55D5D /* JYKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8B311BD4E98C00E55D5D /* JYKitTests.m */; };
 		208C8B3E1BD4E9BD00E55D5D /* JYTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 208C8B3C1BD4E9BD00E55D5D /* JYTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8B3D1BD4E9BD00E55D5D /* JYTest.m */; };
+		20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */; };
 		20E0F0321BD61040000583F9 /* UINavigationItem+ImageAndTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E0F0301BD61040000583F9 /* UINavigationItem+ImageAndTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */; };
 /* End PBXBuildFile section */
@@ -97,6 +99,8 @@
 		208C8B331BD4E98C00E55D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		208C8B3C1BD4E9BD00E55D5D /* JYTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTest.h; sourceTree = "<group>"; };
 		208C8B3D1BD4E9BD00E55D5D /* JYTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTest.m; sourceTree = "<group>"; };
+		20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYView.h"; sourceTree = "<group>"; };
+		20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYView.m"; sourceTree = "<group>"; };
 		20E0F0301BD61040000583F9 /* UINavigationItem+ImageAndTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+ImageAndTitle.h"; sourceTree = "<group>"; };
 		20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+ImageAndTitle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +175,8 @@
 				2079C10F1D10ED5000A4315A /* JYGradientView.m */,
 				2011D2E41D13DA8B0009A26E /* NSDictionary+JYDictionary.h */,
 				2011D2E51D13DA8B0009A26E /* NSDictionary+JYDictionary.m */,
+				20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */,
+				20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 				204B2E871D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h in Headers */,
 				2079C1101D10ED5000A4315A /* JYGradientView.h in Headers */,
 				2011D2E61D13DA8B0009A26E /* NSDictionary+JYDictionary.h in Headers */,
+				20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +342,7 @@
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,
 				208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */,
 				2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */,
+				20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */,
 				205398D91D0D643E00B34DA1 /* UIButton+JYButton.m in Sources */,
 				2049898D1D0D25CD00894ACF /* UIColor+JYColor.m in Sources */,
 				202C35731CF6985D009CA7D8 /* JYDashLineView.m in Sources */,

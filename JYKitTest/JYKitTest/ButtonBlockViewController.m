@@ -20,6 +20,8 @@
     [_button handleControlEvent:UIControlEventTouchUpInside withBlock:^{
         NSLog(@"TODO: 事件处理");
     }];
+    // 测试景深效果
+    [_button applyInterpolatingMotionEffectWithRelativeValue:50];
 }
 
 @end

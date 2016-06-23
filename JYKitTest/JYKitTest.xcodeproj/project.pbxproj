@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2005BDDE1D17E53800AA9814 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005BDDC1D17E53800AA9814 /* LoadingViewController.m */; };
+		2005BDE31D17E6FB00AA9814 /* ControlLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005BDE11D17E6FB00AA9814 /* ControlLoadingViewController.m */; };
+		2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2005BDE21D17E6FB00AA9814 /* ControlLoadingViewController.xib */; };
+		2005BDE81D17EF1100AA9814 /* LoadingBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005BDE61D17EF1100AA9814 /* LoadingBaseViewController.m */; };
+		2005BDEB1D17F5FB00AA9814 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2005BDEA1D17F5FB00AA9814 /* LoadingViewController.xib */; };
 		204989711D0CFDE000894ACF /* NavBackItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049896F1D0CFDE000894ACF /* NavBackItemViewController.m */; };
 		204989751D0D003900894ACF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204989741D0D003900894ACF /* BaseViewController.m */; };
 		204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204989781D0D04DA00894ACF /* ButtonBlockViewController.m */; };
@@ -104,6 +109,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2005BDDB1D17E53800AA9814 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		2005BDDC1D17E53800AA9814 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		2005BDE01D17E6FB00AA9814 /* ControlLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlLoadingViewController.h; sourceTree = "<group>"; };
+		2005BDE11D17E6FB00AA9814 /* ControlLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlLoadingViewController.m; sourceTree = "<group>"; };
+		2005BDE21D17E6FB00AA9814 /* ControlLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlLoadingViewController.xib; sourceTree = "<group>"; };
+		2005BDE51D17EF1100AA9814 /* LoadingBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBaseViewController.h; sourceTree = "<group>"; };
+		2005BDE61D17EF1100AA9814 /* LoadingBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingBaseViewController.m; sourceTree = "<group>"; };
+		2005BDEA1D17F5FB00AA9814 /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		2049896E1D0CFDE000894ACF /* NavBackItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBackItemViewController.h; sourceTree = "<group>"; };
 		2049896F1D0CFDE000894ACF /* NavBackItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBackItemViewController.m; sourceTree = "<group>"; };
 		204989731D0D003900894ACF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -199,6 +212,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2005BDD81D17E4E400AA9814 /* 页面加载动画 */ = {
+			isa = PBXGroup;
+			children = (
+				2005BDE01D17E6FB00AA9814 /* ControlLoadingViewController.h */,
+				2005BDE11D17E6FB00AA9814 /* ControlLoadingViewController.m */,
+				2005BDE21D17E6FB00AA9814 /* ControlLoadingViewController.xib */,
+				2005BDE51D17EF1100AA9814 /* LoadingBaseViewController.h */,
+				2005BDE61D17EF1100AA9814 /* LoadingBaseViewController.m */,
+				2005BDDB1D17E53800AA9814 /* LoadingViewController.h */,
+				2005BDDC1D17E53800AA9814 /* LoadingViewController.m */,
+				2005BDEA1D17F5FB00AA9814 /* LoadingViewController.xib */,
+			);
+			name = "页面加载动画";
+			sourceTree = "<group>";
+		};
 		2049896B1D0CFD8800894ACF /* Nav返回按钮 */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +408,7 @@
 				2079C1121D10EFE900A4315A /* 渐变 */,
 				2079C19C1D11201F00A4315A /* PopOver On Iphone */,
 				2079C1BF1D113F9100A4315A /* 京东菜单 */,
+				2005BDD81D17E4E400AA9814 /* 页面加载动画 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -556,6 +585,8 @@
 			files = (
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
+				2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */,
+				2005BDEB1D17F5FB00AA9814 /* LoadingViewController.xib in Resources */,
 				2079C1191D10EFFF00A4315A /* GradientViewController.xib in Resources */,
 				2079C1A81D11208700A4315A /* PopPresentedViewController.xib in Resources */,
 				204B2E961D1008EA00F9C88C /* DashLineViewController.xib in Resources */,
@@ -599,13 +630,16 @@
 				208C8BAA1BD4EF6E00E55D5D /* ViewController.m in Sources */,
 				204989751D0D003900894ACF /* BaseViewController.m in Sources */,
 				204989871D0D0EBD00894ACF /* CropViewController.m in Sources */,
+				2005BDE81D17EF1100AA9814 /* LoadingBaseViewController.m in Sources */,
 				205398BD1D0D45DA00B34DA1 /* ImageSizeViewController.m in Sources */,
 				2079C1CA1D11403800A4315A /* JDMasterViewController.m in Sources */,
 				208C8BA71BD4EF6E00E55D5D /* AppDelegate.m in Sources */,
 				2079C1A21D11207900A4315A /* PopPresentingViewController.m in Sources */,
+				2005BDE31D17E6FB00AA9814 /* ControlLoadingViewController.m in Sources */,
 				204989711D0CFDE000894ACF /* NavBackItemViewController.m in Sources */,
 				2079C1A71D11208700A4315A /* PopPresentedViewController.m in Sources */,
 				205398AB1D0D2C2600B34DA1 /* ColorViewController.m in Sources */,
+				2005BDDE1D17E53800AA9814 /* LoadingViewController.m in Sources */,
 				205398D31D0D5F2E00B34DA1 /* FlexContentViewController.m in Sources */,
 				204989821D0D06ED00894ACF /* DashLineViewController.m in Sources */,
 				2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */,

@@ -20,6 +20,7 @@
 #import "GradientViewController.h"
 #import "PopPresentingViewController.h"
 #import "JDMenuViewController.h"
+#import "ControlLoadingViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -42,7 +43,8 @@
                   @"隐藏Navigation Bar下方分割线",
                   @"渐变",
                   @"PopOver On Iphone",
-                  @"模仿京东菜单分类"];
+                  @"模仿京东菜单分类",
+                  @"页面加载动画"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -123,6 +125,11 @@
             break;}
         case 12:{
             JDMenuViewController *vc = [JDMenuViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 13:{
+            ControlLoadingViewController *vc = [ControlLoadingViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}
