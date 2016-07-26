@@ -63,4 +63,11 @@
                     allowRound:(BOOL)allowRound
                   prettyFormat:(BOOL)pretty;
 
+/**
+ *  判断是否是合法的手机号
+ *
+ *  @return 是否是合法的手机号
+ */
+- (BOOL)isMobileNumber;
+
 @end
