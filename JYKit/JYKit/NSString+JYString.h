@@ -70,4 +70,11 @@
  */
 - (BOOL)isMobileNumber;
 
+/**
+ *  转换为md5
+ *
+ *  @return md5加密后的值
+ */
+- (NSString *)encryptWithMD5;
+
 @end
