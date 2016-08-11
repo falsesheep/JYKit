@@ -7,6 +7,7 @@
 //
 
 #import "NSString+JYString.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (JYString)
 

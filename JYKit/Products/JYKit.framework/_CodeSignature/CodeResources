@@ -4,25 +4,73 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/JYDashLineView.h</key>
+		<data>
+		v1tXvpFDPLSDwEIV2lX1eYw6WQQ=
+		</data>
+		<key>Headers/JYGradientView.h</key>
+		<data>
+		tVl4vJ4QWJ73OBllFxpmhEVu8/k=
+		</data>
 		<key>Headers/JYKit.h</key>
 		<data>
-		hcuqO6/nKDx4XhbKzBSRwuZY3K8=
+		XvP3vlOdy2pjoB76/8AujcS1TPs=
 		</data>
 		<key>Headers/JYTest.h</key>
 		<data>
 		Orp2d0z9PLTmAN+Jfck3O766zcs=
 		</data>
+		<key>Headers/NSDate+JYDate.h</key>
+		<data>
+		9Y5SbQ13ExOFNajgPoJlCAiv0Eo=
+		</data>
+		<key>Headers/NSDictionary+JYDictionary.h</key>
+		<data>
+		EaLA2MYsOiyh00BOze+2lVj5ob8=
+		</data>
+		<key>Headers/NSString+JYString.h</key>
+		<data>
+		nJGgfv+yjxEyeEaJQJ+kBNiEYgo=
+		</data>
 		<key>Headers/UIButton+Block.h</key>
 		<data>
-		uYYeKHIKcJ/x54MrKrpcezGADo0=
+		Bwu3I+MdBqauC4QYM0lr5tBZOFk=
+		</data>
+		<key>Headers/UIButton+JYButton.h</key>
+		<data>
+		yezyHB7tNEqIxzFEz8p0FYpwqRQ=
+		</data>
+		<key>Headers/UIColor+JYColor.h</key>
+		<data>
+		8rYK2Qk3OcnxbQiOiuKhTmoob74=
+		</data>
+		<key>Headers/UIDevice+JYUID.h</key>
+		<data>
+		ei2XbDR0Ld6dxg3wSwp1PgnkD2s=
+		</data>
+		<key>Headers/UIImage+JYEffects.h</key>
+		<data>
+		LsE/U8hTPYwN8+eSLk/HVLcjBn0=
+		</data>
+		<key>Headers/UINavigationBar+JYNavigationBar.h</key>
+		<data>
+		4QWKEVjJTGFFlV+xd2HHHfVI0xw=
 		</data>
 		<key>Headers/UINavigationItem+ImageAndTitle.h</key>
 		<data>
-		yTphKLUAyXJ6XQ8rESrMhlwoHwg=
+		VCqYKgdkH3302sYYKZfoy/fm+lA=
+		</data>
+		<key>Headers/UIView+JYFrame.h</key>
+		<data>
+		pQiZJV8o6Nzk9R4IkrptcBg8Xa0=
+		</data>
+		<key>Headers/UIView+JYView.h</key>
+		<data>
+		puDgj9BUd+HUQP3eVlhcsdPrOpE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lbIvIla6fjZAaN0frnL3m8qA+rw=
+		Yhgk4RLru3N5x2+e8JcAaKStkL8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,26 +79,193 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/JYDashLineView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v1tXvpFDPLSDwEIV2lX1eYw6WQQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			Tb2ICycYJDF44UBpHtGMaLs9b19JhdGObcBNsEaevnM=
+			</data>
+		</dict>
+		<key>Headers/JYGradientView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tVl4vJ4QWJ73OBllFxpmhEVu8/k=
+			</data>
+			<key>hash2</key>
+			<data>
+			lfcn9bXpOFsqYa5Kg21n5ULMLH0p8nKEPaqWMdBuCIA=
+			</data>
+		</dict>
 		<key>Headers/JYKit.h</key>
-		<data>
-		hcuqO6/nKDx4XhbKzBSRwuZY3K8=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			XvP3vlOdy2pjoB76/8AujcS1TPs=
+			</data>
+			<key>hash2</key>
+			<data>
+			teisk/4iIDyjcpgFWkVg3xmrU817szLgMzHRXhAGWrw=
+			</data>
+		</dict>
 		<key>Headers/JYTest.h</key>
-		<data>
-		Orp2d0z9PLTmAN+Jfck3O766zcs=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Orp2d0z9PLTmAN+Jfck3O766zcs=
+			</data>
+			<key>hash2</key>
+			<data>
+			cjEpPQxz8t5KVfSirX0D6CPTPbpuCxbv3xFxHTfPKeI=
+			</data>
+		</dict>
+		<key>Headers/NSDate+JYDate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9Y5SbQ13ExOFNajgPoJlCAiv0Eo=
+			</data>
+			<key>hash2</key>
+			<data>
+			mc47a3e1ILIBce3YBNnMJw9acwvmwl7HZ41RolqGKxo=
+			</data>
+		</dict>
+		<key>Headers/NSDictionary+JYDictionary.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaLA2MYsOiyh00BOze+2lVj5ob8=
+			</data>
+			<key>hash2</key>
+			<data>
+			6IUGMkUr9IQVw8vxEuzmtV3N2A5Dyoy7IbrLwrFcF4Y=
+			</data>
+		</dict>
+		<key>Headers/NSString+JYString.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nJGgfv+yjxEyeEaJQJ+kBNiEYgo=
+			</data>
+			<key>hash2</key>
+			<data>
+			uRlznLJadalD4uEsviwtsgcBI2U8RB70ZCrf/F79uL0=
+			</data>
+		</dict>
 		<key>Headers/UIButton+Block.h</key>
-		<data>
-		uYYeKHIKcJ/x54MrKrpcezGADo0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bwu3I+MdBqauC4QYM0lr5tBZOFk=
+			</data>
+			<key>hash2</key>
+			<data>
+			DaFE9b6mpFWT9DSxC/xh8ryiUf38+ds7HgDLNxPfgx0=
+			</data>
+		</dict>
+		<key>Headers/UIButton+JYButton.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yezyHB7tNEqIxzFEz8p0FYpwqRQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			L2ftB7gBsjnAnhGRTj35eUxICfEAWj7uboUGMDM4dPc=
+			</data>
+		</dict>
+		<key>Headers/UIColor+JYColor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8rYK2Qk3OcnxbQiOiuKhTmoob74=
+			</data>
+			<key>hash2</key>
+			<data>
+			lva5DLb8jfxKIoOv/WpHWyLajX/NG9nAHhCSUH/zanI=
+			</data>
+		</dict>
+		<key>Headers/UIDevice+JYUID.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ei2XbDR0Ld6dxg3wSwp1PgnkD2s=
+			</data>
+			<key>hash2</key>
+			<data>
+			lOyf3+9EUZweMBS92OC3Yk4wz5lRET8n6CaN+5csY9o=
+			</data>
+		</dict>
+		<key>Headers/UIImage+JYEffects.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LsE/U8hTPYwN8+eSLk/HVLcjBn0=
+			</data>
+			<key>hash2</key>
+			<data>
+			emAN5LqOSXYD0CT4nZy/HDTIz/k2hCKxCR4uGIljsh0=
+			</data>
+		</dict>
+		<key>Headers/UINavigationBar+JYNavigationBar.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4QWKEVjJTGFFlV+xd2HHHfVI0xw=
+			</data>
+			<key>hash2</key>
+			<data>
+			2cp8da+zFQUugrObqEc5nyztmDt/gfX3+NBs6jjjUuY=
+			</data>
+		</dict>
 		<key>Headers/UINavigationItem+ImageAndTitle.h</key>
-		<data>
-		yTphKLUAyXJ6XQ8rESrMhlwoHwg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			VCqYKgdkH3302sYYKZfoy/fm+lA=
+			</data>
+			<key>hash2</key>
+			<data>
+			5KCODOrm/rZmcNlgW5x2ObkWQfx/ZEOFeg27rQNcgI8=
+			</data>
+		</dict>
+		<key>Headers/UIView+JYFrame.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pQiZJV8o6Nzk9R4IkrptcBg8Xa0=
+			</data>
+			<key>hash2</key>
+			<data>
+			hdpHrLmCwDxFdjxe4syFHV+paWEFey16yL7nu1OWl2Q=
+			</data>
+		</dict>
+		<key>Headers/UIView+JYView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			puDgj9BUd+HUQP3eVlhcsdPrOpE=
+			</data>
+			<key>hash2</key>
+			<data>
+			IMVZUWcv8apFyWnHovCbpL5Qd8pY3kwY0EQOfb0+MrQ=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		JlVax5IB7hGrAbGcrlfpaZB8NLY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			JlVax5IB7hGrAbGcrlfpaZB8NLY=
+			</data>
+			<key>hash2</key>
+			<data>
+			EKHYN7e1+OSZEotKusOQKL9o4oB8aCdEECsO4Irw99I=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

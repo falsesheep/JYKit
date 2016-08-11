@@ -10,6 +10,14 @@
 
 @interface UINavigationItem (ImageAndTitle)
 
+/**
+ *  导航栏上的返回键
+ *
+ *  @param title  返回键文字
+ *  @param image  返回键图片
+ *  @param target target
+ *  @param action 点击返回键触发的操作
+ */
 - (void)setBackBarButtonItemWithTitle:(NSString *)title image:(UIImage *)image target:(id)target action:(SEL)action;
 
 @end

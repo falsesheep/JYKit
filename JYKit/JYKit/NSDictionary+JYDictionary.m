@@ -44,4 +44,12 @@
     return [NSArray array];
 }
 
+- (NSDictionary *)dictionaryForKey:(id)aKey {
+    id value = [self objectForKeyCheckNull:aKey];
+    if (value && [value isKindOfClass:[NSDictionary class]]) {
+        return value;
+    }
+    return [NSDictionary dictionary];
+}
+
 @end
