@@ -21,6 +21,7 @@
 #import "PopPresentingViewController.h"
 #import "JDMenuViewController.h"
 #import "ControlLoadingViewController.h"
+#import "ShapeViewViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -44,7 +45,8 @@
                   @"渐变",
                   @"PopOver On Iphone",
                   @"模仿京东菜单分类",
-                  @"页面加载动画"];
+                  @"页面加载动画",
+                  @"View只显示出来一部分"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -130,6 +132,11 @@
             break;}
         case 13:{
             ControlLoadingViewController *vc = [ControlLoadingViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 14:{
+            ShapeViewViewController *vc = [ShapeViewViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

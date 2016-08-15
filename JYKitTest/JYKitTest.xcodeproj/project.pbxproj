@@ -54,6 +54,8 @@
 		208C8BB21BD4EF6E00E55D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */; };
 		208C8BBD1BD4EF6E00E55D5D /* JYKitTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8BBC1BD4EF6E00E55D5D /* JYKitTestTests.m */; };
 		208C8BC81BD4EF6E00E55D5D /* JYKitTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8BC71BD4EF6E00E55D5D /* JYKitTestUITests.m */; };
+		20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C12D4F1D618DBE00E2FF38 /* ShapeViewViewController.m */; };
+		20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +186,9 @@
 		208C8BC71BD4EF6E00E55D5D /* JYKitTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKitTestUITests.m; sourceTree = "<group>"; };
 		208C8BC91BD4EF6E00E55D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		208C8BD51BD4EF8400E55D5D /* JYKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JYKit.xcodeproj; path = ../../JYKit/JYKit.xcodeproj; sourceTree = "<group>"; };
+		20C12D4E1D618DBE00E2FF38 /* ShapeViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeViewViewController.h; sourceTree = "<group>"; };
+		20C12D4F1D618DBE00E2FF38 /* ShapeViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeViewViewController.m; sourceTree = "<group>"; };
+		20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShapeViewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +414,7 @@
 				2079C19C1D11201F00A4315A /* PopOver On Iphone */,
 				2079C1BF1D113F9100A4315A /* 京东菜单 */,
 				2005BDD81D17E4E400AA9814 /* 页面加载动画 */,
+				20C12D4B1D618D7900E2FF38 /* View只显示出来一部分 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -452,6 +458,16 @@
 				208C8BDE1BD4EF8400E55D5D /* JYKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		20C12D4B1D618D7900E2FF38 /* View只显示出来一部分 */ = {
+			isa = PBXGroup;
+			children = (
+				20C12D4E1D618DBE00E2FF38 /* ShapeViewViewController.h */,
+				20C12D4F1D618DBE00E2FF38 /* ShapeViewViewController.m */,
+				20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */,
+			);
+			name = "View只显示出来一部分";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -585,6 +601,7 @@
 			files = (
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
+				20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */,
 				2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */,
 				2005BDEB1D17F5FB00AA9814 /* LoadingViewController.xib in Resources */,
 				2079C1191D10EFFF00A4315A /* GradientViewController.xib in Resources */,
@@ -634,6 +651,7 @@
 				205398BD1D0D45DA00B34DA1 /* ImageSizeViewController.m in Sources */,
 				2079C1CA1D11403800A4315A /* JDMasterViewController.m in Sources */,
 				208C8BA71BD4EF6E00E55D5D /* AppDelegate.m in Sources */,
+				20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */,
 				2079C1A21D11207900A4315A /* PopPresentingViewController.m in Sources */,
 				2005BDE31D17E6FB00AA9814 /* ControlLoadingViewController.m in Sources */,
 				204989711D0CFDE000894ACF /* NavBackItemViewController.m in Sources */,

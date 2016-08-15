@@ -17,4 +17,11 @@
  */
 - (void)applyInterpolatingMotionEffectWithRelativeValue:(CGFloat)value;
 
+/**
+ *  使View显示出图片的形状
+ *
+ *  @param maskImage Mask图片
+ */
+- (void)viewWithMaskImage:(UIImage *)maskImage;
+
 @end

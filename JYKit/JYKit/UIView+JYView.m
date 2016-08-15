@@ -28,4 +28,20 @@
     [self addMotionEffect:interpolationVertical];
 }
 
+- (void)viewWithMaskImage:(UIImage *)maskImage {
+
+}
+
+- (void)viewWithMaskImage:(UIImage *)maskImage scaled:(BOOL)scaled {
+    CALayer *mask = [CALayer layer];
+    mask.contents = (id)(maskImage.CGImage);
+    if (scaled) {
+        mask.frame = self.bounds;
+    }else {
+        mask.frame = CGRectMake(0, 0, maskImage.size.width, maskImage.size.height);
+    }
+    self.layer.mask = mask;
+    self.layer.masksToBounds = YES;
+}
+
 @end
