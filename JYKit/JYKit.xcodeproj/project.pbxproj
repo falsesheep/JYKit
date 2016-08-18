@@ -52,6 +52,10 @@
 		208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8B3D1BD4E9BD00E55D5D /* JYTest.m */; };
 		20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */; };
+		20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */; };
+		20DE2FBE1D65AD6B00832F04 /* JYCircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE2FBA1D65AD6B00832F04 /* JYCircleGestureRecognizer.m */; };
+		20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DE2FBB1D65AD6B00832F04 /* JYCirclrSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DE2FC01D65AD6B00832F04 /* JYCirclrSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE2FBC1D65AD6B00832F04 /* JYCirclrSlider.m */; };
 		20E0F0321BD61040000583F9 /* UINavigationItem+ImageAndTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E0F0301BD61040000583F9 /* UINavigationItem+ImageAndTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */; };
 /* End PBXBuildFile section */
@@ -101,6 +105,10 @@
 		208C8B3D1BD4E9BD00E55D5D /* JYTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTest.m; sourceTree = "<group>"; };
 		20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYView.h"; sourceTree = "<group>"; };
 		20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYView.m"; sourceTree = "<group>"; };
+		20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCircleGestureRecognizer.h; sourceTree = "<group>"; };
+		20DE2FBA1D65AD6B00832F04 /* JYCircleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCircleGestureRecognizer.m; sourceTree = "<group>"; };
+		20DE2FBB1D65AD6B00832F04 /* JYCirclrSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCirclrSlider.h; sourceTree = "<group>"; };
+		20DE2FBC1D65AD6B00832F04 /* JYCirclrSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCirclrSlider.m; sourceTree = "<group>"; };
 		20E0F0301BD61040000583F9 /* UINavigationItem+ImageAndTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+ImageAndTitle.h"; sourceTree = "<group>"; };
 		20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+ImageAndTitle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +185,10 @@
 				2011D2E51D13DA8B0009A26E /* NSDictionary+JYDictionary.m */,
 				20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */,
 				20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */,
+				20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */,
+				20DE2FBA1D65AD6B00832F04 /* JYCircleGestureRecognizer.m */,
+				20DE2FBB1D65AD6B00832F04 /* JYCirclrSlider.h */,
+				20DE2FBC1D65AD6B00832F04 /* JYCirclrSlider.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -213,6 +225,8 @@
 				2079C1101D10ED5000A4315A /* JYGradientView.h in Headers */,
 				2011D2E61D13DA8B0009A26E /* NSDictionary+JYDictionary.h in Headers */,
 				20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */,
+				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
+				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +348,9 @@
 			files = (
 				20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */,
 				2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */,
+				20DE2FBE1D65AD6B00832F04 /* JYCircleGestureRecognizer.m in Sources */,
 				2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */,
+				20DE2FC01D65AD6B00832F04 /* JYCirclrSlider.m in Sources */,
 				205398CA1D0D52BA00B34DA1 /* UIDevice+JYUID.m in Sources */,
 				204B2E881D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m in Sources */,
 				205398E31D0D6A8800B34DA1 /* NSDate+JYDate.m in Sources */,

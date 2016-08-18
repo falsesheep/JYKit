@@ -22,6 +22,7 @@
 #import "JDMenuViewController.h"
 #import "ControlLoadingViewController.h"
 #import "ShapeViewViewController.h"
+#import "CircleSliderViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -46,7 +47,8 @@
                   @"PopOver On Iphone",
                   @"模仿京东菜单分类",
                   @"页面加载动画",
-                  @"View只显示出来一部分"];
+                  @"View只显示出来一部分",
+                  @"环形Slider"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -137,6 +139,11 @@
             break;}
         case 14:{
             ShapeViewViewController *vc = [ShapeViewViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 15:{
+            CircleSliderViewController *vc = [CircleSliderViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

@@ -56,6 +56,7 @@
 		208C8BC81BD4EF6E00E55D5D /* JYKitTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8BC71BD4EF6E00E55D5D /* JYKitTestUITests.m */; };
 		20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C12D4F1D618DBE00E2FF38 /* ShapeViewViewController.m */; };
 		20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */; };
+		20DE2FC61D65ADD500832F04 /* CircleSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +190,8 @@
 		20C12D4E1D618DBE00E2FF38 /* ShapeViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeViewViewController.h; sourceTree = "<group>"; };
 		20C12D4F1D618DBE00E2FF38 /* ShapeViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeViewViewController.m; sourceTree = "<group>"; };
 		20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShapeViewViewController.xib; sourceTree = "<group>"; };
+		20DE2FC41D65ADD500832F04 /* CircleSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSliderViewController.h; sourceTree = "<group>"; };
+		20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSliderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +418,7 @@
 				2079C1BF1D113F9100A4315A /* 京东菜单 */,
 				2005BDD81D17E4E400AA9814 /* 页面加载动画 */,
 				20C12D4B1D618D7900E2FF38 /* View只显示出来一部分 */,
+				20DE2FC11D65AD8C00832F04 /* 环形Slider */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -468,6 +472,15 @@
 				20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */,
 			);
 			name = "View只显示出来一部分";
+			sourceTree = "<group>";
+		};
+		20DE2FC11D65AD8C00832F04 /* 环形Slider */ = {
+			isa = PBXGroup;
+			children = (
+				20DE2FC41D65ADD500832F04 /* CircleSliderViewController.h */,
+				20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */,
+			);
+			name = "环形Slider";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -668,6 +681,7 @@
 				205398B71D0D41BC00B34DA1 /* ImageColorViewController.m in Sources */,
 				208C8BA41BD4EF6E00E55D5D /* main.m in Sources */,
 				2079C1CF1D11404800A4315A /* JDDetailViewController.m in Sources */,
+				20DE2FC61D65ADD500832F04 /* CircleSliderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
