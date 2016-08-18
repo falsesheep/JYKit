@@ -28,10 +28,6 @@
     [self addMotionEffect:interpolationVertical];
 }
 
-- (void)viewWithMaskImage:(UIImage *)maskImage {
-
-}
-
 - (void)viewWithMaskImage:(UIImage *)maskImage scaled:(BOOL)scaled {
     CALayer *mask = [CALayer layer];
     mask.contents = (id)(maskImage.CGImage);

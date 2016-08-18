@@ -30,3 +30,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "JYGradientView.h"
 #import "NSDictionary+JYDictionary.h"
 #import "UIView+JYView.h"
+#import "JYCirclrSlider.h"

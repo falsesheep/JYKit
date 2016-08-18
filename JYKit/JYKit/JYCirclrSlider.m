@@ -12,6 +12,7 @@
 @interface JYCirclrSlider ()
 @property (nonatomic, strong) CAShapeLayer *layerTrack;
 @property (nonatomic, strong) CAShapeLayer *layerKnob;
+@property (nonatomic, strong) CAShapeLayer *layerProgress;
 /// 最大值
 @property (nonatomic, assign) CGFloat maxValue;
 /// 最小值
@@ -37,29 +38,32 @@
         _value = _minValue;
 
         // Track Path
-        CGFloat outterRadius = frame.size.width/2;
-        CGFloat innerRadius = outterRadius - barWidth;
-        UIBezierPath *outterPath = [UIBezierPath bezierPathWithArcCenter:self.center radius:outterRadius startAngle:_startAngle endAngle:M_PI*2+_startAngle clockwise:YES];
-        UIBezierPath *outterOutPath = outterPath.bezierPathByReversingPath;
-        UIBezierPath *innerPath = [UIBezierPath bezierPathWithArcCenter:self.center radius:innerRadius startAngle:_startAngle endAngle:M_PI*2+_startAngle clockwise:YES];
-
-        CGMutablePathRef path = CGPathCreateMutableCopy(outterOutPath.CGPath);
-        CGPathAddPath(path, NULL, innerPath.CGPath);
+        CGFloat trackRadius = frame.size.width/2 - barWidth/2;
+        UIBezierPath *trackPath = [UIBezierPath bezierPathWithArcCenter:self.center radius:trackRadius startAngle:_startAngle endAngle:M_PI*2+_startAngle clockwise:YES];
 
         // Layer Track
         _layerTrack = [CAShapeLayer layer];
-        _layerTrack.path = path;
-        _layerTrack.fillColor = [UIColor blueColor].CGColor;
+        _layerTrack.path = trackPath.CGPath;
+        _layerTrack.fillColor = [UIColor clearColor].CGColor;
+        _layerTrack.strokeColor = [UIColor colorWithRed:171/255.f green:217/255.f blue:252/255.f alpha:1].CGColor;
+        _layerTrack.lineWidth = barWidth;
         [self.layer addSublayer:_layerTrack];
-        CGPathRelease(path);
+
+        // Layer Progress
+        _layerProgress = [CAShapeLayer layer];
+        _layerProgress.path = _layerTrack.path;
+        _layerProgress.fillColor = [UIColor clearColor].CGColor;
+        _layerProgress.strokeColor = [UIColor redColor].CGColor;
+        _layerProgress.lineWidth = _layerTrack.lineWidth;
+        _layerProgress.strokeEnd = 0;
+        [self.layer addSublayer:_layerProgress];
 
         // Knob Path
         knobWidth = 50;
-        CGFloat knobCenterRadius = outterRadius - barWidth/2;
-        CGFloat knobCenterX = CGRectGetMidX(self.bounds) + knobCenterRadius * cos(_startAngle);
-        CGFloat knobCenterY = CGRectGetMidY(self.bounds) + knobCenterRadius * sin(_startAngle);
+        CGFloat knobCenterX = CGRectGetMidX(self.bounds) + trackRadius * cos(_startAngle);
+        CGFloat knobCenterY = CGRectGetMidY(self.bounds) + trackRadius * sin(_startAngle);
         CGPoint knobCenter = CGPointMake(knobCenterX, knobCenterY);
-        UIBezierPath *knobPath = [UIBezierPath bezierPathWithArcCenter:knobCenter radius:knobWidth/2 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+        UIBezierPath *knobPath = [UIBezierPath bezierPathWithArcCenter:knobCenter radius:knobWidth/2 startAngle:0 endAngle:M_PI*2 clockwise:YES];
 
         // Layer Knob
         _layerKnob = [CAShapeLayer layer];
@@ -91,15 +95,23 @@
         _value = MIN(_maxValue, MAX(_minValue, value));
         CGFloat angle = [self angleFromValue:_value];
         _layerKnob.transform = CATransform3DMakeRotation(angle, 0, 0, 1);
+        _layerProgress.strokeEnd = _value / (_maxValue-_minValue);
         [self sendActionsForControlEvents:UIControlEventValueChanged];
     }
 }
 
+- (void)setTrackColor:(UIColor *)trackColor {
+    _trackColor = trackColor;
+    _layerTrack.fillColor = trackColor.CGColor;
+}
+
 - (void)setBarColor:(UIColor *)barColor {
+    _barColor = barColor;
     _layerTrack.fillColor = barColor.CGColor;
 }
 
 - (void)setKnobColor:(UIColor *)knobColor {
+    _knobColor = knobColor;
     _layerKnob.fillColor = knobColor.CGColor;
 }
 

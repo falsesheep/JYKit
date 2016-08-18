@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/JYCirclrSlider.h</key>
+		<data>
+		rODuA8nNYNBtrigiFqN3lfQTxVo=
+		</data>
 		<key>Headers/JYDashLineView.h</key>
 		<data>
 		v1tXvpFDPLSDwEIV2lX1eYw6WQQ=
@@ -14,7 +18,7 @@
 		</data>
 		<key>Headers/JYKit.h</key>
 		<data>
-		XvP3vlOdy2pjoB76/8AujcS1TPs=
+		qDYEsGU1XFWRW1dXV2SWVWhNK8w=
 		</data>
 		<key>Headers/JYTest.h</key>
 		<data>
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/NSDate+JYDate.h</key>
 		<data>
-		9Y5SbQ13ExOFNajgPoJlCAiv0Eo=
+		n+T5Y7pweZr3X1+u1x6kBzUl3zc=
 		</data>
 		<key>Headers/NSDictionary+JYDictionary.h</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>Headers/UIView+JYView.h</key>
 		<data>
-		4sDsv9wF8un02Ytx64MhpMikZPw=
+		MaYIrqt1tYa79uRk35xM9Q+BqOI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -79,6 +83,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/JYCirclrSlider.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rODuA8nNYNBtrigiFqN3lfQTxVo=
+			</data>
+			<key>hash2</key>
+			<data>
+			O+ls0IcYlfLdQycYGhxPRmCkpRCG+c25/gzrxCYIpgo=
+			</data>
+		</dict>
 		<key>Headers/JYDashLineView.h</key>
 		<dict>
 			<key>hash</key>
@@ -105,11 +120,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XvP3vlOdy2pjoB76/8AujcS1TPs=
+			qDYEsGU1XFWRW1dXV2SWVWhNK8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			teisk/4iIDyjcpgFWkVg3xmrU817szLgMzHRXhAGWrw=
+			uvC4VU4P/JSwGIGCgn4860KO2f9CYY3JNwiAE+IqA7g=
 			</data>
 		</dict>
 		<key>Headers/JYTest.h</key>
@@ -127,11 +142,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9Y5SbQ13ExOFNajgPoJlCAiv0Eo=
+			n+T5Y7pweZr3X1+u1x6kBzUl3zc=
 			</data>
 			<key>hash2</key>
 			<data>
-			mc47a3e1ILIBce3YBNnMJw9acwvmwl7HZ41RolqGKxo=
+			ZyJ3wNGd8E/fszT8oUpFvFmdEhiqdeshFGepC48GWHk=
 			</data>
 		</dict>
 		<key>Headers/NSDictionary+JYDictionary.h</key>
@@ -248,11 +263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4sDsv9wF8un02Ytx64MhpMikZPw=
+			MaYIrqt1tYa79uRk35xM9Q+BqOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			6hDpLILn4Hf1FBpPwlL6o+P5RGgOKzydpSajiFvAjI8=
+			Pviv9DZHt2w2VK77X9JNEgSD6bDV6ckDCrPsicCK8II=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
