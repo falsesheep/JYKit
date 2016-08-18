@@ -25,6 +25,13 @@
 - (NSString *)prettyFormat;
 
 /**
+ *  返回“yyyy-MM-dd HH:mm”格式的时间
+ *
+ *  @return 返回“yyyy-MM-dd HH:mm”格式的时间
+ */
+- (NSString *)normalFormat;
+
+/**
  *  计算这个月有多少天
  *
  *  @return 天数

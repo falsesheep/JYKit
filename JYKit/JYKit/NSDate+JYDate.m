@@ -91,6 +91,12 @@
     return [dateFormatter stringFromDate:self];
 }
 
+- (NSString *)normalFormat {
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm";
+    return [formatter stringFromDate:self];
+}
+
 - (NSUInteger)numberOfDaysInCurrentMonth {
     return [[NSCalendar currentCalendar] rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:self].length;
 }
