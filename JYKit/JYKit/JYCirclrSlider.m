@@ -13,12 +13,15 @@
 @property (nonatomic, strong) CAShapeLayer *layerTrack;
 @property (nonatomic, strong) CAShapeLayer *layerKnob;
 @property (nonatomic, strong) CAShapeLayer *layerProgress;
+@property (nonatomic, strong) CALayer *layerBarImage;
 /// 最大值
 @property (nonatomic, assign) CGFloat maxValue;
 /// 最小值
 @property (nonatomic, assign) CGFloat minValue;
 /// 起始位置
 @property (nonatomic, assign) CGFloat startAngle;
+/// 滚动条宽度
+@property (nonatomic, assign) CGFloat barWidth;
 @end
 
 @implementation JYCirclrSlider
@@ -35,6 +38,7 @@
         _maxValue = maxValue;
         _minValue = minValue;
         _startAngle = startAngle;
+        _barWidth = barWidth;
         _value = _minValue;
 
         // Track Path
@@ -51,11 +55,10 @@
 
         // Layer Progress
         _layerProgress = [CAShapeLayer layer];
-        _layerProgress.path = _layerTrack.path;
+        _layerProgress.path = [UIBezierPath bezierPathWithArcCenter:self.center radius:trackRadius startAngle:_startAngle endAngle:_startAngle clockwise:YES].CGPath;
         _layerProgress.fillColor = [UIColor clearColor].CGColor;
         _layerProgress.strokeColor = [UIColor redColor].CGColor;
         _layerProgress.lineWidth = _layerTrack.lineWidth;
-        _layerProgress.strokeEnd = 0;
         [self.layer addSublayer:_layerProgress];
 
         // Knob Path
@@ -89,30 +92,51 @@
     self.value = [self valueFromAngle:angle];
 }
 
+- (void)updateProgressLayerPathToAngle:(CGFloat)angle {
+    CGFloat trackRadius = self.frame.size.width/2 - _barWidth/2;
+    CGPoint center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+    UIBezierPath *newPath = [UIBezierPath bezierPathWithArcCenter:center radius:trackRadius startAngle:_startAngle endAngle:angle clockwise:YES];
+    _layerProgress.path = newPath.CGPath;
+}
+
 #pragma mark - Setters & Getters
 - (void)setValue:(CGFloat)value {
     if (value != _value) {
         _value = MIN(_maxValue, MAX(_minValue, value));
         CGFloat angle = [self angleFromValue:_value];
+        // Transaction
+        [CATransaction new];
+        [CATransaction setDisableActions:YES];
         _layerKnob.transform = CATransform3DMakeRotation(angle, 0, 0, 1);
-        _layerProgress.strokeEnd = _value / (_maxValue-_minValue);
+        [self updateProgressLayerPathToAngle:angle];
+        [CATransaction commit];
         [self sendActionsForControlEvents:UIControlEventValueChanged];
     }
 }
 
 - (void)setTrackColor:(UIColor *)trackColor {
     _trackColor = trackColor;
-    _layerTrack.fillColor = trackColor.CGColor;
+    _layerTrack.strokeColor = trackColor.CGColor;
 }
 
 - (void)setBarColor:(UIColor *)barColor {
     _barColor = barColor;
-    _layerTrack.fillColor = barColor.CGColor;
+    _layerProgress.strokeColor = barColor.CGColor;
 }
 
 - (void)setKnobColor:(UIColor *)knobColor {
     _knobColor = knobColor;
     _layerKnob.fillColor = knobColor.CGColor;
+}
+
+- (void)setBarImage:(UIImage *)barImage {
+    _barImage = barImage;
+    if (barImage) {
+        [self.layer addSublayer:_layerBarImage];
+    }else {
+        [_layerBarImage removeFromSuperlayer];
+        _layerProgress.strokeColor = _barColor.CGColor;
+    }
 }
 
 #pragma mark Value & Angle Convert

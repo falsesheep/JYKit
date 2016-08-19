@@ -17,6 +17,8 @@
 @property (nonatomic, strong) UIColor *barColor;
 /// 滑块颜色
 @property (nonatomic, strong) UIColor *knobColor;
+/// 滚动条背景图片
+@property (nonatomic, strong) UIImage *barImage;
 /**
  *  初始化
  *
