@@ -32,6 +32,7 @@
                    startAngle:(CGFloat)startAngle
                      barWidth:(CGFloat)barWidth
                     knobWidth:(CGFloat)knobWidth
+                     barImage:(UIImage *)barImage
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -60,6 +61,15 @@
         _layerProgress.strokeColor = [UIColor redColor].CGColor;
         _layerProgress.lineWidth = _layerTrack.lineWidth;
         [self.layer addSublayer:_layerProgress];
+
+        // Layer Mask
+        if (barImage) {
+            _layerBarImage = [CALayer layer];
+            _layerBarImage.frame = self.bounds;
+            _layerBarImage.contents = (id)barImage.CGImage;
+            _layerBarImage.mask = _layerProgress;
+            [self.layer addSublayer:_layerBarImage];
+        }
 
         // Knob Path
         knobWidth = 50;
@@ -127,16 +137,6 @@
 - (void)setKnobColor:(UIColor *)knobColor {
     _knobColor = knobColor;
     _layerKnob.fillColor = knobColor.CGColor;
-}
-
-- (void)setBarImage:(UIImage *)barImage {
-    _barImage = barImage;
-    if (barImage) {
-        [self.layer addSublayer:_layerBarImage];
-    }else {
-        [_layerBarImage removeFromSuperlayer];
-        _layerProgress.strokeColor = _barColor.CGColor;
-    }
 }
 
 #pragma mark Value & Angle Convert

@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Slider
-    _slider = [[JYCirclrSlider alloc] initWithFrame:CGRectMake(0, 0, 300, 300) maxValue:360 minValue:0 startAngle:0 barWidth:50 knobWidth:50];
+    _slider = [[JYCirclrSlider alloc] initWithFrame:CGRectMake(0, 0, 300, 300) maxValue:360 minValue:0 startAngle:0 barWidth:50 knobWidth:50 barImage:[UIImage imageNamed:@"circle_gradient"]];
     [self.view addSubview:_slider];
     _slider.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2-64);
     [_slider addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];

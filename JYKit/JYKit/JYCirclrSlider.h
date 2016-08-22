@@ -13,12 +13,10 @@
 @property (nonatomic, assign) CGFloat value;
 /// 轨道颜色
 @property (nonatomic, strong) UIColor *trackColor;
-/// 滚动条颜色
+/// 滚动条颜色(注意: 设定barImage后不起作用)
 @property (nonatomic, strong) UIColor *barColor;
 /// 滑块颜色
 @property (nonatomic, strong) UIColor *knobColor;
-/// 滚动条背景图片
-@property (nonatomic, strong) UIImage *barImage;
 /**
  *  初始化
  *
@@ -28,6 +26,7 @@
  *  @param startAngle 最小值所在位置
  *  @param barWidth   滚动条宽度
  *  @param knobWidth  滑块宽度
+ *  @param barImage  滚动条背景图片
  *
  *  @return JYCirclrSlider实例
  */
@@ -36,6 +35,7 @@
                      minValue:(CGFloat)minValue
                    startAngle:(CGFloat)startAngle
                      barWidth:(CGFloat)barWidth
-                    knobWidth:(CGFloat)knobWidth;
+                    knobWidth:(CGFloat)knobWidth
+                     barImage:(UIImage *)barImage;
 
 @end
