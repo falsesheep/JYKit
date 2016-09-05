@@ -23,6 +23,8 @@
 #import "ControlLoadingViewController.h"
 #import "ShapeViewViewController.h"
 #import "CircleSliderViewController.h"
+#import "AdjustingTextViewController.h"
+#import "QRCodeViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -48,7 +50,9 @@
                   @"模仿京东菜单分类",
                   @"页面加载动画",
                   @"View只显示出来一部分",
-                  @"环形Slider"];
+                  @"环形Slider",
+                  @"高度可变的输入框",
+                  @"生成二维码"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -144,6 +148,16 @@
             break;}
         case 15:{
             CircleSliderViewController *vc = [CircleSliderViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 16:{
+            AdjustingTextViewController *vc = [AdjustingTextViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 17:{
+            QRCodeViewController *vc = [QRCodeViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

@@ -58,10 +58,11 @@
     NSString *formatter = [NSString stringWithFormat:@"%%.%df", count];
     NSString *ret = [NSString stringWithFormat:formatter, devided];
     if (pretty) { // 去掉末尾的0和小数点
-        while ([[ret substringFromIndex:ret.length-1] isEqualToString:@"0"] ||
-               [[ret substringFromIndex:ret.length-1] isEqualToString:@"."]) {
-            ret = [ret substringToIndex:ret.length-1];
-        }
+        while (ret.length > 1 &&
+               ([[ret substringFromIndex:ret.length-1] isEqualToString:@"0"] ||
+                [[ret substringFromIndex:ret.length-1] isEqualToString:@"."])) {
+                   ret = [ret substringToIndex:ret.length-1];
+               }
     }
     return ret;
 }
@@ -83,6 +84,18 @@
              result[8], result[9], result[10], result[11],
              result[12], result[13], result[14], result[15]
              ] lowercaseString];
+}
+
+- (UIImage *)generateQRCodeWithSideWidth:(CGFloat)sideWidth {
+    NSData *data = [self dataUsingEncoding:NSISOLatin1StringEncoding];
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    [filter setValue:data forKey:@"inputMessage"];
+    [filter setValue:@"Q" forKey:@"inputCorrectionLevel"];
+    CIImage *image = filter.outputImage;
+    // Scale
+    CGFloat scale = sideWidth / image.extent.size.width;
+    CIImage *scaledImage = [image imageByApplyingTransform:CGAffineTransformMakeScale(scale, scale)];
+    return [UIImage imageWithCIImage:scaledImage];
 }
 
 @end

@@ -77,4 +77,13 @@
  */
 - (NSString *)encryptWithMD5;
 
+/**
+ *  生成字符串的二维码
+ *
+ *  @param sideWidth 二维码宽度
+ *
+ *  @return 二维码图片
+ */
+- (UIImage *)generateQRCodeWithSideWidth:(CGFloat)sideWidth;
+
 @end
