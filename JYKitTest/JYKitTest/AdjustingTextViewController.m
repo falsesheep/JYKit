@@ -8,30 +8,32 @@
 
 #import "AdjustingTextViewController.h"
 
-@interface AdjustingTextViewController ()
-
+@interface AdjustingTextViewController () <UITextViewDelegate>
+@property (nonatomic, strong) UITextView *textView;
 @end
 
 @implementation AdjustingTextViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 20, 200, 30)];
+    _textView.delegate = self;
+    _textView.layer.borderWidth = 0.5;
+    _textView.scrollEnabled = NO;
+    [self.view addSubview:_textView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITextViewDelegate
+- (void)textViewDidChange:(UITextView *)textView {
+    CGSize newSize = [textView sizeThatFits:CGSizeMake(200, 120)];
+    CGFloat newHeight = newSize.height;
+    if (newHeight > 120) {
+        textView.scrollEnabled = YES;
+        newHeight = 120;
+    }else {
+        textView.scrollEnabled = NO;
+    }
+    textView.frame = CGRectMake(15, 20, 200, newHeight);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
