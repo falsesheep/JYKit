@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdjustingTextViewController">
             <connections>
+                <outlet property="textViewHeight" destination="uup-Hz-a3w" id="E4g-lo-cnt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,65 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pRu-ts-wzM">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="o5Z-te-KKf"/>
+                        <constraint firstAttribute="height" constant="128" id="uup-Hz-a3w">
+                            <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="o5Z-te-KKf"/>
+                            <exclude reference="uup-Hz-a3w"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="o5Z-te-KKf"/>
+                            <include reference="uup-Hz-a3w"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="uZU-SY-3gp"/>
+                    </connections>
+                </textView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pRu-ts-wzM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="83C-Eh-Nzd"/>
+                <constraint firstItem="pRu-ts-wzM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="376" id="cwx-5V-LtT">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="pRu-ts-wzM"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="83C-Eh-Nzd"/>
+                    <exclude reference="cwx-5V-LtT"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="pRu-ts-wzM"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="83C-Eh-Nzd"/>
+                    <include reference="cwx-5V-LtT"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

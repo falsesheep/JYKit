@@ -9,31 +9,26 @@
 #import "AdjustingTextViewController.h"
 
 @interface AdjustingTextViewController () <UITextViewDelegate>
-@property (nonatomic, strong) UITextView *textView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *textViewHeight;
 @end
 
 @implementation AdjustingTextViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 20, 200, 30)];
-    _textView.delegate = self;
-    _textView.layer.borderWidth = 0.5;
-    _textView.scrollEnabled = NO;
-    [self.view addSubview:_textView];
 }
 
 #pragma mark - UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView {
-    CGSize newSize = [textView sizeThatFits:CGSizeMake(200, 120)];
-    CGFloat newHeight = newSize.height;
-    if (newHeight > 120) {
+    CGFloat fixedWidth = textView.frame.size.width;
+    CGFloat newHeight = [textView sizeThatFits:CGSizeMake(fixedWidth, CGFLOAT_MAX)].height;
+    if (newHeight > 66.5) {
+        newHeight = 66.5;
         textView.scrollEnabled = YES;
-        newHeight = 120;
     }else {
-        textView.scrollEnabled = NO;
+        textView.scrollEnabled = NO; // 避免contentOffset一直变化
     }
-    textView.frame = CGRectMake(15, 20, 200, newHeight);
+    _textViewHeight.constant = newHeight;
 }
 
 @end
