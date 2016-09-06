@@ -17,9 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewDidLayoutSubviews {
     UIImage *maskImage = [UIImage imageNamed:@"heart"];
     [_viewOriginal viewWithMaskImage:maskImage scaled:NO];
     [_viewScaled viewWithMaskImage:maskImage scaled:YES];
+    [self.view layoutSubviews];
 }
 
 @end
