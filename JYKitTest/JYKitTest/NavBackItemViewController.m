@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationItem setBackBarButtonItemWithTitle:@"物品管理" image:[UIImage imageNamed:@"item_back"] target:self action:@selector(onClickBack:)];
+    [self.navigationItem setBarButtonItemForRightSide:NO title:@"物品管理" image:[UIImage imageNamed:@"item_back"] target:self action:@selector(onClickBack:)];
+    [self.navigationItem setBarButtonItemForRightSide:YES title:@"分享" image:nil target:nil action:nil];
 }
 
 - (IBAction)onClickBack:(id)sender {
