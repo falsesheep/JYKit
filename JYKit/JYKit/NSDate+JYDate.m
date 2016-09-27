@@ -55,7 +55,7 @@
     }
 
     // lower than 60 minutes
-    if (different < 660 * 60) {
+    if (different < 60 * 60) {
         return [NSString stringWithFormat:@"%d分钟%@", (int)floor(different / 60), suffix];
     }
 
