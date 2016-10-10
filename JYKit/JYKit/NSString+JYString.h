@@ -9,6 +9,19 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+/// The alignment for drawing an NSString inside a bounding rectangle.
+typedef NS_ENUM(NSUInteger, NCStringAlignment) {
+    NCStringAlignmentLeftTop,
+    NCStringAlignmentCenterTop,
+    NCStringAlignmentRightTop,
+    NCStringAlignmentLeftCenter,
+    NCStringAlignmentCenter,
+    NCStringAlignmentRightCenter,
+    NCStringAlignmentLeftBottom,
+    NCStringAlignmentCenterBottom,
+    NCStringAlignmentRightBottom
+};
+
 @interface NSString (JYString)
 
 /**
@@ -86,4 +99,6 @@
  */
 - (UIImage *)generateQRCodeWithSideWidth:(CGFloat)sideWidth;
 
+/// Draw the `NSString` inside the bounding rectangle with a given alignment.
+- (void)drawAtPointInRect:(CGRect)rect withAttributes:(NSDictionary<NSString *,id> *)attrs andAlignment:(NCStringAlignment)alignment;
 @end

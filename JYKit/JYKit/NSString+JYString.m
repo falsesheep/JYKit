@@ -98,4 +98,52 @@
     return [UIImage imageWithCIImage:scaledImage];
 }
 
+- (void)drawAtPointInRect:(CGRect)rect withAttributes:(NSDictionary<NSString *,id> *)attrs andAlignment:(NCStringAlignment)alignment {
+    CGSize size = [self sizeWithAttributes:attrs];
+    // X
+    CGFloat x = 0;
+    switch (alignment) {
+        case NCStringAlignmentLeftTop:
+        case NCStringAlignmentLeftCenter:
+        case NCStringAlignmentLeftBottom:
+            x = CGRectGetMinX(rect);
+            break;
+        case NCStringAlignmentCenterTop:
+        case NCStringAlignmentCenter:
+        case NCStringAlignmentCenterBottom:
+            x = CGRectGetMidX(rect) - size.width/2;
+            break;
+        case NCStringAlignmentRightTop:
+        case NCStringAlignmentRightCenter:
+        case NCStringAlignmentRightBottom:
+            x = CGRectGetMaxX(rect) - size.width;
+            break;
+        default:
+            break;
+    }
+    // Y
+    CGFloat y = 0;
+    switch (alignment) {
+        case NCStringAlignmentLeftTop:
+        case NCStringAlignmentCenterTop:
+        case NCStringAlignmentRightTop:
+            y = CGRectGetMinY(rect);
+            break;
+        case NCStringAlignmentLeftCenter:
+        case NCStringAlignmentCenter:
+        case NCStringAlignmentRightCenter:
+            y = CGRectGetMidY(rect) - size.height/2;
+            break;
+        case NCStringAlignmentLeftBottom:
+        case NCStringAlignmentCenterBottom:
+        case NCStringAlignmentRightBottom:
+            y = CGRectGetMaxY(rect) - size.height;
+            break;
+        default:
+            break;
+    }
+    // draw
+    [self drawAtPoint:CGPointMake(x, y) withAttributes:attrs];
+}
+
 @end
