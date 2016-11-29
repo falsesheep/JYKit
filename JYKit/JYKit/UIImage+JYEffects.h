@@ -48,4 +48,11 @@
  */
 + (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 
+/**
+ *  根据图片的orientation信息，使图片朝上
+ *
+ *  @return 图片
+ */
+- (UIImage *)fixOrientation;
+
 @end
