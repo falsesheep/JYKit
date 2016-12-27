@@ -41,6 +41,8 @@
 		205398D91D0D643E00B34DA1 /* UIButton+JYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398D71D0D643E00B34DA1 /* UIButton+JYButton.m */; };
 		205398E21D0D6A8800B34DA1 /* NSDate+JYDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 205398E01D0D6A8800B34DA1 /* NSDate+JYDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		205398E31D0D6A8800B34DA1 /* NSDate+JYDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 205398E11D0D6A8800B34DA1 /* NSDate+JYDate.m */; };
+		206CCCF51DED59C7009D2626 /* UITableView+DataLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 206CCCF31DED59C7009D2626 /* UITableView+DataLoad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		206CCCF61DED59C7009D2626 /* UITableView+DataLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 206CCCF41DED59C7009D2626 /* UITableView+DataLoad.m */; };
 		2079C1101D10ED5000A4315A /* JYGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2079C10E1D10ED5000A4315A /* JYGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079C10F1D10ED5000A4315A /* JYGradientView.m */; };
 		2087C1CD1BD534E300A3D53F /* UIButton+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 2087C1CB1BD534E300A3D53F /* UIButton+Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -91,6 +93,8 @@
 		205398D71D0D643E00B34DA1 /* UIButton+JYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JYButton.m"; sourceTree = "<group>"; };
 		205398E01D0D6A8800B34DA1 /* NSDate+JYDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JYDate.h"; sourceTree = "<group>"; };
 		205398E11D0D6A8800B34DA1 /* NSDate+JYDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JYDate.m"; sourceTree = "<group>"; };
+		206CCCF31DED59C7009D2626 /* UITableView+DataLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DataLoad.h"; sourceTree = "<group>"; };
+		206CCCF41DED59C7009D2626 /* UITableView+DataLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DataLoad.m"; sourceTree = "<group>"; };
 		2079C10E1D10ED5000A4315A /* JYGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYGradientView.h; sourceTree = "<group>"; };
 		2079C10F1D10ED5000A4315A /* JYGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYGradientView.m; sourceTree = "<group>"; };
 		2087C1CB1BD534E300A3D53F /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				20DE2FBA1D65AD6B00832F04 /* JYCircleGestureRecognizer.m */,
 				20DE2FBB1D65AD6B00832F04 /* JYCirclrSlider.h */,
 				20DE2FBC1D65AD6B00832F04 /* JYCirclrSlider.m */,
+				206CCCF31DED59C7009D2626 /* UITableView+DataLoad.h */,
+				206CCCF41DED59C7009D2626 /* UITableView+DataLoad.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 				2079C1101D10ED5000A4315A /* JYGradientView.h in Headers */,
 				2011D2E61D13DA8B0009A26E /* NSDictionary+JYDictionary.h in Headers */,
 				20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */,
+				206CCCF51DED59C7009D2626 /* UITableView+DataLoad.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
@@ -347,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */,
+				206CCCF61DED59C7009D2626 /* UITableView+DataLoad.m in Sources */,
 				2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */,
 				20DE2FBE1D65AD6B00832F04 /* JYCircleGestureRecognizer.m in Sources */,
 				2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */,
