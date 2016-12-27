@@ -98,6 +98,23 @@
     return [UIImage imageWithCIImage:scaledImage];
 }
 
+- (void)writeToLog {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSString *debugFilePath = [documentPath stringByAppendingPathComponent:@"debug.txt"];
+    if (![fileManager fileExistsAtPath:debugFilePath]) {
+        if (![fileManager createFileAtPath:debugFilePath contents:nil attributes:nil]) {
+            NSLog(@"不能创建debug file");
+            return;
+        }
+        [fileManager setAttributes:@{NSFileProtectionKey:NSFileProtectionNone} ofItemAtPath:debugFilePath error:nil];
+    }
+    NSFileHandle *debugFileHandle = [NSFileHandle fileHandleForWritingAtPath:debugFilePath];
+    [debugFileHandle seekToEndOfFile];
+    [debugFileHandle writeData:[self dataUsingEncoding:NSUTF8StringEncoding]];
+    [debugFileHandle closeFile];
+}
+
 - (void)drawAtPointInRect:(CGRect)rect withAttributes:(NSDictionary<NSString *,id> *)attrs andAlignment:(NCStringAlignment)alignment {
     CGSize size = [self sizeWithAttributes:attrs];
     // X

@@ -99,6 +99,9 @@ typedef NS_ENUM(NSUInteger, NCStringAlignment) {
  */
 - (UIImage *)generateQRCodeWithSideWidth:(CGFloat)sideWidth;
 
+/// 写log到Document中的debug.txt文件
+- (void)writeToLog;
+
 /// Draw the `NSString` inside the bounding rectangle with a given alignment.
 - (void)drawAtPointInRect:(CGRect)rect withAttributes:(NSDictionary<NSString *,id> *)attrs andAlignment:(NCStringAlignment)alignment;
 @end
