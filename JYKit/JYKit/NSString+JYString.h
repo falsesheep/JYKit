@@ -76,6 +76,17 @@ typedef NS_ENUM(NSUInteger, NCStringAlignment) {
                     allowRound:(BOOL)allowRound
                   prettyFormat:(BOOL)pretty;
 
+#pragma mark - Validation
+
+
+/**
+ 判断是否是纯数字（可限制小数位数）
+
+ @param maxNumber 最多支持的小数位数
+ @return 是否是纯数字（可限制小数位数）
+ */
+- (BOOL)isNumberWithMaxNumberOfDecimalDigits:(NSInteger)maxNumber;
+
 /**
  *  判断是否是合法的手机号
  *
@@ -83,6 +94,22 @@ typedef NS_ENUM(NSUInteger, NCStringAlignment) {
  */
 - (BOOL)isMobileNumber;
 
+/**
+ 判断是否是合法的Email
+
+ @return 是否是合法的Email
+ */
+- (BOOL)isEmailAddress;
+
+
+/**
+ 判断是否是合法的QQ号
+
+ @return 是否是合法的QQ号
+ */
+- (BOOL)isQQNumber;
+
+#pragma mark - Other
 /**
  *  转换为md5
  *

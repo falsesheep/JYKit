@@ -67,10 +67,33 @@
     return ret;
 }
 
+- (BOOL)isNumberWithMaxNumberOfDecimalDigits:(NSInteger)maxNumber {
+    NSString *numberRegex = @"";
+    if (maxNumber == 0) {
+        numberRegex = @"^\\d+$";
+    }else {
+        numberRegex = [NSString stringWithFormat:@"^\\d+(\\.\\d{1,%ld})?$", (long)maxNumber];
+    }
+    NSPredicate *numberTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", numberRegex];
+    return [numberTest evaluateWithObject:self];
+}
+
 - (BOOL)isMobileNumber {
-    NSString *MOBILE = @"^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\\d{8}$";
-    NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
-    return [regextestmobile evaluateWithObject:self];
+    NSString *mobileRegex = @"^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\\d{8}$";
+    NSPredicate *mobileTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobileRegex];
+    return [mobileTest evaluateWithObject:self];
+}
+
+- (BOOL)isEmailAddress {
+    NSString *emailRegex = @"^.+@.+.[A-Za-z]{2}[A-Za-z]*$";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:self];
+}
+
+- (BOOL)isQQNumber {
+    NSString *qqRegex = @"^[1-9]\\d{4,}$";
+    NSPredicate *qqTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", qqRegex];
+    return [qqTest evaluateWithObject:self];
 }
 
 - (NSString *)encryptWithMD5 {
