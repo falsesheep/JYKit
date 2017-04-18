@@ -62,6 +62,10 @@
 		20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */; };
 		20E62C4C1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E62C4A1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E62C4D1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C4B1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m */; };
+		20E62C5E1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E62C5C1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E62C5F1EA5BD4A008A7C40 /* UINavigationController+JYPassOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C5D1EA5BD49008A7C40 /* UINavigationController+JYPassOn.m */; };
+		20E62C621EA5BF89008A7C40 /* UIViewController+JYMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E62C601EA5BF89008A7C40 /* UIViewController+JYMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E62C631EA5BF89008A7C40 /* UIViewController+JYMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +123,10 @@
 		20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+ImageAndTitle.m"; sourceTree = "<group>"; };
 		20E62C4A1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JYDeepCopy.h"; sourceTree = "<group>"; };
 		20E62C4B1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JYDeepCopy.m"; sourceTree = "<group>"; };
+		20E62C5C1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JYPassOn.h"; sourceTree = "<group>"; };
+		20E62C5D1EA5BD49008A7C40 /* UINavigationController+JYPassOn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JYPassOn.m"; sourceTree = "<group>"; };
+		20E62C601EA5BF89008A7C40 /* UIViewController+JYMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JYMethods.h"; sourceTree = "<group>"; };
+		20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JYMethods.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +209,10 @@
 				206CCCF41DED59C7009D2626 /* UITableView+DataLoad.m */,
 				20E62C4A1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h */,
 				20E62C4B1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m */,
+				20E62C5C1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h */,
+				20E62C5D1EA5BD49008A7C40 /* UINavigationController+JYPassOn.m */,
+				20E62C601EA5BF89008A7C40 /* UIViewController+JYMethods.h */,
+				20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -239,6 +251,8 @@
 				20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */,
 				206CCCF51DED59C7009D2626 /* UITableView+DataLoad.h in Headers */,
 				20E62C4C1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h in Headers */,
+				20E62C5E1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h in Headers */,
+				20E62C621EA5BF89008A7C40 /* UIViewController+JYMethods.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
@@ -364,9 +378,11 @@
 				206CCCF61DED59C7009D2626 /* UITableView+DataLoad.m in Sources */,
 				2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */,
 				20DE2FBE1D65AD6B00832F04 /* JYCircleGestureRecognizer.m in Sources */,
+				20E62C5F1EA5BD4A008A7C40 /* UINavigationController+JYPassOn.m in Sources */,
 				2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */,
 				20DE2FC01D65AD6B00832F04 /* JYCirclrSlider.m in Sources */,
 				205398CA1D0D52BA00B34DA1 /* UIDevice+JYUID.m in Sources */,
+				20E62C631EA5BF89008A7C40 /* UIViewController+JYMethods.m in Sources */,
 				204B2E881D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m in Sources */,
 				205398E31D0D6A8800B34DA1 /* NSDate+JYDate.m in Sources */,
 				205398CE1D0D5A2900B34DA1 /* NSString+JYString.m in Sources */,

@@ -26,6 +26,7 @@
 #import "AdjustingTextViewController.h"
 #import "QRCodeViewController.h"
 #import "DeepCopyViewController.h"
+#import "UpgradeViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -54,7 +55,8 @@
                   @"环形Slider",
                   @"高度可变的输入框",
                   @"生成二维码",
-                  @"深拷贝"];
+                  @"深拷贝",
+                  @"更新检测"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -165,6 +167,11 @@
             break;}
         case 18:{
             DeepCopyViewController *vc = [DeepCopyViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 19:{
+            UpgradeViewController *vc = [UpgradeViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}
