@@ -12,8 +12,10 @@
 @implementation NSString (JYString)
 
 - (void)alert {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:self delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:self delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+    });
 }
 
 - (CGSize)acceptableSizeWithFont:(UIFont *)font

@@ -12,7 +12,6 @@
 
 @implementation UIViewController (JYMethods)
 
-/// 检查程序是否有更新
 - (void)checkForUpgradeWithAppID:(NSString *)appID {
     NSString *api = [NSString stringWithFormat:@"http://itunes.apple.com/cn/lookup?id=%@", appID];
     NSURL *url = [NSURL URLWithString:api];
@@ -56,6 +55,30 @@
         });
     }];
     [task resume];
+}
+
+#pragma mark - Alert
+- (void)alertMessage:(NSString *)message handler:(void(^)())handler twoButtonMode:(BOOL)isTwoButtonMode title:(NSString *)title {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAct = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *confirmAct = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:handler];
+    [alert addAction:cancelAct];
+    [alert addAction:confirmAct];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:alert animated:YES completion:nil];
+    });
+}
+
+- (void)alertMessage:(NSString *)message handler:(void(^)())handler twoButtonMode:(BOOL)isTwoButtonMode {
+    [self alertMessage:message handler:handler twoButtonMode:isTwoButtonMode title:@"提示"];
+}
+
+- (void)alertMessage:(NSString *)message handler:(void(^)())handler {
+    [self alertMessage:message handler:handler twoButtonMode:NO];
+}
+
+- (void)alertMessage:(NSString *)message {
+    [self alertMessage:message handler:nil];
 }
 
 @end
