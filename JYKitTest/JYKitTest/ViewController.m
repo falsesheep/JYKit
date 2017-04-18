@@ -25,6 +25,7 @@
 #import "CircleSliderViewController.h"
 #import "AdjustingTextViewController.h"
 #import "QRCodeViewController.h"
+#import "DeepCopyViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -52,7 +53,8 @@
                   @"View只显示出来一部分",
                   @"环形Slider",
                   @"高度可变的输入框",
-                  @"生成二维码"];
+                  @"生成二维码",
+                  @"深拷贝"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -158,6 +160,11 @@
             break;}
         case 17:{
             QRCodeViewController *vc = [QRCodeViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 18:{
+            DeepCopyViewController *vc = [DeepCopyViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

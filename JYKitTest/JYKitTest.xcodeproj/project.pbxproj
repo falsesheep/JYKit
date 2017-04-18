@@ -59,6 +59,9 @@
 		20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C12D4F1D618DBE00E2FF38 /* ShapeViewViewController.m */; };
 		20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */; };
 		20DE2FC61D65ADD500832F04 /* CircleSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */; };
+		20E62C541EA5B430008A7C40 /* DeepCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C521EA5B430008A7C40 /* DeepCopyViewController.m */; };
+		20E62C551EA5B430008A7C40 /* DeepCopyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E62C531EA5B430008A7C40 /* DeepCopyViewController.xib */; };
+		20E62C581EA5B4F4008A7C40 /* MDeepCopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C571EA5B4F4008A7C40 /* MDeepCopyTest.m */; };
 		20F7139C1D6D535700798D56 /* AdjustingTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F7139A1D6D535700798D56 /* AdjustingTextViewController.m */; };
 		20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */; };
 /* End PBXBuildFile section */
@@ -199,6 +202,11 @@
 		20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShapeViewViewController.xib; sourceTree = "<group>"; };
 		20DE2FC41D65ADD500832F04 /* CircleSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSliderViewController.h; sourceTree = "<group>"; };
 		20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSliderViewController.m; sourceTree = "<group>"; };
+		20E62C511EA5B430008A7C40 /* DeepCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepCopyViewController.h; sourceTree = "<group>"; };
+		20E62C521EA5B430008A7C40 /* DeepCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepCopyViewController.m; sourceTree = "<group>"; };
+		20E62C531EA5B430008A7C40 /* DeepCopyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeepCopyViewController.xib; sourceTree = "<group>"; };
+		20E62C561EA5B4F4008A7C40 /* MDeepCopyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDeepCopyTest.h; sourceTree = "<group>"; };
+		20E62C571EA5B4F4008A7C40 /* MDeepCopyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDeepCopyTest.m; sourceTree = "<group>"; };
 		20F713991D6D535700798D56 /* AdjustingTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustingTextViewController.h; sourceTree = "<group>"; };
 		20F7139A1D6D535700798D56 /* AdjustingTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustingTextViewController.m; sourceTree = "<group>"; };
 		20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdjustingTextViewController.xib; sourceTree = "<group>"; };
@@ -441,6 +449,7 @@
 				20DE2FC11D65AD8C00832F04 /* 环形Slider */,
 				20F713961D6D52D800798D56 /* 高度可变的输入框 */,
 				2059AF7B1D7D3BAD00C6DE23 /* 生成二维码 */,
+				20E62C4E1EA5B405008A7C40 /* 深拷贝 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -503,6 +512,18 @@
 				20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */,
 			);
 			name = "环形Slider";
+			sourceTree = "<group>";
+		};
+		20E62C4E1EA5B405008A7C40 /* 深拷贝 */ = {
+			isa = PBXGroup;
+			children = (
+				20E62C561EA5B4F4008A7C40 /* MDeepCopyTest.h */,
+				20E62C571EA5B4F4008A7C40 /* MDeepCopyTest.m */,
+				20E62C511EA5B430008A7C40 /* DeepCopyViewController.h */,
+				20E62C521EA5B430008A7C40 /* DeepCopyViewController.m */,
+				20E62C531EA5B430008A7C40 /* DeepCopyViewController.xib */,
+			);
+			name = "深拷贝";
 			sourceTree = "<group>";
 		};
 		20F713961D6D52D800798D56 /* 高度可变的输入框 */ = {
@@ -647,6 +668,7 @@
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
 				20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */,
 				2059AF821D7D3BD200C6DE23 /* QRCodeViewController.xib in Resources */,
+				20E62C551EA5B430008A7C40 /* DeepCopyViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
 				20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */,
 				2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */,
@@ -702,6 +724,7 @@
 				20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */,
 				2079C1A21D11207900A4315A /* PopPresentingViewController.m in Sources */,
 				20F7139C1D6D535700798D56 /* AdjustingTextViewController.m in Sources */,
+				20E62C541EA5B430008A7C40 /* DeepCopyViewController.m in Sources */,
 				2005BDE31D17E6FB00AA9814 /* ControlLoadingViewController.m in Sources */,
 				204989711D0CFDE000894ACF /* NavBackItemViewController.m in Sources */,
 				2079C1A71D11208700A4315A /* PopPresentedViewController.m in Sources */,
@@ -709,6 +732,7 @@
 				2005BDDE1D17E53800AA9814 /* LoadingViewController.m in Sources */,
 				205398D31D0D5F2E00B34DA1 /* FlexContentViewController.m in Sources */,
 				204989821D0D06ED00894ACF /* DashLineViewController.m in Sources */,
+				20E62C581EA5B4F4008A7C40 /* MDeepCopyTest.m in Sources */,
 				2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */,
 				204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */,
 				2079C1C51D113FD200A4315A /* JDMenuViewController.m in Sources */,

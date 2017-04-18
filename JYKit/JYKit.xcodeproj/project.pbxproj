@@ -60,6 +60,8 @@
 		20DE2FC01D65AD6B00832F04 /* JYCirclrSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE2FBC1D65AD6B00832F04 /* JYCirclrSlider.m */; };
 		20E0F0321BD61040000583F9 /* UINavigationItem+ImageAndTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E0F0301BD61040000583F9 /* UINavigationItem+ImageAndTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */; };
+		20E62C4C1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E62C4A1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E62C4D1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C4B1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		20DE2FBC1D65AD6B00832F04 /* JYCirclrSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCirclrSlider.m; sourceTree = "<group>"; };
 		20E0F0301BD61040000583F9 /* UINavigationItem+ImageAndTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+ImageAndTitle.h"; sourceTree = "<group>"; };
 		20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+ImageAndTitle.m"; sourceTree = "<group>"; };
+		20E62C4A1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JYDeepCopy.h"; sourceTree = "<group>"; };
+		20E62C4B1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JYDeepCopy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 				20DE2FBC1D65AD6B00832F04 /* JYCirclrSlider.m */,
 				206CCCF31DED59C7009D2626 /* UITableView+DataLoad.h */,
 				206CCCF41DED59C7009D2626 /* UITableView+DataLoad.m */,
+				20E62C4A1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h */,
+				20E62C4B1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				2011D2E61D13DA8B0009A26E /* NSDictionary+JYDictionary.h in Headers */,
 				20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */,
 				206CCCF51DED59C7009D2626 /* UITableView+DataLoad.h in Headers */,
+				20E62C4C1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
@@ -369,6 +376,7 @@
 				20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */,
 				205398D91D0D643E00B34DA1 /* UIButton+JYButton.m in Sources */,
 				2049898D1D0D25CD00894ACF /* UIColor+JYColor.m in Sources */,
+				20E62C4D1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m in Sources */,
 				202C35731CF6985D009CA7D8 /* JYDashLineView.m in Sources */,
 				205398C21D0D490F00B34DA1 /* UIView+JYFrame.m in Sources */,
 			);
