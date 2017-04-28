@@ -22,6 +22,7 @@
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],
                                                          NSFontAttributeName: [UIFont boldSystemFontOfSize:20]};
     NSLog(@"设备唯一标识:%@", [UIDevice currentDevice].UID);
+    NSLog(@"设备型号:%@", [UIDevice platformString]);
     return YES;
 }
 

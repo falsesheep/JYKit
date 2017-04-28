@@ -6,6 +6,7 @@
 //  Copyright © 2017年 FALSESHEEP. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "JYExceptionHandle.h"
 
 @implementation JYExceptionHandle
@@ -24,10 +25,12 @@ void uncaughtExceptionHandler(NSException *exception) {
     NSTimeInterval crashTime = [[NSDate date] timeIntervalSince1970];
     NSString *appName = [[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleName"];
     NSString *appVer = [[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    NSString *iosVer = [UIDevice currentDevice].systemVersion;
+    NSString *model = [UIDevice currentDevice].localizedModel;
     NSString *name = exception.name;
     NSString *reason = exception.reason;
     NSArray *stackArray = exception.callStackSymbols;
-    NSString *exceptionInfo = [NSString stringWithFormat:@"Crash Time: %.f\nApp Name: %@\nApp Version: %@\nException Name: %@\nException Reason: %@\nException Stack: %@", crashTime, appName, appVer, name, reason, stackArray];
+    NSString *exceptionInfo = [NSString stringWithFormat:@"Crash Time: %.f\nApp Name: %@\nApp Version: %@\niOS Version: %@\nModel: %@\nException Name: %@\nException Reason: %@\nException Stack: %@", crashTime, appName, appVer, iosVer, model, name, reason, stackArray];
     NSString *fileName = [NSString stringWithFormat:@"%@-%.f.log", appName, crashTime];
     NSString *filePath = [[JYExceptionHandle crashFolder] stringByAppendingPathComponent:fileName];
     [exceptionInfo writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:nil];

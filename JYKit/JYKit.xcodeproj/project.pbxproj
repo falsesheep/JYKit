@@ -45,6 +45,8 @@
 		206CCCF61DED59C7009D2626 /* UITableView+DataLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 206CCCF41DED59C7009D2626 /* UITableView+DataLoad.m */; };
 		2079C1101D10ED5000A4315A /* JYGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2079C10E1D10ED5000A4315A /* JYGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079C10F1D10ED5000A4315A /* JYGradientView.m */; };
+		207B898A1EB2F4B100B25520 /* UIDevice+JYDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 207B89881EB2F4B100B25520 /* UIDevice+JYDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		207B898B1EB2F4B100B25520 /* UIDevice+JYDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 207B89891EB2F4B100B25520 /* UIDevice+JYDevice.m */; };
 		2087C1CD1BD534E300A3D53F /* UIButton+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 2087C1CB1BD534E300A3D53F /* UIButton+Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 2087C1CC1BD534E300A3D53F /* UIButton+Block.m */; };
 		208C8B261BD4E98B00E55D5D /* JYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 208C8B251BD4E98B00E55D5D /* JYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -105,6 +107,8 @@
 		206CCCF41DED59C7009D2626 /* UITableView+DataLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DataLoad.m"; sourceTree = "<group>"; };
 		2079C10E1D10ED5000A4315A /* JYGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYGradientView.h; sourceTree = "<group>"; };
 		2079C10F1D10ED5000A4315A /* JYGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYGradientView.m; sourceTree = "<group>"; };
+		207B89881EB2F4B100B25520 /* UIDevice+JYDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JYDevice.h"; sourceTree = "<group>"; };
+		207B89891EB2F4B100B25520 /* UIDevice+JYDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JYDevice.m"; sourceTree = "<group>"; };
 		2087C1CB1BD534E300A3D53F /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		2087C1CC1BD534E300A3D53F /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		208C8B221BD4E98B00E55D5D /* JYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +223,8 @@
 				20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */,
 				209CFF951EB23E350069529B /* JYExceptionHandle.h */,
 				209CFF961EB23E350069529B /* JYExceptionHandle.m */,
+				207B89881EB2F4B100B25520 /* UIDevice+JYDevice.h */,
+				207B89891EB2F4B100B25520 /* UIDevice+JYDevice.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 				20E62C5E1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h in Headers */,
 				20E62C621EA5BF89008A7C40 /* UIViewController+JYMethods.h in Headers */,
 				209CFF971EB23E350069529B /* JYExceptionHandle.h in Headers */,
+				207B898A1EB2F4B100B25520 /* UIDevice+JYDevice.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
@@ -382,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */,
+				207B898B1EB2F4B100B25520 /* UIDevice+JYDevice.m in Sources */,
 				206CCCF61DED59C7009D2626 /* UITableView+DataLoad.m in Sources */,
 				2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */,
 				20DE2FBE1D65AD6B00832F04 /* JYCircleGestureRecognizer.m in Sources */,
