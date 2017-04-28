@@ -35,3 +35,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "NSObject+JYDeepCopy.h"
 #import "UINavigationController+JYPassOn.h"
 #import "UIViewController+JYMethods.h"
+#import "JYExceptionHandle.h"

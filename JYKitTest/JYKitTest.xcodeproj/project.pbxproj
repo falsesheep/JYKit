@@ -58,6 +58,8 @@
 		208C8BC81BD4EF6E00E55D5D /* JYKitTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8BC71BD4EF6E00E55D5D /* JYKitTestUITests.m */; };
 		20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C12D4F1D618DBE00E2FF38 /* ShapeViewViewController.m */; };
 		20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */; };
+		20D2C24A1EB1F61A006BB9D7 /* CrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D2C2481EB1F61A006BB9D7 /* CrashViewController.m */; };
+		20D2C24B1EB1F61A006BB9D7 /* CrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D2C2491EB1F61A006BB9D7 /* CrashViewController.xib */; };
 		20DE2FC61D65ADD500832F04 /* CircleSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */; };
 		20E62C541EA5B430008A7C40 /* DeepCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C521EA5B430008A7C40 /* DeepCopyViewController.m */; };
 		20E62C551EA5B430008A7C40 /* DeepCopyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E62C531EA5B430008A7C40 /* DeepCopyViewController.xib */; };
@@ -202,6 +204,9 @@
 		20C12D4E1D618DBE00E2FF38 /* ShapeViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeViewViewController.h; sourceTree = "<group>"; };
 		20C12D4F1D618DBE00E2FF38 /* ShapeViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeViewViewController.m; sourceTree = "<group>"; };
 		20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShapeViewViewController.xib; sourceTree = "<group>"; };
+		20D2C2471EB1F61A006BB9D7 /* CrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashViewController.h; sourceTree = "<group>"; };
+		20D2C2481EB1F61A006BB9D7 /* CrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashViewController.m; sourceTree = "<group>"; };
+		20D2C2491EB1F61A006BB9D7 /* CrashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrashViewController.xib; sourceTree = "<group>"; };
 		20DE2FC41D65ADD500832F04 /* CircleSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSliderViewController.h; sourceTree = "<group>"; };
 		20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSliderViewController.m; sourceTree = "<group>"; };
 		20E62C511EA5B430008A7C40 /* DeepCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepCopyViewController.h; sourceTree = "<group>"; };
@@ -456,6 +461,7 @@
 				2059AF7B1D7D3BAD00C6DE23 /* 生成二维码 */,
 				20E62C4E1EA5B405008A7C40 /* 深拷贝 */,
 				20E62C641EA5C626008A7C40 /* 更新检测 */,
+				20D2C2441EB1F5FE006BB9D7 /* Crash记录 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -509,6 +515,16 @@
 				20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */,
 			);
 			name = "View只显示出来一部分";
+			sourceTree = "<group>";
+		};
+		20D2C2441EB1F5FE006BB9D7 /* Crash记录 */ = {
+			isa = PBXGroup;
+			children = (
+				20D2C2471EB1F61A006BB9D7 /* CrashViewController.h */,
+				20D2C2481EB1F61A006BB9D7 /* CrashViewController.m */,
+				20D2C2491EB1F61A006BB9D7 /* CrashViewController.xib */,
+			);
+			name = "Crash记录";
 			sourceTree = "<group>";
 		};
 		20DE2FC11D65AD8C00832F04 /* 环形Slider */ = {
@@ -683,6 +699,7 @@
 			files = (
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
 				20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */,
+				20D2C24B1EB1F61A006BB9D7 /* CrashViewController.xib in Resources */,
 				20E62C691EA5C665008A7C40 /* UpgradeViewController.xib in Resources */,
 				2059AF821D7D3BD200C6DE23 /* QRCodeViewController.xib in Resources */,
 				20E62C551EA5B430008A7C40 /* DeepCopyViewController.xib in Resources */,
@@ -730,6 +747,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D2C24A1EB1F61A006BB9D7 /* CrashViewController.m in Sources */,
 				208C8BAA1BD4EF6E00E55D5D /* ViewController.m in Sources */,
 				204989751D0D003900894ACF /* BaseViewController.m in Sources */,
 				204989871D0D0EBD00894ACF /* CropViewController.m in Sources */,

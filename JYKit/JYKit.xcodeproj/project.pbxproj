@@ -52,6 +52,8 @@
 		208C8B321BD4E98C00E55D5D /* JYKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8B311BD4E98C00E55D5D /* JYKitTests.m */; };
 		208C8B3E1BD4E9BD00E55D5D /* JYTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 208C8B3C1BD4E9BD00E55D5D /* JYTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8B3D1BD4E9BD00E55D5D /* JYTest.m */; };
+		209CFF971EB23E350069529B /* JYExceptionHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 209CFF951EB23E350069529B /* JYExceptionHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209CFF981EB23E350069529B /* JYExceptionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CFF961EB23E350069529B /* JYExceptionHandle.m */; };
 		20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */; };
 		20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */; };
@@ -113,6 +115,8 @@
 		208C8B331BD4E98C00E55D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		208C8B3C1BD4E9BD00E55D5D /* JYTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTest.h; sourceTree = "<group>"; };
 		208C8B3D1BD4E9BD00E55D5D /* JYTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTest.m; sourceTree = "<group>"; };
+		209CFF951EB23E350069529B /* JYExceptionHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYExceptionHandle.h; sourceTree = "<group>"; };
+		209CFF961EB23E350069529B /* JYExceptionHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYExceptionHandle.m; sourceTree = "<group>"; };
 		20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYView.h"; sourceTree = "<group>"; };
 		20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYView.m"; sourceTree = "<group>"; };
 		20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCircleGestureRecognizer.h; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 				20E62C5D1EA5BD49008A7C40 /* UINavigationController+JYPassOn.m */,
 				20E62C601EA5BF89008A7C40 /* UIViewController+JYMethods.h */,
 				20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */,
+				209CFF951EB23E350069529B /* JYExceptionHandle.h */,
+				209CFF961EB23E350069529B /* JYExceptionHandle.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 				20E62C4C1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h in Headers */,
 				20E62C5E1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h in Headers */,
 				20E62C621EA5BF89008A7C40 /* UIViewController+JYMethods.h in Headers */,
+				209CFF971EB23E350069529B /* JYExceptionHandle.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
@@ -386,6 +393,7 @@
 				204B2E881D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m in Sources */,
 				205398E31D0D6A8800B34DA1 /* NSDate+JYDate.m in Sources */,
 				205398CE1D0D5A2900B34DA1 /* NSString+JYString.m in Sources */,
+				209CFF981EB23E350069529B /* JYExceptionHandle.m in Sources */,
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,
 				208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */,
 				2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */,

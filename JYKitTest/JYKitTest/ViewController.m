@@ -27,6 +27,7 @@
 #import "QRCodeViewController.h"
 #import "DeepCopyViewController.h"
 #import "UpgradeViewController.h"
+#import "CrashViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -56,7 +57,8 @@
                   @"高度可变的输入框",
                   @"生成二维码",
                   @"深拷贝",
-                  @"更新检测"];
+                  @"更新检测",
+                  @"Crash记录"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -172,6 +174,11 @@
             break;}
         case 19:{
             UpgradeViewController *vc = [UpgradeViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 20:{
+            CrashViewController *vc = [CrashViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

@@ -15,6 +15,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [JYExceptionHandle writeCrashLogWhenNecessary]; // 记录Crash
     [[JYTest new] testFramework];
     [UINavigationBar appearance].barTintColor = [UIColor redColor];
     [UINavigationBar appearance].translucent = NO;
