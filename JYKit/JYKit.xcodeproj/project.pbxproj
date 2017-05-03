@@ -56,6 +56,8 @@
 		208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C8B3D1BD4E9BD00E55D5D /* JYTest.m */; };
 		209CFF971EB23E350069529B /* JYExceptionHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 209CFF951EB23E350069529B /* JYExceptionHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209CFF981EB23E350069529B /* JYExceptionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CFF961EB23E350069529B /* JYExceptionHandle.m */; };
+		209E08671EB9B84D00796EB8 /* UIView+HitTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E08651EB9B84D00796EB8 /* UIView+HitTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E08681EB9B84D00796EB8 /* UIView+HitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E08661EB9B84D00796EB8 /* UIView+HitTest.m */; };
 		20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */; };
 		20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */; };
@@ -121,6 +123,8 @@
 		208C8B3D1BD4E9BD00E55D5D /* JYTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTest.m; sourceTree = "<group>"; };
 		209CFF951EB23E350069529B /* JYExceptionHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYExceptionHandle.h; sourceTree = "<group>"; };
 		209CFF961EB23E350069529B /* JYExceptionHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYExceptionHandle.m; sourceTree = "<group>"; };
+		209E08651EB9B84D00796EB8 /* UIView+HitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HitTest.h"; sourceTree = "<group>"; };
+		209E08661EB9B84D00796EB8 /* UIView+HitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HitTest.m"; sourceTree = "<group>"; };
 		20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYView.h"; sourceTree = "<group>"; };
 		20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYView.m"; sourceTree = "<group>"; };
 		20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCircleGestureRecognizer.h; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 				209CFF961EB23E350069529B /* JYExceptionHandle.m */,
 				207B89881EB2F4B100B25520 /* UIDevice+JYDevice.h */,
 				207B89891EB2F4B100B25520 /* UIDevice+JYDevice.m */,
+				209E08651EB9B84D00796EB8 /* UIView+HitTest.h */,
+				209E08661EB9B84D00796EB8 /* UIView+HitTest.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				20E62C5E1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h in Headers */,
 				20E62C621EA5BF89008A7C40 /* UIViewController+JYMethods.h in Headers */,
 				209CFF971EB23E350069529B /* JYExceptionHandle.h in Headers */,
+				209E08671EB9B84D00796EB8 /* UIView+HitTest.h in Headers */,
 				207B898A1EB2F4B100B25520 /* UIDevice+JYDevice.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
@@ -408,6 +415,7 @@
 				20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */,
 				205398D91D0D643E00B34DA1 /* UIButton+JYButton.m in Sources */,
 				2049898D1D0D25CD00894ACF /* UIColor+JYColor.m in Sources */,
+				209E08681EB9B84D00796EB8 /* UIView+HitTest.m in Sources */,
 				20E62C4D1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m in Sources */,
 				202C35731CF6985D009CA7D8 /* JYDashLineView.m in Sources */,
 				205398C21D0D490F00B34DA1 /* UIView+JYFrame.m in Sources */,
