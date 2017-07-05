@@ -25,7 +25,7 @@
     layer.startPoint = _startPoint;
     layer.endPoint = _endPoint;
 
-    [self.layer addSublayer:layer];
+    [self.layer insertSublayer:layer atIndex:0];
 }
 
 - (void)setDefaultValue {

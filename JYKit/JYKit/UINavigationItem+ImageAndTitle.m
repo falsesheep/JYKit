@@ -40,4 +40,9 @@
     }
 }
 
+- (void)hideLeftItems {
+    self.leftBarButtonItems = nil;
+    self.hidesBackButton = YES;
+}
+
 @end
