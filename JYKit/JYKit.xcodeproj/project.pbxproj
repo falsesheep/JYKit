@@ -60,6 +60,10 @@
 		209E08681EB9B84D00796EB8 /* UIView+HitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E08661EB9B84D00796EB8 /* UIView+HitTest.m */; };
 		20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */; };
+		20DC65831F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DC65811F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DC65841F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DC65821F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.m */; };
+		20DC65871F0CC28100B39DA8 /* JYLabelScroller.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DC65851F0CC28100B39DA8 /* JYLabelScroller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DC65881F0CC28100B39DA8 /* JYLabelScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DC65861F0CC28100B39DA8 /* JYLabelScroller.m */; };
 		20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */; };
 		20DE2FBE1D65AD6B00832F04 /* JYCircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE2FBA1D65AD6B00832F04 /* JYCircleGestureRecognizer.m */; };
 		20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DE2FBB1D65AD6B00832F04 /* JYCirclrSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -127,6 +131,10 @@
 		209E08661EB9B84D00796EB8 /* UIView+HitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HitTest.m"; sourceTree = "<group>"; };
 		20BFB7A61D1BC9F1008611A7 /* UIView+JYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYView.h"; sourceTree = "<group>"; };
 		20BFB7A71D1BC9F1008611A7 /* UIView+JYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYView.m"; sourceTree = "<group>"; };
+		20DC65811F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+JYSearchBar.h"; sourceTree = "<group>"; };
+		20DC65821F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+JYSearchBar.m"; sourceTree = "<group>"; };
+		20DC65851F0CC28100B39DA8 /* JYLabelScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLabelScroller.h; sourceTree = "<group>"; };
+		20DC65861F0CC28100B39DA8 /* JYLabelScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLabelScroller.m; sourceTree = "<group>"; };
 		20DE2FB91D65AD6B00832F04 /* JYCircleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCircleGestureRecognizer.h; sourceTree = "<group>"; };
 		20DE2FBA1D65AD6B00832F04 /* JYCircleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCircleGestureRecognizer.m; sourceTree = "<group>"; };
 		20DE2FBB1D65AD6B00832F04 /* JYCirclrSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCirclrSlider.h; sourceTree = "<group>"; };
@@ -231,6 +239,10 @@
 				207B89891EB2F4B100B25520 /* UIDevice+JYDevice.m */,
 				209E08651EB9B84D00796EB8 /* UIView+HitTest.h */,
 				209E08661EB9B84D00796EB8 /* UIView+HitTest.m */,
+				20DC65811F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.h */,
+				20DC65821F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.m */,
+				20DC65851F0CC28100B39DA8 /* JYLabelScroller.h */,
+				20DC65861F0CC28100B39DA8 /* JYLabelScroller.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -274,6 +286,8 @@
 				209CFF971EB23E350069529B /* JYExceptionHandle.h in Headers */,
 				209E08671EB9B84D00796EB8 /* UIView+HitTest.h in Headers */,
 				207B898A1EB2F4B100B25520 /* UIDevice+JYDevice.h in Headers */,
+				20DC65831F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.h in Headers */,
+				20DC65871F0CC28100B39DA8 /* JYLabelScroller.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
@@ -396,12 +410,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */,
+				20DC65881F0CC28100B39DA8 /* JYLabelScroller.m in Sources */,
 				207B898B1EB2F4B100B25520 /* UIDevice+JYDevice.m in Sources */,
 				206CCCF61DED59C7009D2626 /* UITableView+DataLoad.m in Sources */,
 				2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */,
 				20DE2FBE1D65AD6B00832F04 /* JYCircleGestureRecognizer.m in Sources */,
 				20E62C5F1EA5BD4A008A7C40 /* UINavigationController+JYPassOn.m in Sources */,
 				2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */,
+				20DC65841F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.m in Sources */,
 				20DE2FC01D65AD6B00832F04 /* JYCirclrSlider.m in Sources */,
 				205398CA1D0D52BA00B34DA1 /* UIDevice+JYUID.m in Sources */,
 				20E62C631EA5BF89008A7C40 /* UIViewController+JYMethods.m in Sources */,

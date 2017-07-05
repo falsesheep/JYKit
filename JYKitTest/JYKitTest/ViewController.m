@@ -28,6 +28,7 @@
 #import "DeepCopyViewController.h"
 #import "UpgradeViewController.h"
 #import "CrashViewController.h"
+#import "LabelScrollerViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -58,7 +59,8 @@
                   @"生成二维码",
                   @"深拷贝",
                   @"更新检测",
-                  @"Crash记录"];
+                  @"Crash记录",
+                  @"滚动Label"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -179,6 +181,11 @@
             break;}
         case 20:{
             CrashViewController *vc = [CrashViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 21:{
+            LabelScrollerViewController *vc = [LabelScrollerViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

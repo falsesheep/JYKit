@@ -60,6 +60,8 @@
 		20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C12D501D618DBE00E2FF38 /* ShapeViewViewController.xib */; };
 		20D2C24A1EB1F61A006BB9D7 /* CrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D2C2481EB1F61A006BB9D7 /* CrashViewController.m */; };
 		20D2C24B1EB1F61A006BB9D7 /* CrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D2C2491EB1F61A006BB9D7 /* CrashViewController.xib */; };
+		20DC658F1F0CC47C00B39DA8 /* LabelScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DC658D1F0CC47C00B39DA8 /* LabelScrollerViewController.m */; };
+		20DC65901F0CC47C00B39DA8 /* LabelScrollerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DC658E1F0CC47C00B39DA8 /* LabelScrollerViewController.xib */; };
 		20DE2FC61D65ADD500832F04 /* CircleSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */; };
 		20E62C541EA5B430008A7C40 /* DeepCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C521EA5B430008A7C40 /* DeepCopyViewController.m */; };
 		20E62C551EA5B430008A7C40 /* DeepCopyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E62C531EA5B430008A7C40 /* DeepCopyViewController.xib */; };
@@ -207,6 +209,9 @@
 		20D2C2471EB1F61A006BB9D7 /* CrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashViewController.h; sourceTree = "<group>"; };
 		20D2C2481EB1F61A006BB9D7 /* CrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashViewController.m; sourceTree = "<group>"; };
 		20D2C2491EB1F61A006BB9D7 /* CrashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrashViewController.xib; sourceTree = "<group>"; };
+		20DC658C1F0CC47C00B39DA8 /* LabelScrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelScrollerViewController.h; sourceTree = "<group>"; };
+		20DC658D1F0CC47C00B39DA8 /* LabelScrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelScrollerViewController.m; sourceTree = "<group>"; };
+		20DC658E1F0CC47C00B39DA8 /* LabelScrollerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelScrollerViewController.xib; sourceTree = "<group>"; };
 		20DE2FC41D65ADD500832F04 /* CircleSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSliderViewController.h; sourceTree = "<group>"; };
 		20DE2FC51D65ADD500832F04 /* CircleSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSliderViewController.m; sourceTree = "<group>"; };
 		20E62C511EA5B430008A7C40 /* DeepCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepCopyViewController.h; sourceTree = "<group>"; };
@@ -462,6 +467,7 @@
 				20E62C4E1EA5B405008A7C40 /* 深拷贝 */,
 				20E62C641EA5C626008A7C40 /* 更新检测 */,
 				20D2C2441EB1F5FE006BB9D7 /* Crash记录 */,
+				20DC65891F0CC43D00B39DA8 /* 滚动Label */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -525,6 +531,16 @@
 				20D2C2491EB1F61A006BB9D7 /* CrashViewController.xib */,
 			);
 			name = "Crash记录";
+			sourceTree = "<group>";
+		};
+		20DC65891F0CC43D00B39DA8 /* 滚动Label */ = {
+			isa = PBXGroup;
+			children = (
+				20DC658C1F0CC47C00B39DA8 /* LabelScrollerViewController.h */,
+				20DC658D1F0CC47C00B39DA8 /* LabelScrollerViewController.m */,
+				20DC658E1F0CC47C00B39DA8 /* LabelScrollerViewController.xib */,
+			);
+			name = "滚动Label";
 			sourceTree = "<group>";
 		};
 		20DE2FC11D65AD8C00832F04 /* 环形Slider */ = {
@@ -707,6 +723,7 @@
 				20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */,
 				2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */,
 				2005BDEB1D17F5FB00AA9814 /* LoadingViewController.xib in Resources */,
+				20DC65901F0CC47C00B39DA8 /* LabelScrollerViewController.xib in Resources */,
 				2079C1191D10EFFF00A4315A /* GradientViewController.xib in Resources */,
 				2079C1A81D11208700A4315A /* PopPresentedViewController.xib in Resources */,
 				204B2E961D1008EA00F9C88C /* DashLineViewController.xib in Resources */,
@@ -776,6 +793,7 @@
 				205398B71D0D41BC00B34DA1 /* ImageColorViewController.m in Sources */,
 				208C8BA41BD4EF6E00E55D5D /* main.m in Sources */,
 				20E62C681EA5C665008A7C40 /* UpgradeViewController.m in Sources */,
+				20DC658F1F0CC47C00B39DA8 /* LabelScrollerViewController.m in Sources */,
 				2079C1CF1D11404800A4315A /* JDDetailViewController.m in Sources */,
 				20DE2FC61D65ADD500832F04 /* CircleSliderViewController.m in Sources */,
 			);
