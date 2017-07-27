@@ -13,15 +13,15 @@
 - (NSString *)UID {
     NSString *uuid = [NSUUID UUID].UUIDString;
     NSString *key = @"deviceUID";
-    NSString *service = key;
-    if (![[NSUserDefaults standardUserDefaults] objectForKey:key]) {
-        [[NSUserDefaults standardUserDefaults] setObject:uuid forKey:key];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+    NSString *service = [NSBundle mainBundle].infoDictionary[@"CFBundleIdentifier"];
+    NSString *ret = [self valueForKeychainKey:key service:service];
+    if (!ret) {
+        OSStatus status = [self setValue:uuid forKeychainKey:key inService:service];
+        if (status == errSecSuccess) {
+            ret = uuid;
+        }
     }
-    if (![self valueForKeychainKey:key service:service]) {
-        [self setValue:uuid forKeychainKey:key inService:key];
-    }
-    return [self valueForKeychainKey:key service:service];
+    return ret;
 }
 
 #pragma mark - Keychain methods
@@ -29,7 +29,7 @@
 - (OSStatus)setValue:(NSString *)value forKeychainKey:(NSString *)key inService:(NSString *)service {
     NSMutableDictionary *keychainItem = [[NSMutableDictionary alloc] init];
     keychainItem[(__bridge id)kSecClass] = (__bridge id)kSecClassGenericPassword;
-    keychainItem[(__bridge id)kSecAttrAccessible] = (__bridge id)kSecAttrAccessibleAlways;
+    keychainItem[(__bridge id)kSecAttrAccessible] = (__bridge id)kSecAttrAccessibleWhenUnlocked;
     keychainItem[(__bridge id)kSecAttrAccount] = key;
     keychainItem[(__bridge id)kSecAttrService] = service;
     keychainItem[(__bridge id)kSecValueData] = [value dataUsingEncoding:NSUTF8StringEncoding];
@@ -38,25 +38,21 @@
 
 // 获取Keychain Value
 - (NSString *)valueForKeychainKey:(NSString *)key service:(NSString *)service {
-    OSStatus status;
     NSMutableDictionary *keychainItem = [[NSMutableDictionary alloc] init];
     keychainItem[(__bridge id)kSecClass] = (__bridge id)kSecClassGenericPassword;
-    keychainItem[(__bridge id)kSecAttrAccessible] = (__bridge id)kSecAttrAccessibleAlways;
+    keychainItem[(__bridge id)kSecAttrAccessible] = (__bridge id)kSecAttrAccessibleWhenUnlocked;
     keychainItem[(__bridge id)kSecAttrAccount] = key;
     keychainItem[(__bridge id)kSecAttrService] = service;
-    keychainItem[(__bridge id)kSecReturnData] = (__bridge id)kCFBooleanTrue;
-    keychainItem[(__bridge id)kSecReturnAttributes] = (__bridge id)kCFBooleanTrue;
-    CFDictionaryRef result = nil;
-    status = SecItemCopyMatching((__bridge CFDictionaryRef)keychainItem, (CFTypeRef *)&result);
-    if (status != noErr) {
+    keychainItem[(__bridge id)kSecReturnData] = @YES;
+    CFTypeRef result = nil;
+    OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)keychainItem, &result);
+    if (status != errSecSuccess) {
         return nil;
     }
-    NSDictionary *resultDict = (__bridge_transfer NSDictionary *)result;
-    NSData *data = resultDict[(__bridge id)kSecValueData];
-    if (!data) {
+    if (!result) {
         return nil;
     }
-    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return [NSString stringWithUTF8String:[(__bridge NSData *)result bytes]];
 }
 
 @end
