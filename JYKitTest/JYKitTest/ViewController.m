@@ -29,6 +29,7 @@
 #import "UpgradeViewController.h"
 #import "CrashViewController.h"
 #import "LabelScrollerViewController.h"
+#import "LotteryViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -60,7 +61,8 @@
                   @"深拷贝",
                   @"更新检测",
                   @"Crash记录",
-                  @"滚动Label"];
+                  @"滚动Label",
+                  @"抽奖"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -186,6 +188,11 @@
             break;}
         case 21:{
             LabelScrollerViewController *vc = [LabelScrollerViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 22:{
+            LotteryViewController *vc = [LotteryViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

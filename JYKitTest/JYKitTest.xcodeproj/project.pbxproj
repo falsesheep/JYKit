@@ -12,6 +12,8 @@
 		2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2005BDE21D17E6FB00AA9814 /* ControlLoadingViewController.xib */; };
 		2005BDE81D17EF1100AA9814 /* LoadingBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005BDE61D17EF1100AA9814 /* LoadingBaseViewController.m */; };
 		2005BDEB1D17F5FB00AA9814 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2005BDEA1D17F5FB00AA9814 /* LoadingViewController.xib */; };
+		20386822200F383100B432E2 /* LotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20386820200F383100B432E2 /* LotteryViewController.m */; };
+		20386823200F383100B432E2 /* LotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20386821200F383100B432E2 /* LotteryViewController.xib */; };
 		204989711D0CFDE000894ACF /* NavBackItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049896F1D0CFDE000894ACF /* NavBackItemViewController.m */; };
 		204989751D0D003900894ACF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204989741D0D003900894ACF /* BaseViewController.m */; };
 		204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204989781D0D04DA00894ACF /* ButtonBlockViewController.m */; };
@@ -133,6 +135,9 @@
 		2005BDE51D17EF1100AA9814 /* LoadingBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBaseViewController.h; sourceTree = "<group>"; };
 		2005BDE61D17EF1100AA9814 /* LoadingBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingBaseViewController.m; sourceTree = "<group>"; };
 		2005BDEA1D17F5FB00AA9814 /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		2038681F200F383100B432E2 /* LotteryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryViewController.h; sourceTree = "<group>"; };
+		20386820200F383100B432E2 /* LotteryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryViewController.m; sourceTree = "<group>"; };
+		20386821200F383100B432E2 /* LotteryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LotteryViewController.xib; sourceTree = "<group>"; };
 		2049896E1D0CFDE000894ACF /* NavBackItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBackItemViewController.h; sourceTree = "<group>"; };
 		2049896F1D0CFDE000894ACF /* NavBackItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBackItemViewController.m; sourceTree = "<group>"; };
 		204989731D0D003900894ACF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -266,6 +271,16 @@
 				2005BDEA1D17F5FB00AA9814 /* LoadingViewController.xib */,
 			);
 			name = "页面加载动画";
+			sourceTree = "<group>";
+		};
+		2038681C200F381000B432E2 /* 抽奖 */ = {
+			isa = PBXGroup;
+			children = (
+				2038681F200F383100B432E2 /* LotteryViewController.h */,
+				20386820200F383100B432E2 /* LotteryViewController.m */,
+				20386821200F383100B432E2 /* LotteryViewController.xib */,
+			);
+			name = "抽奖";
 			sourceTree = "<group>";
 		};
 		2049896B1D0CFD8800894ACF /* Nav返回按钮 */ = {
@@ -468,6 +483,7 @@
 				20E62C641EA5C626008A7C40 /* 更新检测 */,
 				20D2C2441EB1F5FE006BB9D7 /* Crash记录 */,
 				20DC65891F0CC43D00B39DA8 /* 滚动Label */,
+				2038681C200F381000B432E2 /* 抽奖 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -717,6 +733,7 @@
 				20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */,
 				20D2C24B1EB1F61A006BB9D7 /* CrashViewController.xib in Resources */,
 				20E62C691EA5C665008A7C40 /* UpgradeViewController.xib in Resources */,
+				20386823200F383100B432E2 /* LotteryViewController.xib in Resources */,
 				2059AF821D7D3BD200C6DE23 /* QRCodeViewController.xib in Resources */,
 				20E62C551EA5B430008A7C40 /* DeepCopyViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
@@ -786,6 +803,7 @@
 				204989821D0D06ED00894ACF /* DashLineViewController.m in Sources */,
 				20E62C581EA5B4F4008A7C40 /* MDeepCopyTest.m in Sources */,
 				2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */,
+				20386822200F383100B432E2 /* LotteryViewController.m in Sources */,
 				204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */,
 				2079C1C51D113FD200A4315A /* JDMenuViewController.m in Sources */,
 				204B2E8F1D10039100F9C88C /* HideNavLineViewController.m in Sources */,
