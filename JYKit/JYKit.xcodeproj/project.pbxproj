@@ -25,6 +25,8 @@
 		2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2011D2E51D13DA8B0009A26E /* NSDictionary+JYDictionary.m */; };
 		202C35721CF6985D009CA7D8 /* JYDashLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202C35701CF6985D009CA7D8 /* JYDashLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202C35731CF6985D009CA7D8 /* JYDashLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202C35711CF6985D009CA7D8 /* JYDashLineView.m */; };
+		20386827200F4DB800B432E2 /* UICollectionView+DataLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 20386825200F4DB800B432E2 /* UICollectionView+DataLoad.h */; };
+		20386828200F4DB800B432E2 /* UICollectionView+DataLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 20386826200F4DB800B432E2 /* UICollectionView+DataLoad.m */; };
 		2049898C1D0D25CD00894ACF /* UIColor+JYColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2049898A1D0D25CD00894ACF /* UIColor+JYColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2049898D1D0D25CD00894ACF /* UIColor+JYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049898B1D0D25CD00894ACF /* UIColor+JYColor.m */; };
 		204B2E871D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 204B2E851D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -93,6 +95,8 @@
 		2011D2E51D13DA8B0009A26E /* NSDictionary+JYDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JYDictionary.m"; sourceTree = "<group>"; };
 		202C35701CF6985D009CA7D8 /* JYDashLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYDashLineView.h; sourceTree = "<group>"; };
 		202C35711CF6985D009CA7D8 /* JYDashLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYDashLineView.m; sourceTree = "<group>"; };
+		20386825200F4DB800B432E2 /* UICollectionView+DataLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DataLoad.h"; sourceTree = "<group>"; };
+		20386826200F4DB800B432E2 /* UICollectionView+DataLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DataLoad.m"; sourceTree = "<group>"; };
 		2049898A1D0D25CD00894ACF /* UIColor+JYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JYColor.h"; sourceTree = "<group>"; };
 		2049898B1D0D25CD00894ACF /* UIColor+JYColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JYColor.m"; sourceTree = "<group>"; };
 		204B2E851D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JYNavigationBar.h"; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 				20DE2FBC1D65AD6B00832F04 /* JYCirclrSlider.m */,
 				206CCCF31DED59C7009D2626 /* UITableView+DataLoad.h */,
 				206CCCF41DED59C7009D2626 /* UITableView+DataLoad.m */,
+				20386825200F4DB800B432E2 /* UICollectionView+DataLoad.h */,
+				20386826200F4DB800B432E2 /* UICollectionView+DataLoad.m */,
 				20E62C4A1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.h */,
 				20E62C4B1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m */,
 				20E62C5C1EA5BD49008A7C40 /* UINavigationController+JYPassOn.h */,
@@ -266,6 +272,7 @@
 				208C8B261BD4E98B00E55D5D /* JYKit.h in Headers */,
 				208C8B3E1BD4E9BD00E55D5D /* JYTest.h in Headers */,
 				20E0F0321BD61040000583F9 /* UINavigationItem+ImageAndTitle.h in Headers */,
+				20386827200F4DB800B432E2 /* UICollectionView+DataLoad.h in Headers */,
 				2087C1CD1BD534E300A3D53F /* UIButton+Block.h in Headers */,
 				202C35721CF6985D009CA7D8 /* JYDashLineView.h in Headers */,
 				204DD9E51C9EC6B5002407A3 /* UIImage+JYEffects.h in Headers */,
@@ -428,6 +435,7 @@
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,
 				208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */,
 				2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */,
+				20386828200F4DB800B432E2 /* UICollectionView+DataLoad.m in Sources */,
 				20BFB7A91D1BC9F1008611A7 /* UIView+JYView.m in Sources */,
 				205398D91D0D643E00B34DA1 /* UIButton+JYButton.m in Sources */,
 				2049898D1D0D25CD00894ACF /* UIColor+JYColor.m in Sources */,
