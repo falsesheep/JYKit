@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationItem setBarButtonItemForRightSide:NO title:@"物品管理" image:[UIImage imageNamed:@"item_back"] target:self action:@selector(onClickBack:)];
-    [self.navigationItem setBarButtonItemForRightSide:YES title:@"分享" image:nil target:nil action:nil];
+    NSAttributedString *leftTitle = [[NSAttributedString alloc] initWithString:@"返回" attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:16], NSForegroundColorAttributeName: UIColor.whiteColor}];
+    NSAttributedString *rightTitle = [[NSAttributedString alloc] initWithString:@"详情" attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:16], NSForegroundColorAttributeName: UIColor.blueColor}];
+    [self.navigationItem setBarButtonItemForRightSide:NO title:leftTitle image:[UIImage imageNamed:@"item_back"] target:self action:@selector(onClickBack:)];
+    [self.navigationItem setBarButtonItemForRightSide:YES title:rightTitle image:nil target:nil action:nil];
 }
 
 - (IBAction)onClickBack:(id)sender {

@@ -14,12 +14,12 @@
  *  导航栏上的操作按钮
  *
  *  @param isRightSide 居左or居右
- *  @param title  返回键文字
+ *  @param title  返回键文字(NSAttributedString)
  *  @param image  返回键图片
  *  @param target target
  *  @param action 点击返回键触发的操作
  */
-- (void)setBarButtonItemForRightSide:(BOOL)isRightSide title:(NSString *)title image:(UIImage *)image target:(id)target action:(SEL)action;
+- (void)setBarButtonItemForRightSide:(BOOL)isRightSide title:(NSAttributedString *)title image:(UIImage *)image target:(id)target action:(SEL)action;
 
 
 /**
