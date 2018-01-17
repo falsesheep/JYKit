@@ -25,12 +25,12 @@
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
         NSArray *results = [dic arrayForKey:@"results"];
         if (results.count == 0) {
-            [@"App Store无版本记录" alert];
+            NSLog(@"App Store无版本记录，App可能是第一版，或者App被下架");
             return;
         }
         NSDictionary *dicLastVerInfo = results.firstObject;
         NSString *latestVer = [dicLastVerInfo stringForKey:@"version"];
-        NSString *currentVer = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+        NSString *currentVer = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
         if ([latestVer compare:currentVer options:NSNumericSearch] <= 0) {
             // 程序已是最新版本，不需要更新
             return;
