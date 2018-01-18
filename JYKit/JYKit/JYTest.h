@@ -10,6 +10,9 @@
 
 @interface JYTest : NSObject
 
+/**
+ 测试Framework是否导入成功
+ */
 - (void)testFramework;
 
 @end

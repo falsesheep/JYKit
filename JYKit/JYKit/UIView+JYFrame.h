@@ -13,11 +13,29 @@
 /**
  *  改变View的frame
  *
- *  @param x,y,width.height
+ *  @param x x
  */
 - (void)setX:(CGFloat)x;
+
+/**
+ *  改变View的frame
+ *
+ *  @param y y
+ */
 - (void)setY:(CGFloat)y;
+
+/**
+ *  改变View的frame
+ *
+ *  @param width width
+ */
 - (void)setWith:(CGFloat)width;
+
+/**
+ *  改变View的frame
+ *
+ *  @param height height
+ */
 - (void)setHeight:(CGFloat)height;
 
 @end

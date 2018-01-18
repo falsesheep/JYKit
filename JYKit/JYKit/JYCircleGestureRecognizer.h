@@ -13,6 +13,7 @@
  */
 @interface JYCircleGestureRecognizer : UIPanGestureRecognizer
 
+/// 当前旋转角度
 @property (nonatomic, assign) CGFloat touchAngle;
 
 @end

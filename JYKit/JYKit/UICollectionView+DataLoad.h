@@ -10,7 +10,12 @@
 
 @interface UICollectionView (DataLoad)
 
-/// collectionView无数据时，显示的文字提示
+/**
+ collectionView无数据时，显示的文字提示
+
+ @param message 无数据时显示的文字
+ @param count 数据个数
+ */
 - (void)collectionViewDisplayWithMsg:(NSString *)message ifNecessaryForDataCount:(NSUInteger)count;
 
 @end

@@ -10,7 +10,12 @@
 
 @interface UITableView (DataLoad)
 
-/// tableView无数据时，显示的文字提示
+/**
+tableView无数据时，显示的文字提示
+
+@param message 无数据时显示的文字
+@param count 数据个数
+*/
 - (void)tableViewDisplayWithMsg:(NSString *)message ifNecessaryForDataCount:(NSUInteger)count;
 
 @end

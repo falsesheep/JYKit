@@ -21,7 +21,6 @@
  */
 - (void)setBarButtonItemForRightSide:(BOOL)isRightSide title:(NSAttributedString *)title image:(UIImage *)image target:(id)target action:(SEL)action;
 
-
 /**
  隐藏返回按钮
  */

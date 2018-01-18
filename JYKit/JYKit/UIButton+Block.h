@@ -8,15 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 按键操作Block
+ */
 typedef void (^ActionBlock)();
 
 @interface UIButton (Block)
-@property (readonly) NSMutableDictionary *event;
+
 /**
  *  用block处理button的事件
  *
  *  @param controlEvent 事件
  *  @param action       处理事件的block
+ *
+ *  @see ActionBlock
  */
 - (void)handleControlEvent:(UIControlEvents)controlEvent withBlock:(ActionBlock)action;
+
 @end

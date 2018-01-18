@@ -11,7 +11,7 @@
 @interface UIDevice (JYUID)
 
 /**
- *  创建并获取设备的唯一标识
+ *  创建并获取设备的唯一标识，该标识存储在keychain中
  *
  *  @return 设备的唯一标识
  */

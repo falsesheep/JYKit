@@ -11,14 +11,23 @@
 
 /// The alignment for drawing an NSString inside a bounding rectangle.
 typedef NS_ENUM(NSUInteger, NCStringAlignment) {
+    /** 左上角 */
     NCStringAlignmentLeftTop,
+    /** 中间偏上 */
     NCStringAlignmentCenterTop,
+    /** 右上角 */
     NCStringAlignmentRightTop,
+    /** 左侧居中 */
     NCStringAlignmentLeftCenter,
+    /** 居中 */
     NCStringAlignmentCenter,
+    /** 右侧居中 */
     NCStringAlignmentRightCenter,
+    /** 左下角 */
     NCStringAlignmentLeftBottom,
+    /** 中间偏下 */
     NCStringAlignmentCenterBottom,
+    /** 右下角 */
     NCStringAlignmentRightBottom
 };
 
@@ -129,6 +138,14 @@ typedef NS_ENUM(NSUInteger, NCStringAlignment) {
 /// 写log到Document中的debug.txt文件
 - (void)writeToLog;
 
-/// Draw the `NSString` inside the bounding rectangle with a given alignment.
+/**
+ Draw the `NSString` inside the bounding rectangle with a given alignment.
+
+ @param rect 范围区域
+ @param attrs 文字属性Attributes
+ @param alignment 文字在区域中的位置
+
+ @see NCStringAlignment
+ */
 - (void)drawAtPointInRect:(CGRect)rect withAttributes:(NSDictionary<NSString *,id> *)attrs andAlignment:(NCStringAlignment)alignment;
 @end

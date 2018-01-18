@@ -16,7 +16,7 @@
 - (void)setImageToRight;
 
 /**
- *  button 图片与文字垂直居中
+ *  button 图片与文字垂直排列，水平居中
  */
 - (void)setImageToTop;
 

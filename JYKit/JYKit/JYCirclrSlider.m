@@ -14,14 +14,10 @@
 @property (nonatomic, strong) CAShapeLayer *layerKnob;
 @property (nonatomic, strong) CAShapeLayer *layerProgress;
 @property (nonatomic, strong) CALayer *layerBarImage;
-/// 最大值
-@property (nonatomic, assign) CGFloat maxValue;
-/// 最小值
-@property (nonatomic, assign) CGFloat minValue;
-/// 起始位置
-@property (nonatomic, assign) CGFloat startAngle;
-/// 滚动条宽度
-@property (nonatomic, assign) CGFloat barWidth;
+@property (nonatomic, assign) CGFloat maxValue; // 最大值
+@property (nonatomic, assign) CGFloat minValue; // 最小值
+@property (nonatomic, assign) CGFloat startAngle; // 起始位置
+@property (nonatomic, assign) CGFloat barWidth; // 滚动条宽度
 @end
 
 @implementation JYCirclrSlider

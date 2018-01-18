@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+/**
+ 由当前显示的ViewController控制 StatusBar 和 Rotation
+ */
 @interface UINavigationController (JYPassOn)
 
 @end
