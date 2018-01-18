@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JYKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "An utility framework comes from work."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description	 = "An utility framework comes from work(Powered By Falsesheep)."
-  s.homepage	 = "https://github.com/falsesheep/JYKit/tree/dev"
+  s.homepage	 = "https://github.com/falsesheep/JYKit/tree/master"
 
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
