@@ -17,4 +17,11 @@
  */
 - (NSDictionary *)parameters;
 
+/**
+ 生成程序对应的userAgent(格式: iOS com.falsesheep.JYKitTest 1.0.1 11.2 iPhone7,2)
+
+ @return userAgent
+ */
++ (NSString *)userAgent;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "NSURL+JYURL.h"
+#import "UIDevice+JYDevice.h"
 
 @implementation NSURL (JYURL)
 
@@ -21,6 +22,16 @@
         ret[keyValue[0]] = keyValue[1];
     }
     return ret;
+}
+
++ (NSString *)userAgent {
+    NSString *platform = @"iOS";
+    NSDictionary *infoDictionary = NSBundle.mainBundle.infoDictionary;
+    NSString *bundleID = infoDictionary[@"CFBundleIdentifier"];
+    NSString *appVer = infoDictionary[@"CFBundleShortVersionString"];
+    NSString *sysVer = infoDictionary[@"DTPlatformVersion"];
+    NSString *deviceVer = UIDevice.platformType;
+    return [NSString stringWithFormat:@"%@ %@ %@ %@ %@", platform, bundleID, appVer, sysVer, deviceVer];
 }
 
 @end
