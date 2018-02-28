@@ -80,6 +80,8 @@
 		20E62C631EA5BF89008A7C40 /* UIViewController+JYMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */; };
 		9F13958D2046A52C00027D66 /* BackgroundBlurTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F13958B2046A52C00027D66 /* BackgroundBlurTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F13958E2046A52C00027D66 /* BackgroundBlurTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */; };
+		9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F1395922046AD2D00027D66 /* NSURL+JYURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1395902046AD2D00027D66 /* NSURL+JYURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JYMethods.m"; sourceTree = "<group>"; };
 		9F13958B2046A52C00027D66 /* BackgroundBlurTrigger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundBlurTrigger.h; sourceTree = "<group>"; };
 		9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundBlurTrigger.m; sourceTree = "<group>"; };
+		9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+JYURL.h"; sourceTree = "<group>"; };
+		9F1395902046AD2D00027D66 /* NSURL+JYURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JYURL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,8 @@
 				20DC65861F0CC28100B39DA8 /* JYLabelScroller.m */,
 				9F13958B2046A52C00027D66 /* BackgroundBlurTrigger.h */,
 				9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */,
+				9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */,
+				9F1395902046AD2D00027D66 /* NSURL+JYURL.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -303,6 +309,7 @@
 				9F13958D2046A52C00027D66 /* BackgroundBlurTrigger.h in Headers */,
 				20DC65871F0CC28100B39DA8 /* JYLabelScroller.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
+				9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +439,7 @@
 				20E62C5F1EA5BD4A008A7C40 /* UINavigationController+JYPassOn.m in Sources */,
 				2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */,
 				20DC65841F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.m in Sources */,
+				9F1395922046AD2D00027D66 /* NSURL+JYURL.m in Sources */,
 				20DE2FC01D65AD6B00832F04 /* JYCirclrSlider.m in Sources */,
 				205398CA1D0D52BA00B34DA1 /* UIDevice+JYUID.m in Sources */,
 				20E62C631EA5BF89008A7C40 /* UIViewController+JYMethods.m in Sources */,
