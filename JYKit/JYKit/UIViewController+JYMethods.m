@@ -9,6 +9,7 @@
 #import "UIViewController+JYMethods.h"
 #import "NSString+JYString.h"
 #import "NSDictionary+JYDictionary.h"
+@import StoreKit;
 
 @implementation UIViewController (JYMethods)
 
@@ -55,6 +56,15 @@
         });
     }];
     [task resume];
+}
+
+- (void)rateOnAppStoreWithAppID:(NSString *)appID {
+    if ([SKStoreReviewController respondsToSelector:@selector(requestReview)]) { // iOS 10.3之后
+        [SKStoreReviewController requestReview];
+    }else {
+        NSString *url = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@?action=write-review", appID];
+        [UIApplication.sharedApplication openURL:[NSURL URLWithString:url]];
+    }
 }
 
 #pragma mark - Alert

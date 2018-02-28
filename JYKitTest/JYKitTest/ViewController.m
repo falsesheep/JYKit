@@ -30,6 +30,7 @@
 #import "CrashViewController.h"
 #import "LabelScrollerViewController.h"
 #import "LotteryViewController.h"
+#import "RateViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -62,7 +63,8 @@
                   @"更新检测",
                   @"Crash记录",
                   @"滚动Label",
-                  @"抽奖"];
+                  @"抽奖",
+                  @"App Store评分"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -193,6 +195,11 @@
             break;}
         case 22:{
             LotteryViewController *vc = [LotteryViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 23:{
+            RateViewController *vc = [RateViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

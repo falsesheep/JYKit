@@ -72,6 +72,8 @@
 		20E62C691EA5C665008A7C40 /* UpgradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E62C671EA5C665008A7C40 /* UpgradeViewController.xib */; };
 		20F7139C1D6D535700798D56 /* AdjustingTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F7139A1D6D535700798D56 /* AdjustingTextViewController.m */; };
 		20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */; };
+		9F1395892046956300027D66 /* RateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1395862046956200027D66 /* RateViewController.xib */; };
+		9F13958A2046956300027D66 /* RateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1395882046956300027D66 /* RateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +232,9 @@
 		20F713991D6D535700798D56 /* AdjustingTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustingTextViewController.h; sourceTree = "<group>"; };
 		20F7139A1D6D535700798D56 /* AdjustingTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustingTextViewController.m; sourceTree = "<group>"; };
 		20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdjustingTextViewController.xib; sourceTree = "<group>"; };
+		9F1395862046956200027D66 /* RateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateViewController.xib; sourceTree = "<group>"; };
+		9F1395872046956300027D66 /* RateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateViewController.h; sourceTree = "<group>"; };
+		9F1395882046956300027D66 /* RateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,6 +489,7 @@
 				20D2C2441EB1F5FE006BB9D7 /* Crash记录 */,
 				20DC65891F0CC43D00B39DA8 /* 滚动Label */,
 				2038681C200F381000B432E2 /* 抽奖 */,
+				9F1395832046951800027D66 /* App Store评分 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -598,6 +604,16 @@
 				20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */,
 			);
 			name = "高度可变的输入框";
+			sourceTree = "<group>";
+		};
+		9F1395832046951800027D66 /* App Store评分 */ = {
+			isa = PBXGroup;
+			children = (
+				9F1395872046956300027D66 /* RateViewController.h */,
+				9F1395882046956300027D66 /* RateViewController.m */,
+				9F1395862046956200027D66 /* RateViewController.xib */,
+			);
+			name = "App Store评分";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -730,6 +746,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
+				9F1395892046956300027D66 /* RateViewController.xib in Resources */,
 				20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */,
 				20D2C24B1EB1F61A006BB9D7 /* CrashViewController.xib in Resources */,
 				20E62C691EA5C665008A7C40 /* UpgradeViewController.xib in Resources */,
@@ -805,6 +822,7 @@
 				2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */,
 				20386822200F383100B432E2 /* LotteryViewController.m in Sources */,
 				204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */,
+				9F13958A2046956300027D66 /* RateViewController.m in Sources */,
 				2079C1C51D113FD200A4315A /* JDMenuViewController.m in Sources */,
 				204B2E8F1D10039100F9C88C /* HideNavLineViewController.m in Sources */,
 				205398DE1D0D64F500B34DA1 /* ButtonImagePositionViewController.m in Sources */,
@@ -960,7 +978,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JYKitTest/PrefixHeader.pch";
 				INFOPLIST_FILE = JYKitTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.falsesheep.JYKitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -974,7 +992,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JYKitTest/PrefixHeader.pch";
 				INFOPLIST_FILE = JYKitTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.falsesheep.JYKitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -17,6 +17,12 @@
  */
 - (void)checkForUpgradeWithAppID:(NSString *)appID;
 
+/**
+ 弹出App Store打分框
+
+ @param appID App Store的AppID
+ */
+- (void)rateOnAppStoreWithAppID:(NSString *)appID;
 
 #pragma mark - Alert
 /**
