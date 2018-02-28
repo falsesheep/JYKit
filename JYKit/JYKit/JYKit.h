@@ -39,3 +39,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "UIDevice+JYDevice.h"
 #import "UISearchBar+JYSearchBar.h"
 #import "JYLabelScroller.h"
+#import "BackgroundBlurTrigger.h"

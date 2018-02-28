@@ -16,7 +16,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [JYExceptionHandle writeCrashLogWhenNecessary]; // 记录Crash
-    [[JYTest new] testFramework];
+    
+    // 进入后台时，触发Blur效果
+    BackgroundBlurTrigger.sharedTrigger.shouldTriggerBlur = YES;
+    
     [UINavigationBar appearance].barTintColor = [UIColor redColor];
     [UINavigationBar appearance].translucent = NO;
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],
@@ -24,6 +27,15 @@
     NSLog(@"设备唯一标识:%@", [UIDevice currentDevice].UID);
     NSLog(@"设备型号:%@", [UIDevice platformString]);
     return YES;
+}
+
+#pragma mark - 进入后台时，触发Blur效果
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [BackgroundBlurTrigger.sharedTrigger addBlur];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [BackgroundBlurTrigger.sharedTrigger removeBlur];
 }
 
 @end
