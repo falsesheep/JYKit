@@ -24,4 +24,18 @@
  */
 + (NSString *)userAgent;
 
+/**
+ URL编码
+
+ @return 编码后的URL
+ */
+- (NSURL *)encodedURL;
+
+/**
+ URL解码
+
+ @return 解码后的URL
+ */
+- (NSURL *)decodeURL;
+
 @end

@@ -16,8 +16,10 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <JYKit/PublicHeader.h>
 #import "JYTest.h"
+#import "JRSwizzle.h"
 #import "UIButton+Block.h"
 #import "UINavigationItem+ImageAndTitle.h"
+#import "UIBarButtonItem+JYBarButtonItem.h"
 #import "JYDashLineView.h"
 #import "UIImage+JYEffects.h"
 #import "UIColor+JYColor.h"

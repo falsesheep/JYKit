@@ -34,4 +34,15 @@
     return [NSString stringWithFormat:@"%@ %@ %@ %@ %@", platform, bundleID, appVer, sysVer, deviceVer];
 }
 
+- (NSURL *)encodedURL {
+    NSCharacterSet *charSet = [NSCharacterSet characterSetWithCharactersInString:@"'#%^{}\"[]|\\<>"].invertedSet;
+    NSString *encodedStr = [self.absoluteString stringByAddingPercentEncodingWithAllowedCharacters:charSet];
+    return [NSURL URLWithString:encodedStr];
+}
+
+- (NSURL *)decodeURL {
+    NSString *decodedStr = [self.absoluteString stringByRemovingPercentEncoding];
+    return [NSURL URLWithString:decodedStr];
+}
+
 @end

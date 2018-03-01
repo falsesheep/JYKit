@@ -82,6 +82,10 @@
 		9F13958E2046A52C00027D66 /* BackgroundBlurTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */; };
 		9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F1395922046AD2D00027D66 /* NSURL+JYURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1395902046AD2D00027D66 /* NSURL+JYURL.m */; };
+		9FC6563B204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC65639204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FC6563C204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6563A204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m */; };
+		9FC6563F20479AE600ADE4B2 /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC6563D20479AE500ADE4B2 /* JRSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FC6564020479AE600ADE4B2 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6563E20479AE500ADE4B2 /* JRSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +163,10 @@
 		9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundBlurTrigger.m; sourceTree = "<group>"; };
 		9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+JYURL.h"; sourceTree = "<group>"; };
 		9F1395902046AD2D00027D66 /* NSURL+JYURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JYURL.m"; sourceTree = "<group>"; };
+		9FC65639204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JYBarButtonItem.h"; sourceTree = "<group>"; };
+		9FC6563A204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JYBarButtonItem.m"; sourceTree = "<group>"; };
+		9FC6563D20479AE500ADE4B2 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		9FC6563E20479AE500ADE4B2 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,8 +213,12 @@
 				208C8B271BD4E98B00E55D5D /* Info.plist */,
 				208C8B3C1BD4E9BD00E55D5D /* JYTest.h */,
 				208C8B3D1BD4E9BD00E55D5D /* JYTest.m */,
+				9FC6563D20479AE500ADE4B2 /* JRSwizzle.h */,
+				9FC6563E20479AE500ADE4B2 /* JRSwizzle.m */,
 				20E0F0301BD61040000583F9 /* UINavigationItem+ImageAndTitle.h */,
 				20E0F0311BD61040000583F9 /* UINavigationItem+ImageAndTitle.m */,
+				9FC65639204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h */,
+				9FC6563A204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m */,
 				2087C1CB1BD534E300A3D53F /* UIButton+Block.h */,
 				2087C1CC1BD534E300A3D53F /* UIButton+Block.m */,
 				202C35701CF6985D009CA7D8 /* JYDashLineView.h */,
@@ -308,6 +320,8 @@
 				20DC65831F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.h in Headers */,
 				9F13958D2046A52C00027D66 /* BackgroundBlurTrigger.h in Headers */,
 				20DC65871F0CC28100B39DA8 /* JYLabelScroller.h in Headers */,
+				9FC6563B204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h in Headers */,
+				9FC6563F20479AE600ADE4B2 /* JRSwizzle.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
@@ -432,6 +446,7 @@
 			files = (
 				20E0F0331BD61040000583F9 /* UINavigationItem+ImageAndTitle.m in Sources */,
 				20DC65881F0CC28100B39DA8 /* JYLabelScroller.m in Sources */,
+				9FC6563C204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m in Sources */,
 				207B898B1EB2F4B100B25520 /* UIDevice+JYDevice.m in Sources */,
 				206CCCF61DED59C7009D2626 /* UITableView+DataLoad.m in Sources */,
 				2011D2E71D13DA8B0009A26E /* NSDictionary+JYDictionary.m in Sources */,
@@ -445,6 +460,7 @@
 				20E62C631EA5BF89008A7C40 /* UIViewController+JYMethods.m in Sources */,
 				204B2E881D1002D100F9C88C /* UINavigationBar+JYNavigationBar.m in Sources */,
 				205398E31D0D6A8800B34DA1 /* NSDate+JYDate.m in Sources */,
+				9FC6564020479AE600ADE4B2 /* JRSwizzle.m in Sources */,
 				205398CE1D0D5A2900B34DA1 /* NSString+JYString.m in Sources */,
 				209CFF981EB23E350069529B /* JYExceptionHandle.m in Sources */,
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,
