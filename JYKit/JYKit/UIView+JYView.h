@@ -25,4 +25,12 @@
  */
 - (void)viewWithMaskImage:(UIImage *)maskImage scaled:(BOOL)scaled;
 
+/**
+ 设置部分圆角
+
+ @param corners 需要设置为圆角的角 UIRectCornerTopLeft | UIRectCornerTopRight | UIRectCornerBottomLeft | UIRectCornerBottomRight | UIRectCornerAllCorners
+ @param radii 需要设置的圆角大小
+ */
+- (void)addRoundedCorners:(UIRectCorner)corners withRadius:(CGFloat)radius;
+
 @end

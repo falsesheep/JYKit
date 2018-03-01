@@ -74,6 +74,8 @@
 		20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */; };
 		9F1395892046956300027D66 /* RateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1395862046956200027D66 /* RateViewController.xib */; };
 		9F13958A2046956300027D66 /* RateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1395882046956300027D66 /* RateViewController.m */; };
+		9FC656472047A14800ADE4B2 /* RoundedCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC656452047A14800ADE4B2 /* RoundedCornerViewController.m */; };
+		9FC656482047A14800ADE4B2 /* RoundedCornerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC656462047A14800ADE4B2 /* RoundedCornerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +237,9 @@
 		9F1395862046956200027D66 /* RateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateViewController.xib; sourceTree = "<group>"; };
 		9F1395872046956300027D66 /* RateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateViewController.h; sourceTree = "<group>"; };
 		9F1395882046956300027D66 /* RateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateViewController.m; sourceTree = "<group>"; };
+		9FC656442047A14800ADE4B2 /* RoundedCornerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedCornerViewController.h; sourceTree = "<group>"; };
+		9FC656452047A14800ADE4B2 /* RoundedCornerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedCornerViewController.m; sourceTree = "<group>"; };
+		9FC656462047A14800ADE4B2 /* RoundedCornerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedCornerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,6 +495,7 @@
 				20DC65891F0CC43D00B39DA8 /* 滚动Label */,
 				2038681C200F381000B432E2 /* 抽奖 */,
 				9F1395832046951800027D66 /* App Store评分 */,
+				9FC656412047A10300ADE4B2 /* View部分圆角 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -614,6 +620,16 @@
 				9F1395862046956200027D66 /* RateViewController.xib */,
 			);
 			name = "App Store评分";
+			sourceTree = "<group>";
+		};
+		9FC656412047A10300ADE4B2 /* View部分圆角 */ = {
+			isa = PBXGroup;
+			children = (
+				9FC656442047A14800ADE4B2 /* RoundedCornerViewController.h */,
+				9FC656452047A14800ADE4B2 /* RoundedCornerViewController.m */,
+				9FC656462047A14800ADE4B2 /* RoundedCornerViewController.xib */,
+			);
+			name = "View部分圆角";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -748,6 +764,7 @@
 				2049897D1D0D058100894ACF /* ButtonBlockViewController.xib in Resources */,
 				9F1395892046956300027D66 /* RateViewController.xib in Resources */,
 				20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */,
+				9FC656482047A14800ADE4B2 /* RoundedCornerViewController.xib in Resources */,
 				20D2C24B1EB1F61A006BB9D7 /* CrashViewController.xib in Resources */,
 				20E62C691EA5C665008A7C40 /* UpgradeViewController.xib in Resources */,
 				20386823200F383100B432E2 /* LotteryViewController.xib in Resources */,
@@ -809,6 +826,7 @@
 				208C8BA71BD4EF6E00E55D5D /* AppDelegate.m in Sources */,
 				20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */,
 				2079C1A21D11207900A4315A /* PopPresentingViewController.m in Sources */,
+				9FC656472047A14800ADE4B2 /* RoundedCornerViewController.m in Sources */,
 				20F7139C1D6D535700798D56 /* AdjustingTextViewController.m in Sources */,
 				20E62C541EA5B430008A7C40 /* DeepCopyViewController.m in Sources */,
 				2005BDE31D17E6FB00AA9814 /* ControlLoadingViewController.m in Sources */,

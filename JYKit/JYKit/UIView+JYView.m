@@ -40,4 +40,11 @@
     self.layer.masksToBounds = YES;
 }
 
+- (void)addRoundedCorners:(UIRectCorner)corners withRadius:(CGFloat)radius {
+    UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer* shape = [CAShapeLayer layer];
+    shape.path = rounded.CGPath;
+    self.layer.mask = shape;
+}
+
 @end

@@ -31,6 +31,7 @@
 #import "LabelScrollerViewController.h"
 #import "LotteryViewController.h"
 #import "RateViewController.h"
+#import "RoundedCornerViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -64,7 +65,8 @@
                   @"Crash记录",
                   @"滚动Label",
                   @"抽奖",
-                  @"App Store评分"];
+                  @"App Store评分",
+                  @"View部分圆角"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -200,6 +202,11 @@
             break;}
         case 23:{
             RateViewController *vc = [RateViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 24:{
+            RoundedCornerViewController *vc = [RoundedCornerViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}
