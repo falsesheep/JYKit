@@ -86,6 +86,10 @@
 		9FC6563C204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6563A204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m */; };
 		9FC6563F20479AE600ADE4B2 /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC6563D20479AE500ADE4B2 /* JRSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FC6564020479AE600ADE4B2 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6563E20479AE500ADE4B2 /* JRSwizzle.m */; };
+		9FC6564B2047CD6D00ADE4B2 /* JYABC123Keyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC656492047CD6D00ADE4B2 /* JYABC123Keyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FC6564C2047CD6D00ADE4B2 /* JYABC123Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6564A2047CD6D00ADE4B2 /* JYABC123Keyboard.m */; };
+		9FC6564F2047CE1300ADE4B2 /* KeyboardButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC6564D2047CE1300ADE4B2 /* KeyboardButtonCell.h */; };
+		9FC656502047CE1300ADE4B2 /* KeyboardButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6564E2047CE1300ADE4B2 /* KeyboardButtonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,10 +167,15 @@
 		9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundBlurTrigger.m; sourceTree = "<group>"; };
 		9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+JYURL.h"; sourceTree = "<group>"; };
 		9F1395902046AD2D00027D66 /* NSURL+JYURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JYURL.m"; sourceTree = "<group>"; };
+		9F58F1622048EBF800000F45 /* JYKeyboardConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKeyboardConfig.h; sourceTree = "<group>"; };
 		9FC65639204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JYBarButtonItem.h"; sourceTree = "<group>"; };
 		9FC6563A204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JYBarButtonItem.m"; sourceTree = "<group>"; };
 		9FC6563D20479AE500ADE4B2 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		9FC6563E20479AE500ADE4B2 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		9FC656492047CD6D00ADE4B2 /* JYABC123Keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYABC123Keyboard.h; sourceTree = "<group>"; };
+		9FC6564A2047CD6D00ADE4B2 /* JYABC123Keyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYABC123Keyboard.m; sourceTree = "<group>"; };
+		9FC6564D2047CE1300ADE4B2 /* KeyboardButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardButtonCell.h; sourceTree = "<group>"; };
+		9FC6564E2047CE1300ADE4B2 /* KeyboardButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardButtonCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +282,11 @@
 				9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */,
 				9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */,
 				9F1395902046AD2D00027D66 /* NSURL+JYURL.m */,
+				9FC656492047CD6D00ADE4B2 /* JYABC123Keyboard.h */,
+				9FC6564A2047CD6D00ADE4B2 /* JYABC123Keyboard.m */,
+				9FC6564D2047CE1300ADE4B2 /* KeyboardButtonCell.h */,
+				9FC6564E2047CE1300ADE4B2 /* KeyboardButtonCell.m */,
+				9F58F1622048EBF800000F45 /* JYKeyboardConfig.h */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -307,6 +321,7 @@
 				205398E21D0D6A8800B34DA1 /* NSDate+JYDate.h in Headers */,
 				204B2E871D1002D100F9C88C /* UINavigationBar+JYNavigationBar.h in Headers */,
 				2079C1101D10ED5000A4315A /* JYGradientView.h in Headers */,
+				9FC6564F2047CE1300ADE4B2 /* KeyboardButtonCell.h in Headers */,
 				2011D2E61D13DA8B0009A26E /* NSDictionary+JYDictionary.h in Headers */,
 				20BFB7A81D1BC9F1008611A7 /* UIView+JYView.h in Headers */,
 				206CCCF51DED59C7009D2626 /* UITableView+DataLoad.h in Headers */,
@@ -321,6 +336,7 @@
 				9F13958D2046A52C00027D66 /* BackgroundBlurTrigger.h in Headers */,
 				20DC65871F0CC28100B39DA8 /* JYLabelScroller.h in Headers */,
 				9FC6563B204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h in Headers */,
+				9FC6564B2047CD6D00ADE4B2 /* JYABC123Keyboard.h in Headers */,
 				9FC6563F20479AE600ADE4B2 /* JRSwizzle.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */,
@@ -453,6 +469,7 @@
 				20DE2FBE1D65AD6B00832F04 /* JYCircleGestureRecognizer.m in Sources */,
 				20E62C5F1EA5BD4A008A7C40 /* UINavigationController+JYPassOn.m in Sources */,
 				2079C1111D10ED5000A4315A /* JYGradientView.m in Sources */,
+				9FC656502047CE1300ADE4B2 /* KeyboardButtonCell.m in Sources */,
 				20DC65841F0CC0A800B39DA8 /* UISearchBar+JYSearchBar.m in Sources */,
 				9F1395922046AD2D00027D66 /* NSURL+JYURL.m in Sources */,
 				20DE2FC01D65AD6B00832F04 /* JYCirclrSlider.m in Sources */,
@@ -473,6 +490,7 @@
 				209E08681EB9B84D00796EB8 /* UIView+HitTest.m in Sources */,
 				20E62C4D1EA5B2E3008A7C40 /* NSObject+JYDeepCopy.m in Sources */,
 				202C35731CF6985D009CA7D8 /* JYDashLineView.m in Sources */,
+				9FC6564C2047CD6D00ADE4B2 /* JYABC123Keyboard.m in Sources */,
 				205398C21D0D490F00B34DA1 /* UIView+JYFrame.m in Sources */,
 				9F13958E2046A52C00027D66 /* BackgroundBlurTrigger.m in Sources */,
 			);

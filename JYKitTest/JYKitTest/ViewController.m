@@ -32,6 +32,7 @@
 #import "LotteryViewController.h"
 #import "RateViewController.h"
 #import "RoundedCornerViewController.h"
+#import "CustomKeyboardViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -66,7 +67,8 @@
                   @"滚动Label",
                   @"抽奖",
                   @"App Store评分",
-                  @"View部分圆角"];
+                  @"View部分圆角",
+                  @"安全键盘"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -207,6 +209,11 @@
             break;}
         case 24:{
             RoundedCornerViewController *vc = [RoundedCornerViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 25:{
+            CustomKeyboardViewController *vc = [CustomKeyboardViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}
