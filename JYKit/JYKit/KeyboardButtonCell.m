@@ -42,6 +42,7 @@
     button.layer.shadowColor = UIColor.blackColor.CGColor;
     button.layer.shadowOpacity = 0.8;
     button.layer.shadowOffset = CGSizeMake(0, JYKB_BTN_SHADOW);
+    button.layer.masksToBounds = YES;
     
     [button setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
     [button setTitleColor:UIColor.whiteColor forState:UIControlStateHighlighted];

@@ -76,6 +76,12 @@
 		9F13958A2046956300027D66 /* RateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1395882046956300027D66 /* RateViewController.m */; };
 		9F2C79BA2047F02700DF0195 /* CustomKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C79B82047F02700DF0195 /* CustomKeyboardViewController.m */; };
 		9F2C79BB2047F02700DF0195 /* CustomKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2C79B92047F02700DF0195 /* CustomKeyboardViewController.xib */; };
+		9F58F1782048FD5900000F45 /* LeadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58F1762048FD5900000F45 /* LeadingViewController.m */; };
+		9F58F1792048FD5900000F45 /* LeadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F58F1772048FD5900000F45 /* LeadingViewController.xib */; };
+		9F58F17E2048FD6D00000F45 /* 178-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F58F17A2048FD6D00000F45 /* 178-1.png */; };
+		9F58F17F2048FD6D00000F45 /* 178-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F58F17B2048FD6D00000F45 /* 178-4.png */; };
+		9F58F1802048FD6D00000F45 /* 178-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F58F17C2048FD6D00000F45 /* 178-2.png */; };
+		9F58F1812048FD6D00000F45 /* 178-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F58F17D2048FD6D00000F45 /* 178-3.png */; };
 		9FC656472047A14800ADE4B2 /* RoundedCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC656452047A14800ADE4B2 /* RoundedCornerViewController.m */; };
 		9FC656482047A14800ADE4B2 /* RoundedCornerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC656462047A14800ADE4B2 /* RoundedCornerViewController.xib */; };
 /* End PBXBuildFile section */
@@ -242,6 +248,13 @@
 		9F2C79B72047F02700DF0195 /* CustomKeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomKeyboardViewController.h; sourceTree = "<group>"; };
 		9F2C79B82047F02700DF0195 /* CustomKeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboardViewController.m; sourceTree = "<group>"; };
 		9F2C79B92047F02700DF0195 /* CustomKeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboardViewController.xib; sourceTree = "<group>"; };
+		9F58F1752048FD5900000F45 /* LeadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeadingViewController.h; sourceTree = "<group>"; };
+		9F58F1762048FD5900000F45 /* LeadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeadingViewController.m; sourceTree = "<group>"; };
+		9F58F1772048FD5900000F45 /* LeadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeadingViewController.xib; sourceTree = "<group>"; };
+		9F58F17A2048FD6D00000F45 /* 178-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "178-1.png"; sourceTree = "<group>"; };
+		9F58F17B2048FD6D00000F45 /* 178-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "178-4.png"; sourceTree = "<group>"; };
+		9F58F17C2048FD6D00000F45 /* 178-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "178-2.png"; sourceTree = "<group>"; };
+		9F58F17D2048FD6D00000F45 /* 178-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "178-3.png"; sourceTree = "<group>"; };
 		9FC656442047A14800ADE4B2 /* RoundedCornerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedCornerViewController.h; sourceTree = "<group>"; };
 		9FC656452047A14800ADE4B2 /* RoundedCornerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedCornerViewController.m; sourceTree = "<group>"; };
 		9FC656462047A14800ADE4B2 /* RoundedCornerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedCornerViewController.xib; sourceTree = "<group>"; };
@@ -502,10 +515,12 @@
 				9F1395832046951800027D66 /* App Store评分 */,
 				9FC656412047A10300ADE4B2 /* View部分圆角 */,
 				9F2C79B42047EF5D00DF0195 /* 安全键盘 */,
+				9F58F1742048FD3E00000F45 /* 引导页 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
 				208C8BB31BD4EF6E00E55D5D /* Info.plist */,
+				9F58F1712048FD3100000F45 /* Resources */,
 				208C8BA21BD4EF6E00E55D5D /* Supporting Files */,
 			);
 			path = JYKitTest;
@@ -636,6 +651,27 @@
 				9F2C79B92047F02700DF0195 /* CustomKeyboardViewController.xib */,
 			);
 			name = "安全键盘";
+			sourceTree = "<group>";
+		};
+		9F58F1712048FD3100000F45 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F58F17A2048FD6D00000F45 /* 178-1.png */,
+				9F58F17C2048FD6D00000F45 /* 178-2.png */,
+				9F58F17D2048FD6D00000F45 /* 178-3.png */,
+				9F58F17B2048FD6D00000F45 /* 178-4.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9F58F1742048FD3E00000F45 /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				9F58F1752048FD5900000F45 /* LeadingViewController.h */,
+				9F58F1762048FD5900000F45 /* LeadingViewController.m */,
+				9F58F1772048FD5900000F45 /* LeadingViewController.xib */,
+			);
+			name = "引导页";
 			sourceTree = "<group>";
 		};
 		9FC656412047A10300ADE4B2 /* View部分圆角 */ = {
@@ -790,6 +826,7 @@
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
 				20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */,
 				2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */,
+				9F58F17F2048FD6D00000F45 /* 178-4.png in Resources */,
 				2005BDEB1D17F5FB00AA9814 /* LoadingViewController.xib in Resources */,
 				20DC65901F0CC47C00B39DA8 /* LabelScrollerViewController.xib in Resources */,
 				2079C1191D10EFFF00A4315A /* GradientViewController.xib in Resources */,
@@ -800,12 +837,16 @@
 				205398AD1D0D2CDF00B34DA1 /* ColorViewController.xib in Resources */,
 				208C8BAF1BD4EF6E00E55D5D /* Assets.xcassets in Resources */,
 				2079C1D01D11404800A4315A /* JDDetailViewController.xib in Resources */,
+				9F58F1812048FD6D00000F45 /* 178-3.png in Resources */,
 				208C8BAD1BD4EF6E00E55D5D /* Main.storyboard in Resources */,
+				9F58F17E2048FD6D00000F45 /* 178-1.png in Resources */,
 				205398D41D0D5F2E00B34DA1 /* FlexContentViewController.xib in Resources */,
 				2079C1CB1D11403800A4315A /* JDMasterViewController.xib in Resources */,
 				2079C1C61D113FD200A4315A /* JDMenuViewController.xib in Resources */,
 				204B2E901D10039100F9C88C /* HideNavLineViewController.xib in Resources */,
 				205398DF1D0D64F500B34DA1 /* ButtonImagePositionViewController.xib in Resources */,
+				9F58F1802048FD6D00000F45 /* 178-2.png in Resources */,
+				9F58F1792048FD5900000F45 /* LeadingViewController.xib in Resources */,
 				205398B81D0D41BC00B34DA1 /* ImageColorViewController.xib in Resources */,
 				204989891D0D0F3400894ACF /* CropViewController.xib in Resources */,
 			);
@@ -857,6 +898,7 @@
 				2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */,
 				20386822200F383100B432E2 /* LotteryViewController.m in Sources */,
 				204989791D0D04DA00894ACF /* ButtonBlockViewController.m in Sources */,
+				9F58F1782048FD5900000F45 /* LeadingViewController.m in Sources */,
 				9F13958A2046956300027D66 /* RateViewController.m in Sources */,
 				2079C1C51D113FD200A4315A /* JDMenuViewController.m in Sources */,
 				204B2E8F1D10039100F9C88C /* HideNavLineViewController.m in Sources */,

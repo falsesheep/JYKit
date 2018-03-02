@@ -33,6 +33,7 @@
 #import "RateViewController.h"
 #import "RoundedCornerViewController.h"
 #import "CustomKeyboardViewController.h"
+#import "LeadingViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -68,7 +69,8 @@
                   @"抽奖",
                   @"App Store评分",
                   @"View部分圆角",
-                  @"安全键盘"];
+                  @"安全键盘",
+                  @"程序引导页"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -214,6 +216,11 @@
             break;}
         case 25:{
             CustomKeyboardViewController *vc = [CustomKeyboardViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 26:{
+            LeadingViewController *vc = [LeadingViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

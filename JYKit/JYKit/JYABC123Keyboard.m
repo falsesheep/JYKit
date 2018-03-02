@@ -107,6 +107,17 @@
     return _clearBtn;
 }
 
+/// 获取UITextField或UITextView中选中的Range
++ (NSRange)selectedRange:(id<UITextInput>)textControl {
+    UITextPosition *beginning = textControl.beginningOfDocument;
+    UITextRange *selectedRange = textControl.selectedTextRange;
+    UITextPosition *selectionStart = selectedRange.start;
+    UITextPosition *selectionEnd = selectedRange.end;
+    NSInteger location = [textControl offsetFromPosition:beginning toPosition:selectionStart];
+    NSInteger length = [textControl offsetFromPosition:selectionStart toPosition:selectionEnd];
+    return NSMakeRange(location, length);
+}
+
 #pragma mark - Events
 /// 切换大小写
 - (IBAction)onClickUp:(id)sender {
@@ -131,11 +142,6 @@
         UITextField *tf = [(UISearchBar *)_sourceView searchBarTextField];
         [tf deleteBackward];
     }
-}
-
-#pragma mark - UICollectionViewDelegate
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -181,13 +187,35 @@
 - (void)didClickedButtonCellWithValue:(NSString *)value {
     if ([_sourceView isKindOfClass:UITextField.class]) {
         UITextField *tf = (UITextField *)_sourceView;
-        [tf insertText:value];
+        if (tf.delegate && [tf.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
+            NSRange range = [JYABC123Keyboard selectedRange:tf];
+            if ([tf.delegate textField:tf shouldChangeCharactersInRange:range replacementString:value]) {
+                [tf insertText:value];
+            }
+        }else {
+           [tf insertText:value];
+        }
     }else if ([_sourceView isKindOfClass:UITextView.class]) {
         UITextView *tv = (UITextView *)_sourceView;
-        [tv insertText:value];
+        if (tv.delegate && [tv.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
+            NSRange range = [JYABC123Keyboard selectedRange:tv];
+            if ([tv.delegate textView:tv shouldChangeTextInRange:range replacementText:value]) {
+                [tv insertText:value];
+            }
+        }else {
+           [tv insertText:value];
+        }
     }else if ([_sourceView isKindOfClass:UISearchBar.class]) {
-        UITextField *tf = [(UISearchBar *)_sourceView searchBarTextField];
-        [tf insertText:value];
+        UISearchBar *searchBar = (UISearchBar *)_sourceView;
+        UITextField *tf = searchBar.searchBarTextField;
+        if (searchBar.delegate && [searchBar.delegate respondsToSelector:@selector(searchBar:shouldChangeTextInRange:replacementText:)]) {
+            NSRange range = [JYABC123Keyboard selectedRange:tf];
+            if ([searchBar.delegate searchBar:searchBar shouldChangeTextInRange:range replacementText:value]) {
+                [tf insertText:value];
+            }
+        }else {
+           [tf insertText:value];
+        }
     }
 }
 

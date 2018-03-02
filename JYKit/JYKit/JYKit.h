@@ -44,3 +44,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "BackgroundBlurTrigger.h"
 #import "NSURL+JYURL.h"
 #import "JYABC123Keyboard.h"
+#import "JYIntroView.h"

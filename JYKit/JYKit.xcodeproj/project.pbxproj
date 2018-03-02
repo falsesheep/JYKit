@@ -82,6 +82,8 @@
 		9F13958E2046A52C00027D66 /* BackgroundBlurTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */; };
 		9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F1395922046AD2D00027D66 /* NSURL+JYURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1395902046AD2D00027D66 /* NSURL+JYURL.m */; };
+		9F58F1842048FE3300000F45 /* JYIntroView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F58F1822048FE3300000F45 /* JYIntroView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F58F1852048FE3300000F45 /* JYIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58F1832048FE3300000F45 /* JYIntroView.m */; };
 		9FC6563B204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC65639204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FC6563C204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6563A204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m */; };
 		9FC6563F20479AE600ADE4B2 /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC6563D20479AE500ADE4B2 /* JRSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -168,6 +170,8 @@
 		9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+JYURL.h"; sourceTree = "<group>"; };
 		9F1395902046AD2D00027D66 /* NSURL+JYURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JYURL.m"; sourceTree = "<group>"; };
 		9F58F1622048EBF800000F45 /* JYKeyboardConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKeyboardConfig.h; sourceTree = "<group>"; };
+		9F58F1822048FE3300000F45 /* JYIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYIntroView.h; sourceTree = "<group>"; };
+		9F58F1832048FE3300000F45 /* JYIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYIntroView.m; sourceTree = "<group>"; };
 		9FC65639204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JYBarButtonItem.h"; sourceTree = "<group>"; };
 		9FC6563A204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JYBarButtonItem.m"; sourceTree = "<group>"; };
 		9FC6563D20479AE500ADE4B2 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
@@ -287,6 +291,8 @@
 				9FC6564D2047CE1300ADE4B2 /* KeyboardButtonCell.h */,
 				9FC6564E2047CE1300ADE4B2 /* KeyboardButtonCell.m */,
 				9F58F1622048EBF800000F45 /* JYKeyboardConfig.h */,
+				9F58F1822048FE3300000F45 /* JYIntroView.h */,
+				9F58F1832048FE3300000F45 /* JYIntroView.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				9FC6563B204799E500ADE4B2 /* UIBarButtonItem+JYBarButtonItem.h in Headers */,
 				9FC6564B2047CD6D00ADE4B2 /* JYABC123Keyboard.h in Headers */,
 				9FC6563F20479AE600ADE4B2 /* JRSwizzle.h in Headers */,
+				9F58F1842048FE3300000F45 /* JYIntroView.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
@@ -480,6 +487,7 @@
 				9FC6564020479AE600ADE4B2 /* JRSwizzle.m in Sources */,
 				205398CE1D0D5A2900B34DA1 /* NSString+JYString.m in Sources */,
 				209CFF981EB23E350069529B /* JYExceptionHandle.m in Sources */,
+				9F58F1852048FE3300000F45 /* JYIntroView.m in Sources */,
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,
 				208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */,
 				2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */,
