@@ -17,4 +17,11 @@
  */
 - (UIImageView *)bottomLine;
 
+/**
+ 设置背景图片颜色
+
+ @param color 背景颜色
+ */
+- (void)JY_setBackgroundColor:(UIColor *)color;
+
 @end

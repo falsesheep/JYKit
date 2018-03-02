@@ -7,6 +7,7 @@
 //
 
 #import "UINavigationBar+JYNavigationBar.h"
+#import "UIImage+JYEffects.h"
 #import "JRSwizzle.h"
 
 @implementation UINavigationBar (JYNavigationBar)
@@ -43,6 +44,10 @@
         }
     }
     return nil;
+}
+
+- (void)JY_setBackgroundColor:(UIColor *)color {
+    [self setBackgroundImage:[UIImage imageWithColor:color size:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
 }
 
 @end
