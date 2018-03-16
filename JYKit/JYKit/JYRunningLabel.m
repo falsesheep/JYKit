@@ -28,6 +28,7 @@
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
         _scrollView.scrollEnabled = NO;
         [self addSubview:_scrollView];
+        self.clipsToBounds = YES;
         // 添加第一个label
         _lb0 = [self labelWithContent:content];
         [_scrollView addSubview:_lb0];
