@@ -92,6 +92,8 @@
 		9FC6564C2047CD6D00ADE4B2 /* JYABC123Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6564A2047CD6D00ADE4B2 /* JYABC123Keyboard.m */; };
 		9FC6564F2047CE1300ADE4B2 /* KeyboardButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC6564D2047CE1300ADE4B2 /* KeyboardButtonCell.h */; };
 		9FC656502047CE1300ADE4B2 /* KeyboardButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6564E2047CE1300ADE4B2 /* KeyboardButtonCell.m */; };
+		9FD9D111205BA615004F6144 /* JYRunningLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FD9D10F205BA615004F6144 /* JYRunningLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FD9D112205BA615004F6144 /* JYRunningLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9D110205BA615004F6144 /* JYRunningLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +182,8 @@
 		9FC6564A2047CD6D00ADE4B2 /* JYABC123Keyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYABC123Keyboard.m; sourceTree = "<group>"; };
 		9FC6564D2047CE1300ADE4B2 /* KeyboardButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardButtonCell.h; sourceTree = "<group>"; };
 		9FC6564E2047CE1300ADE4B2 /* KeyboardButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardButtonCell.m; sourceTree = "<group>"; };
+		9FD9D10F205BA615004F6144 /* JYRunningLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYRunningLabel.h; sourceTree = "<group>"; };
+		9FD9D110205BA615004F6144 /* JYRunningLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYRunningLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +297,8 @@
 				9F58F1622048EBF800000F45 /* JYKeyboardConfig.h */,
 				9F58F1822048FE3300000F45 /* JYIntroView.h */,
 				9F58F1832048FE3300000F45 /* JYIntroView.m */,
+				9FD9D10F205BA615004F6144 /* JYRunningLabel.h */,
+				9FD9D110205BA615004F6144 /* JYRunningLabel.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 				9FC6563F20479AE600ADE4B2 /* JRSwizzle.h in Headers */,
 				9F58F1842048FE3300000F45 /* JYIntroView.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
+				9FD9D111205BA615004F6144 /* JYRunningLabel.h in Headers */,
 				9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
@@ -489,6 +496,7 @@
 				209CFF981EB23E350069529B /* JYExceptionHandle.m in Sources */,
 				9F58F1852048FE3300000F45 /* JYIntroView.m in Sources */,
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,
+				9FD9D112205BA615004F6144 /* JYRunningLabel.m in Sources */,
 				208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */,
 				2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */,
 				20386828200F4DB800B432E2 /* UICollectionView+DataLoad.m in Sources */,

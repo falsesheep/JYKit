@@ -34,6 +34,7 @@
 #import "RoundedCornerViewController.h"
 #import "CustomKeyboardViewController.h"
 #import "LeadingViewController.h"
+#import "RunningLabelViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -70,7 +71,8 @@
                   @"App Store评分",
                   @"View部分圆角",
                   @"安全键盘",
-                  @"程序引导页"];
+                  @"程序引导页",
+                  @"文字跑马灯"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -221,6 +223,11 @@
             break;}
         case 26:{
             LeadingViewController *vc = [LeadingViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 27:{
+            RunningLabelViewController *vc = [RunningLabelViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

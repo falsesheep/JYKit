@@ -84,6 +84,8 @@
 		9F58F1812048FD6D00000F45 /* 178-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F58F17D2048FD6D00000F45 /* 178-3.png */; };
 		9FC656472047A14800ADE4B2 /* RoundedCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC656452047A14800ADE4B2 /* RoundedCornerViewController.m */; };
 		9FC656482047A14800ADE4B2 /* RoundedCornerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC656462047A14800ADE4B2 /* RoundedCornerViewController.xib */; };
+		9FD9D10D205BA5C0004F6144 /* RunningLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9D10B205BA5C0004F6144 /* RunningLabelViewController.m */; };
+		9FD9D10E205BA5C0004F6144 /* RunningLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9D10C205BA5C0004F6144 /* RunningLabelViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +260,9 @@
 		9FC656442047A14800ADE4B2 /* RoundedCornerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedCornerViewController.h; sourceTree = "<group>"; };
 		9FC656452047A14800ADE4B2 /* RoundedCornerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedCornerViewController.m; sourceTree = "<group>"; };
 		9FC656462047A14800ADE4B2 /* RoundedCornerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedCornerViewController.xib; sourceTree = "<group>"; };
+		9FD9D10A205BA5C0004F6144 /* RunningLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunningLabelViewController.h; sourceTree = "<group>"; };
+		9FD9D10B205BA5C0004F6144 /* RunningLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunningLabelViewController.m; sourceTree = "<group>"; };
+		9FD9D10C205BA5C0004F6144 /* RunningLabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunningLabelViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +521,7 @@
 				9FC656412047A10300ADE4B2 /* View部分圆角 */,
 				9F2C79B42047EF5D00DF0195 /* 安全键盘 */,
 				9F58F1742048FD3E00000F45 /* 引导页 */,
+				9FD9D107205BA550004F6144 /* 文字跑马灯 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -684,6 +690,16 @@
 			name = "View部分圆角";
 			sourceTree = "<group>";
 		};
+		9FD9D107205BA550004F6144 /* 文字跑马灯 */ = {
+			isa = PBXGroup;
+			children = (
+				9FD9D10A205BA5C0004F6144 /* RunningLabelViewController.h */,
+				9FD9D10B205BA5C0004F6144 /* RunningLabelViewController.m */,
+				9FD9D10C205BA5C0004F6144 /* RunningLabelViewController.xib */,
+			);
+			name = "文字跑马灯";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -823,6 +839,7 @@
 				20386823200F383100B432E2 /* LotteryViewController.xib in Resources */,
 				2059AF821D7D3BD200C6DE23 /* QRCodeViewController.xib in Resources */,
 				20E62C551EA5B430008A7C40 /* DeepCopyViewController.xib in Resources */,
+				9FD9D10E205BA5C0004F6144 /* RunningLabelViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
 				20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */,
 				2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */,
@@ -884,6 +901,7 @@
 				208C8BA71BD4EF6E00E55D5D /* AppDelegate.m in Sources */,
 				20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */,
 				2079C1A21D11207900A4315A /* PopPresentingViewController.m in Sources */,
+				9FD9D10D205BA5C0004F6144 /* RunningLabelViewController.m in Sources */,
 				9FC656472047A14800ADE4B2 /* RoundedCornerViewController.m in Sources */,
 				20F7139C1D6D535700798D56 /* AdjustingTextViewController.m in Sources */,
 				20E62C541EA5B430008A7C40 /* DeepCopyViewController.m in Sources */,

@@ -45,3 +45,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "NSURL+JYURL.h"
 #import "JYABC123Keyboard.h"
 #import "JYIntroView.h"
+#import "JYRunningLabel.h"
