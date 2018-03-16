@@ -17,7 +17,6 @@
 @property (nonatomic, strong) UILabel *lb1;
 @property (nonatomic, assign) BOOL labelNeedScroll; // 文字长度是否超过frame
 @property (nonatomic, assign) CGFloat speed;
-@property (nonatomic, strong) NSTimer *movingTimer;
 @end
 
 @implementation JYRunningLabel
@@ -26,7 +25,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         _speed = speed;
-        [self addSubview:self.scrollView];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
+        _scrollView.scrollEnabled = NO;
+        [self addSubview:_scrollView];
         // 添加第一个label
         _lb0 = [self labelWithContent:content];
         [_scrollView addSubview:_lb0];
@@ -36,18 +37,11 @@
             _lb1 = [self labelWithContent:content];
             [_lb1 setX:CGRectGetMaxX(_lb0.frame) + RunningLabelSpacing];
             [_scrollView addSubview:_lb1];
+            [_scrollView setWith:CGRectGetMaxX(_lb1.frame)];
         }
         [self beginRunning];
     }
     return self;
-}
-
-- (UIScrollView *)scrollView {
-    if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
-        _scrollView.scrollEnabled = NO;
-    }
-    return _scrollView;
 }
 
 /// 根据content生成Label
@@ -68,22 +62,22 @@
         [_scrollView setX:0];
     } completion:^(BOOL finished) {
         if (_labelNeedScroll) {
-            // 移动Label
-            CGFloat duration = (_lb0.frame.size.width + RunningLabelSpacing) / _speed;
-            _movingTimer = [NSTimer scheduledTimerWithTimeInterval:duration target:self selector:@selector(move) userInfo:nil repeats:YES];
-            [_movingTimer fire];
+            [self movingLabel];
         }
     }];
 }
 
-- (void)move {
-    CGFloat movingLength = _lb0.frame.size.width + RunningLabelSpacing - 1;
+/// 反复滚动显示标签
+- (void)movingLabel {
+    // 移动Label
+    CGFloat movingLength = _lb0.frame.size.width + RunningLabelSpacing;
     CGFloat duration = movingLength / _speed;
-    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
-        _scrollView.contentOffset = CGPointMake(movingLength, 0);
-    } completion:^(BOOL finished) {
-        _scrollView.contentOffset = CGPointZero;
-    }];
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.translation.x"];
+    animation.toValue = @(-movingLength);
+    animation.duration = duration;
+    animation.repeatCount = 10000;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    [_scrollView.layer addAnimation:animation forKey:@"moving label"];
 }
 
 @end
