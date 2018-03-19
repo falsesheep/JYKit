@@ -35,6 +35,7 @@
 #import "CustomKeyboardViewController.h"
 #import "LeadingViewController.h"
 #import "RunningLabelViewController.h"
+#import "ItemDragViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -72,7 +73,8 @@
                   @"View部分圆角",
                   @"安全键盘",
                   @"程序引导页",
-                  @"文字跑马灯"];
+                  @"文字跑马灯",
+                  @"CollectionView拖拽"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -228,6 +230,11 @@
             break;}
         case 27:{
             RunningLabelViewController *vc = [RunningLabelViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 28:{
+            ItemDragViewController *vc = [ItemDragViewController new];
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

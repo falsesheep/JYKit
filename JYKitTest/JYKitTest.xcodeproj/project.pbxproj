@@ -74,6 +74,10 @@
 		20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */; };
 		9F1395892046956300027D66 /* RateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1395862046956200027D66 /* RateViewController.xib */; };
 		9F13958A2046956300027D66 /* RateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1395882046956300027D66 /* RateViewController.m */; };
+		9F28968D205F619400F6B21E /* ItemDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F28968B205F619400F6B21E /* ItemDragViewController.m */; };
+		9F28968E205F619400F6B21E /* ItemDragViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F28968C205F619400F6B21E /* ItemDragViewController.xib */; };
+		9F289692205F643500F6B21E /* ItemDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F289690205F643500F6B21E /* ItemDragCell.m */; };
+		9F289693205F643500F6B21E /* ItemDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F289691205F643500F6B21E /* ItemDragCell.xib */; };
 		9F2C79BA2047F02700DF0195 /* CustomKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C79B82047F02700DF0195 /* CustomKeyboardViewController.m */; };
 		9F2C79BB2047F02700DF0195 /* CustomKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2C79B92047F02700DF0195 /* CustomKeyboardViewController.xib */; };
 		9F58F1782048FD5900000F45 /* LeadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58F1762048FD5900000F45 /* LeadingViewController.m */; };
@@ -247,6 +251,12 @@
 		9F1395862046956200027D66 /* RateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateViewController.xib; sourceTree = "<group>"; };
 		9F1395872046956300027D66 /* RateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateViewController.h; sourceTree = "<group>"; };
 		9F1395882046956300027D66 /* RateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateViewController.m; sourceTree = "<group>"; };
+		9F28968A205F619400F6B21E /* ItemDragViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDragViewController.h; sourceTree = "<group>"; };
+		9F28968B205F619400F6B21E /* ItemDragViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDragViewController.m; sourceTree = "<group>"; };
+		9F28968C205F619400F6B21E /* ItemDragViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDragViewController.xib; sourceTree = "<group>"; };
+		9F28968F205F643500F6B21E /* ItemDragCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDragCell.h; sourceTree = "<group>"; };
+		9F289690205F643500F6B21E /* ItemDragCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDragCell.m; sourceTree = "<group>"; };
+		9F289691205F643500F6B21E /* ItemDragCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDragCell.xib; sourceTree = "<group>"; };
 		9F2C79B72047F02700DF0195 /* CustomKeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomKeyboardViewController.h; sourceTree = "<group>"; };
 		9F2C79B82047F02700DF0195 /* CustomKeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboardViewController.m; sourceTree = "<group>"; };
 		9F2C79B92047F02700DF0195 /* CustomKeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboardViewController.xib; sourceTree = "<group>"; };
@@ -522,6 +532,7 @@
 				9F2C79B42047EF5D00DF0195 /* 安全键盘 */,
 				9F58F1742048FD3E00000F45 /* 引导页 */,
 				9FD9D107205BA550004F6144 /* 文字跑马灯 */,
+				9F289687205F616000F6B21E /* CollectionView拖拽 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -647,6 +658,19 @@
 				9F1395862046956200027D66 /* RateViewController.xib */,
 			);
 			name = "App Store评分";
+			sourceTree = "<group>";
+		};
+		9F289687205F616000F6B21E /* CollectionView拖拽 */ = {
+			isa = PBXGroup;
+			children = (
+				9F28968F205F643500F6B21E /* ItemDragCell.h */,
+				9F289690205F643500F6B21E /* ItemDragCell.m */,
+				9F289691205F643500F6B21E /* ItemDragCell.xib */,
+				9F28968A205F619400F6B21E /* ItemDragViewController.h */,
+				9F28968B205F619400F6B21E /* ItemDragViewController.m */,
+				9F28968C205F619400F6B21E /* ItemDragViewController.xib */,
+			);
+			name = "CollectionView拖拽";
 			sourceTree = "<group>";
 		};
 		9F2C79B42047EF5D00DF0195 /* 安全键盘 */ = {
@@ -840,6 +864,7 @@
 				2059AF821D7D3BD200C6DE23 /* QRCodeViewController.xib in Resources */,
 				20E62C551EA5B430008A7C40 /* DeepCopyViewController.xib in Resources */,
 				9FD9D10E205BA5C0004F6144 /* RunningLabelViewController.xib in Resources */,
+				9F28968E205F619400F6B21E /* ItemDragViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
 				20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */,
 				2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */,
@@ -856,6 +881,7 @@
 				2079C1D01D11404800A4315A /* JDDetailViewController.xib in Resources */,
 				9F58F1812048FD6D00000F45 /* 178-3.png in Resources */,
 				208C8BAD1BD4EF6E00E55D5D /* Main.storyboard in Resources */,
+				9F289693205F643500F6B21E /* ItemDragCell.xib in Resources */,
 				9F58F17E2048FD6D00000F45 /* 178-1.png in Resources */,
 				205398D41D0D5F2E00B34DA1 /* FlexContentViewController.xib in Resources */,
 				2079C1CB1D11403800A4315A /* JDMasterViewController.xib in Resources */,
@@ -891,6 +917,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D2C24A1EB1F61A006BB9D7 /* CrashViewController.m in Sources */,
+				9F28968D205F619400F6B21E /* ItemDragViewController.m in Sources */,
 				208C8BAA1BD4EF6E00E55D5D /* ViewController.m in Sources */,
 				204989751D0D003900894ACF /* BaseViewController.m in Sources */,
 				204989871D0D0EBD00894ACF /* CropViewController.m in Sources */,
@@ -911,6 +938,7 @@
 				205398AB1D0D2C2600B34DA1 /* ColorViewController.m in Sources */,
 				2005BDDE1D17E53800AA9814 /* LoadingViewController.m in Sources */,
 				205398D31D0D5F2E00B34DA1 /* FlexContentViewController.m in Sources */,
+				9F289692205F643500F6B21E /* ItemDragCell.m in Sources */,
 				204989821D0D06ED00894ACF /* DashLineViewController.m in Sources */,
 				20E62C581EA5B4F4008A7C40 /* MDeepCopyTest.m in Sources */,
 				2079C1181D10EFFF00A4315A /* GradientViewController.m in Sources */,
