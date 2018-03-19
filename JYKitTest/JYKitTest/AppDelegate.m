@@ -27,6 +27,7 @@
     NSLog(@"设备唯一标识:%@", [UIDevice currentDevice].UID);
     NSLog(@"设备型号:%@", [UIDevice platformString]);
     NSLog(@"User-Agent:%@", NSURL.userAgent);
+    NSLog(@"系统启动时长:%ld", UIDevice.systemRunningDuration);
     
     return YES;
 }

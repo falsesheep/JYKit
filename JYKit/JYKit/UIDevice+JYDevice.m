@@ -8,6 +8,7 @@
 
 #import "UIDevice+JYDevice.h"
 #import <sys/utsname.h>
+#import <sys/sysctl.h>
 
 @implementation UIDevice (JYDevice)
 
@@ -104,6 +105,30 @@
                           @"iPod7,1" : @"iPod touch (6th generation)"};
     NSString *platformType = [UIDevice platformType];
     return dic[platformType];
+}
+
++ (long)systemBootTime {
+    int mib[2];
+    mib[0] = CTL_KERN;
+    mib[1] = KERN_BOOTTIME;
+    
+    struct timeval boottime;
+    size_t size = sizeof(boottime);
+    if (sysctl(mib, 2, &boottime, &size, NULL, 0) != -1) {
+        return boottime.tv_sec;
+    }
+    return 0;
+}
+
++ (long)systemNowTime {
+    struct timeval now;
+    struct timezone tz;
+    gettimeofday(&now, &tz);
+    return now.tv_sec;
+}
+
++ (long)systemRunningDuration {
+    return UIDevice.systemNowTime - UIDevice.systemBootTime;
 }
 
 @end

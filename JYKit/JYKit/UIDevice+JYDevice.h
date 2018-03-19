@@ -26,4 +26,29 @@
  */
 + (NSString *)platformString;
 
+
+/**
+ 获取系统启动时的Unix时间
+
+ @return 系统启动时的Unix时间
+ */
++ (long)systemBootTime;
+
+
+/**
+ 获取系统当前的Unix时间
+
+ @return 系统当前的Unix时间
+ */
++ (long)systemNowTime;
+
+
+/**
+ 获取系统运行时长(不受‘用户修改系统时间’影响)
+ 
+ @discussion 系统运行时长 = 系统当前时间 - 系统启动时间
+ @return 系统运行时长
+ */
++ (long)systemRunningDuration;
+
 @end
