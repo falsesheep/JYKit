@@ -36,6 +36,7 @@
 #import "LeadingViewController.h"
 #import "RunningLabelViewController.h"
 #import "ItemDragViewController.h"
+#import "PauseAnimViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray *examples;
@@ -74,7 +75,8 @@
                   @"安全键盘",
                   @"程序引导页",
                   @"文字跑马灯",
-                  @"CollectionView拖拽"];
+                  @"CollectionView拖拽",
+                  @"Layer动画暂停"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -235,6 +237,11 @@
             break;}
         case 28:{
             ItemDragViewController *vc = [ItemDragViewController new];
+            vc.title = _examples[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;}
+        case 29:{
+            PauseAnimViewController *vc = PauseAnimViewController.new;
             vc.title = _examples[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;}

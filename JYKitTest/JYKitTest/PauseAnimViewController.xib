@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PauseAnimViewController">
+            <connections>
+                <outlet property="line" destination="rIv-ie-hYR" id="cVv-3j-mnu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rIv-ie-hYR">
+                    <rect key="frame" x="157" y="216" width="100" height="2"/>
+                    <color key="backgroundColor" red="1" green="0.18823529410000001" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="2gm-RC-3ZN"/>
+                        <constraint firstAttribute="width" constant="100" id="jqG-Ud-q75"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="layer.anchorPoint">
+                            <point key="value" x="0.0" y="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-hh-3gc">
+                    <rect key="frame" x="153" y="371" width="108" height="30"/>
+                    <state key="normal" title="Pause/Continue"/>
+                    <connections>
+                        <action selector="togglePause:" destination="-1" eventType="touchUpInside" id="Usl-nj-kM7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YEY-hh-3gc" firstAttribute="top" secondItem="rIv-ie-hYR" secondAttribute="bottom" constant="153" id="NTz-Ve-FZj"/>
+                <constraint firstItem="rIv-ie-hYR" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="172" id="ffs-rh-xnx"/>
+                <constraint firstItem="YEY-hh-3gc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lrR-A2-GIY"/>
+                <constraint firstItem="rIv-ie-hYR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pS3-ET-Xmf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </view>
+    </objects>
+</document>

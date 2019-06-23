@@ -46,3 +46,4 @@ FOUNDATION_EXPORT const unsigned char JYKitVersionString[];
 #import "JYABC123Keyboard.h"
 #import "JYIntroView.h"
 #import "JYRunningLabel.h"
+#import "UIView+JYAnimation.h"

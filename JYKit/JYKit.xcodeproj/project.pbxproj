@@ -78,6 +78,8 @@
 		20E62C5F1EA5BD4A008A7C40 /* UINavigationController+JYPassOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C5D1EA5BD49008A7C40 /* UINavigationController+JYPassOn.m */; };
 		20E62C621EA5BF89008A7C40 /* UIViewController+JYMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E62C601EA5BF89008A7C40 /* UIViewController+JYMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E62C631EA5BF89008A7C40 /* UIViewController+JYMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */; };
+		9F05288F22BF6271009D5342 /* UIView+JYAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F05288D22BF6271009D5342 /* UIView+JYAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F05289022BF6271009D5342 /* UIView+JYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F05288E22BF6271009D5342 /* UIView+JYAnimation.m */; };
 		9F13958D2046A52C00027D66 /* BackgroundBlurTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F13958B2046A52C00027D66 /* BackgroundBlurTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F13958E2046A52C00027D66 /* BackgroundBlurTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */; };
 		9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -167,6 +169,8 @@
 		20E62C5D1EA5BD49008A7C40 /* UINavigationController+JYPassOn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JYPassOn.m"; sourceTree = "<group>"; };
 		20E62C601EA5BF89008A7C40 /* UIViewController+JYMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JYMethods.h"; sourceTree = "<group>"; };
 		20E62C611EA5BF89008A7C40 /* UIViewController+JYMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JYMethods.m"; sourceTree = "<group>"; };
+		9F05288D22BF6271009D5342 /* UIView+JYAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JYAnimation.h"; sourceTree = "<group>"; };
+		9F05288E22BF6271009D5342 /* UIView+JYAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYAnimation.m"; sourceTree = "<group>"; };
 		9F13958B2046A52C00027D66 /* BackgroundBlurTrigger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundBlurTrigger.h; sourceTree = "<group>"; };
 		9F13958C2046A52C00027D66 /* BackgroundBlurTrigger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundBlurTrigger.m; sourceTree = "<group>"; };
 		9F13958F2046AD2D00027D66 /* NSURL+JYURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+JYURL.h"; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 				9F58F1832048FE3300000F45 /* JYIntroView.m */,
 				9FD9D10F205BA615004F6144 /* JYRunningLabel.h */,
 				9FD9D110205BA615004F6144 /* JYRunningLabel.m */,
+				9F05288D22BF6271009D5342 /* UIView+JYAnimation.h */,
+				9F05288E22BF6271009D5342 /* UIView+JYAnimation.m */,
 			);
 			path = JYKit;
 			sourceTree = "<group>";
@@ -353,6 +359,7 @@
 				9F58F1842048FE3300000F45 /* JYIntroView.h in Headers */,
 				20DE2FBF1D65AD6B00832F04 /* JYCirclrSlider.h in Headers */,
 				9FD9D111205BA615004F6144 /* JYRunningLabel.h in Headers */,
+				9F05288F22BF6271009D5342 /* UIView+JYAnimation.h in Headers */,
 				9F1395912046AD2D00027D66 /* NSURL+JYURL.h in Headers */,
 				20DE2FBD1D65AD6B00832F04 /* JYCircleGestureRecognizer.h in Headers */,
 			);
@@ -422,6 +429,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 208C8B181BD4E98B00E55D5D;
@@ -496,6 +504,7 @@
 				209CFF981EB23E350069529B /* JYExceptionHandle.m in Sources */,
 				9F58F1852048FE3300000F45 /* JYIntroView.m in Sources */,
 				204DD9E61C9EC6B5002407A3 /* UIImage+JYEffects.m in Sources */,
+				9F05289022BF6271009D5342 /* UIView+JYAnimation.m in Sources */,
 				9FD9D112205BA615004F6144 /* JYRunningLabel.m in Sources */,
 				208C8B3F1BD4E9BD00E55D5D /* JYTest.m in Sources */,
 				2087C1CE1BD534E300A3D53F /* UIButton+Block.m in Sources */,

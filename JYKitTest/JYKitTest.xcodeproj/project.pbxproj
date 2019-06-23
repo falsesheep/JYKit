@@ -72,6 +72,8 @@
 		20E62C691EA5C665008A7C40 /* UpgradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E62C671EA5C665008A7C40 /* UpgradeViewController.xib */; };
 		20F7139C1D6D535700798D56 /* AdjustingTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F7139A1D6D535700798D56 /* AdjustingTextViewController.m */; };
 		20F7139D1D6D535700798D56 /* AdjustingTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */; };
+		9F05289722BF62DF009D5342 /* PauseAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F05289522BF62DF009D5342 /* PauseAnimViewController.m */; };
+		9F05289822BF62DF009D5342 /* PauseAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F05289622BF62DF009D5342 /* PauseAnimViewController.xib */; };
 		9F1395892046956300027D66 /* RateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1395862046956200027D66 /* RateViewController.xib */; };
 		9F13958A2046956300027D66 /* RateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1395882046956300027D66 /* RateViewController.m */; };
 		9F28968D205F619400F6B21E /* ItemDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F28968B205F619400F6B21E /* ItemDragViewController.m */; };
@@ -248,6 +250,9 @@
 		20F713991D6D535700798D56 /* AdjustingTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustingTextViewController.h; sourceTree = "<group>"; };
 		20F7139A1D6D535700798D56 /* AdjustingTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustingTextViewController.m; sourceTree = "<group>"; };
 		20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdjustingTextViewController.xib; sourceTree = "<group>"; };
+		9F05289422BF62DF009D5342 /* PauseAnimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PauseAnimViewController.h; sourceTree = "<group>"; };
+		9F05289522BF62DF009D5342 /* PauseAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PauseAnimViewController.m; sourceTree = "<group>"; };
+		9F05289622BF62DF009D5342 /* PauseAnimViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PauseAnimViewController.xib; sourceTree = "<group>"; };
 		9F1395862046956200027D66 /* RateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateViewController.xib; sourceTree = "<group>"; };
 		9F1395872046956300027D66 /* RateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateViewController.h; sourceTree = "<group>"; };
 		9F1395882046956300027D66 /* RateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateViewController.m; sourceTree = "<group>"; };
@@ -533,6 +538,7 @@
 				9F58F1742048FD3E00000F45 /* 引导页 */,
 				9FD9D107205BA550004F6144 /* 文字跑马灯 */,
 				9F289687205F616000F6B21E /* CollectionView拖拽 */,
+				9F05289122BF62AB009D5342 /* 动画暂停 */,
 				208C8BAB1BD4EF6E00E55D5D /* Main.storyboard */,
 				208C8BAE1BD4EF6E00E55D5D /* Assets.xcassets */,
 				208C8BB01BD4EF6E00E55D5D /* LaunchScreen.storyboard */,
@@ -648,6 +654,16 @@
 				20F7139B1D6D535700798D56 /* AdjustingTextViewController.xib */,
 			);
 			name = "高度可变的输入框";
+			sourceTree = "<group>";
+		};
+		9F05289122BF62AB009D5342 /* 动画暂停 */ = {
+			isa = PBXGroup;
+			children = (
+				9F05289422BF62DF009D5342 /* PauseAnimViewController.h */,
+				9F05289522BF62DF009D5342 /* PauseAnimViewController.m */,
+				9F05289622BF62DF009D5342 /* PauseAnimViewController.xib */,
+			);
+			name = "动画暂停";
 			sourceTree = "<group>";
 		};
 		9F1395832046951800027D66 /* App Store评分 */ = {
@@ -810,6 +826,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -867,6 +884,7 @@
 				9F28968E205F619400F6B21E /* ItemDragViewController.xib in Resources */,
 				205398BE1D0D45DA00B34DA1 /* ImageSizeViewController.xib in Resources */,
 				20C12D521D618DBE00E2FF38 /* ShapeViewViewController.xib in Resources */,
+				9F05289822BF62DF009D5342 /* PauseAnimViewController.xib in Resources */,
 				2005BDE41D17E6FB00AA9814 /* ControlLoadingViewController.xib in Resources */,
 				9F58F17F2048FD6D00000F45 /* 178-4.png in Resources */,
 				2005BDEB1D17F5FB00AA9814 /* LoadingViewController.xib in Resources */,
@@ -924,6 +942,7 @@
 				2005BDE81D17EF1100AA9814 /* LoadingBaseViewController.m in Sources */,
 				205398BD1D0D45DA00B34DA1 /* ImageSizeViewController.m in Sources */,
 				2059AF811D7D3BD200C6DE23 /* QRCodeViewController.m in Sources */,
+				9F05289722BF62DF009D5342 /* PauseAnimViewController.m in Sources */,
 				2079C1CA1D11403800A4315A /* JDMasterViewController.m in Sources */,
 				208C8BA71BD4EF6E00E55D5D /* AppDelegate.m in Sources */,
 				20C12D511D618DBE00E2FF38 /* ShapeViewViewController.m in Sources */,

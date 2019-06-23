@@ -11,7 +11,7 @@
 
 @interface ItemDragViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
-@property (nonatomic, strong) NSMutableArray *dataSource
+@property (nonatomic, strong) NSMutableArray *dataSource;
 @end
 
 @implementation ItemDragViewController
